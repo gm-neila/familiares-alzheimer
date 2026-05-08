@@ -1,0 +1,1916 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#143f47">
+
+  <title>AFABECO Béjar | Apoyo en Alzheimer y demencias</title>
+  <meta name="description" content="AFABECO Béjar acompaña a personas con Alzheimer y otras demencias, y a sus familias cuidadoras, en Béjar y comarca.">
+  <meta name="keywords" content="AFABECO Béjar, Alzheimer Béjar, asociación Alzheimer Béjar, demencias Béjar, apoyo cuidadores Béjar, respiro familiar Alzheimer">
+  <meta name="author" content="AFABECO Béjar">
+
+  <meta property="og:title" content="AFABECO Béjar | Apoyo en Alzheimer y demencias">
+  <meta property="og:description" content="Acompañamiento, orientación y apoyo especializado para familias de Béjar y comarca.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:image" content="img/afabeco-centro-exterior.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Literata:opsz,wght@7..72,500;7..72,600;7..72,700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ============================================================
+       01. VARIABLES
+       ============================================================ */
+    :root {
+      --azul-900: #143f47;
+      --azul-800: #1d5660;
+      --azul-100: #dfecee;
+      --azul-50: #f0f7f8;
+
+      --salvia-600: #7f9678;
+      --salvia-100: #edf3ea;
+
+      --terracota-700: #914936;
+      --terracota-600: #b76045;
+      --terracota-100: #f6ded4;
+
+      --marfil: #fbf8f1;
+      --arena: #f3eadc;
+      --ambar: #fff4d8;
+      --blanco: #ffffff;
+
+      --texto: #1f2729;
+      --texto-2: #546366;
+      --texto-3: #7a8587;
+      --borde: #dce2df;
+      --borde-suave: #edf0ee;
+
+      --shadow-sm: 0 8px 24px rgba(20, 63, 71, .08);
+      --shadow-md: 0 18px 55px rgba(20, 63, 71, .15);
+      --shadow-lg: 0 25px 80px rgba(20, 63, 71, .20);
+
+      --radius-sm: 14px;
+      --radius-md: 22px;
+      --radius-lg: 34px;
+      --max-width: 1180px;
+    }
+
+    /* ============================================================
+       02. RESET Y BASE
+       ============================================================ */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 92px;
+    }
+
+    body {
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--texto);
+      background: var(--marfil);
+      line-height: 1.65;
+      font-size: 16px;
+      text-rendering: optimizeLegibility;
+    }
+
+    img,
+    svg {
+      max-width: 100%;
+    }
+
+    img {
+      display: block;
+      height: auto;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    :focus-visible {
+      outline: 3px solid rgba(183, 96, 69, .45);
+      outline-offset: 3px;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -80px;
+      left: 18px;
+      z-index: 999;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: var(--azul-900);
+      color: var(--blanco);
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    .skip-link:focus {
+      top: 18px;
+    }
+
+    .container {
+      width: min(var(--max-width), calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    section {
+      padding: 92px 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Literata", Georgia, serif;
+      color: var(--azul-900);
+      letter-spacing: -.025em;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin-bottom: 24px;
+      font-size: clamp(2.55rem, 5vw, 5rem);
+      line-height: .98;
+    }
+
+    h1 span {
+      color: var(--terracota-600);
+    }
+
+    h2 {
+      margin-bottom: 18px;
+      font-size: clamp(2rem, 3.2vw, 3.35rem);
+      line-height: 1.08;
+    }
+
+    h3 {
+      font-size: 1.28rem;
+      line-height: 1.25;
+    }
+
+    p {
+      color: var(--texto-2);
+    }
+
+    .section-head {
+      margin-bottom: 38px;
+    }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 12px;
+      color: var(--terracota-600);
+      font-size: .76rem;
+      font-weight: 900;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .section-label::before {
+      content: "";
+      width: 32px;
+      height: 2px;
+      border-radius: 999px;
+      background: currentColor;
+    }
+
+    .intro {
+      max-width: 760px;
+      font-size: 1.08rem;
+    }
+
+    .card {
+      border: 1px solid var(--borde-suave);
+      border-radius: var(--radius-md);
+      background: var(--blanco);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .icon {
+      width: 21px;
+      height: 21px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex: 0 0 auto;
+    }
+
+    /* ============================================================
+       03. BOTONES
+       ============================================================ */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 50px;
+      padding: 14px 23px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      font-family: inherit;
+      font-size: .96rem;
+      font-weight: 900;
+      line-height: 1;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform .2s ease, background .2s ease, border-color .2s ease, box-shadow .2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--azul-900);
+      color: var(--blanco);
+      box-shadow: 0 14px 30px rgba(20, 63, 71, .22);
+    }
+
+    .btn-primary:hover {
+      background: #0e3036;
+    }
+
+    .btn-secondary {
+      background: var(--blanco);
+      color: var(--azul-900);
+      border-color: rgba(20, 63, 71, .22);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--azul-800);
+    }
+
+    .btn-accent {
+      background: var(--terracota-600);
+      color: var(--blanco);
+      box-shadow: 0 14px 30px rgba(183, 96, 69, .22);
+    }
+
+    .btn-accent:hover {
+      background: var(--terracota-700);
+    }
+
+    /* ============================================================
+       04. CABECERA Y NAVEGACIÓN
+       ============================================================ */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(220, 226, 223, .88);
+      background: rgba(251, 248, 241, .92);
+      backdrop-filter: blur(18px);
+    }
+
+    .header-inner {
+      min-height: 84px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .brand-mark {
+      width: 48px;
+      height: 48px;
+      border-radius: 17px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--azul-900), var(--azul-800));
+      color: var(--blanco);
+      box-shadow: 0 12px 28px rgba(20, 63, 71, .22);
+    }
+
+    .brand-mark svg {
+      width: 25px;
+      height: 25px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.8;
+    }
+
+    .brand-text strong {
+      display: block;
+      font-family: "Literata", Georgia, serif;
+      color: var(--azul-900);
+      font-size: 1.16rem;
+      line-height: 1;
+    }
+
+    .brand-text span {
+      display: block;
+      margin-top: 4px;
+      color: var(--texto-3);
+      font-size: .74rem;
+      font-weight: 800;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    .nav-toggle {
+      display: none;
+    }
+
+    .nav-button {
+      display: none;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border: 1px solid var(--borde);
+      border-radius: 999px;
+      background: var(--blanco);
+      color: var(--azul-900);
+      font-weight: 900;
+      cursor: pointer;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .main-nav ul {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      list-style: none;
+    }
+
+    .main-nav a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 42px;
+      padding: 9px 12px;
+      border-radius: 999px;
+      color: var(--texto-2);
+      font-size: .9rem;
+      font-weight: 800;
+      text-decoration: none;
+      transition: background .18s ease, color .18s ease;
+    }
+
+    .main-nav a:hover {
+      background: var(--azul-100);
+      color: var(--azul-900);
+    }
+
+    .main-nav .nav-cta {
+      padding-inline: 17px;
+      background: var(--azul-900);
+      color: var(--blanco);
+    }
+
+    .main-nav .nav-cta:hover {
+      background: var(--terracota-600);
+      color: var(--blanco);
+    }
+
+    /* ============================================================
+       05. HERO
+       ============================================================ */
+    .hero {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      padding: 88px 0 80px;
+      background:
+        radial-gradient(circle at 88% 10%, rgba(183, 96, 69, .16), transparent 28%),
+        radial-gradient(circle at 9% 18%, rgba(31, 86, 96, .14), transparent 29%),
+        linear-gradient(135deg, #fbf8f1 0%, #f2eadc 48%, #e6efed 100%);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -150px;
+      bottom: -200px;
+      width: 530px;
+      height: 530px;
+      border-radius: 999px;
+      background: rgba(127, 150, 120, .16);
+      z-index: -1;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.06fr) minmax(360px, .94fr);
+      gap: 58px;
+      align-items: center;
+    }
+
+    .local-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 24px;
+      padding: 8px 14px;
+      border: 1px solid rgba(20, 63, 71, .16);
+      border-radius: 999px;
+      background: rgba(20, 63, 71, .08);
+      color: var(--azul-900);
+      font-size: .82rem;
+      font-weight: 900;
+    }
+
+    .hero-lead {
+      max-width: 700px;
+      margin-bottom: 30px;
+      color: #405154;
+      font-size: clamp(1.08rem, 1.8vw, 1.28rem);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+
+    .hero-contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .hero-contact a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--azul-900);
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    .hero-media {
+      position: relative;
+      min-height: 560px;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      background: var(--azul-900);
+    }
+
+    .hero-media img {
+      width: 100%;
+      height: 100%;
+      min-height: 560px;
+      object-fit: cover;
+    }
+
+    .hero-media::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(20, 63, 71, .03), rgba(20, 63, 71, .74));
+    }
+
+    .hero-note {
+      position: absolute;
+      right: 24px;
+      bottom: 24px;
+      left: 24px;
+      z-index: 1;
+      padding: 22px;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 24px;
+      background: rgba(20, 63, 71, .82);
+      backdrop-filter: blur(10px);
+      color: var(--blanco);
+    }
+
+    .hero-note strong {
+      display: block;
+      margin-bottom: 4px;
+      font-family: "Literata", Georgia, serif;
+      font-size: 1.45rem;
+    }
+
+    .hero-note span {
+      color: rgba(255,255,255,.84);
+      font-size: .94rem;
+    }
+
+    .trust-strip {
+      padding: 18px 0;
+      background: var(--azul-900);
+      color: var(--blanco);
+    }
+
+    .trust-list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      list-style: none;
+    }
+
+    .trust-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: rgba(255,255,255,.86);
+      font-size: .94rem;
+      font-weight: 800;
+    }
+
+    .trust-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--terracota-600);
+      flex-shrink: 0;
+    }
+
+    /* ============================================================
+       06. QUIÉNES SOMOS
+       ============================================================ */
+    .about {
+      background: var(--blanco);
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: .96fr 1.04fr;
+      gap: 58px;
+      align-items: center;
+    }
+
+    .photo-card {
+      overflow: hidden;
+      padding: 14px;
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 440px;
+      border-radius: 18px;
+      object-fit: cover;
+    }
+
+    .photo-caption {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 14px;
+      color: var(--texto-3);
+      font-size: .84rem;
+    }
+
+    .registry-note {
+      display: inline-flex;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--salvia-100);
+      color: var(--azul-900);
+      font-size: .82rem;
+      font-weight: 900;
+    }
+
+    .recognition {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin: 24px 0;
+      padding: 18px;
+      border-radius: 18px;
+      background: var(--azul-100);
+      color: var(--azul-900);
+    }
+
+    .recognition-icon {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: var(--blanco);
+      box-shadow: var(--shadow-sm);
+      flex-shrink: 0;
+    }
+
+    .quote {
+      margin: 24px 0;
+      padding: 24px;
+      border-left: 5px solid var(--terracota-600);
+      border-radius: 0 20px 20px 0;
+      background: var(--arena);
+    }
+
+    .quote p {
+      color: var(--azul-900);
+      font-family: "Literata", Georgia, serif;
+      font-size: 1.35rem;
+      line-height: 1.35;
+    }
+
+    .quote cite {
+      display: block;
+      margin-top: 10px;
+      color: var(--texto-2);
+      font-size: .9rem;
+      font-style: normal;
+      font-weight: 900;
+    }
+
+    .pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--salvia-100);
+      color: var(--azul-900);
+      font-size: .88rem;
+      font-weight: 900;
+    }
+
+    /* ============================================================
+       07. SERVICIOS
+       ============================================================ */
+    .services {
+      background: linear-gradient(180deg, var(--marfil), var(--arena));
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      position: relative;
+      min-height: 278px;
+      overflow: hidden;
+      padding: 28px;
+      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+
+    .service-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 5px;
+      background: linear-gradient(90deg, var(--azul-800), var(--salvia-600), var(--terracota-600));
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(31, 86, 96, .28);
+      box-shadow: var(--shadow-md);
+    }
+
+    .service-icon,
+    .collab-icon,
+    .contact-icon {
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 18px;
+      border-radius: 18px;
+      background: var(--azul-100);
+      color: var(--azul-900);
+    }
+
+    .service-card:nth-child(2n) .service-icon {
+      background: var(--salvia-100);
+    }
+
+    .service-card:nth-child(3n) .service-icon {
+      background: var(--terracota-100);
+      color: var(--terracota-700);
+    }
+
+    .service-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .service-card p,
+    .collab-card p,
+    .news-card p,
+    .help-card p {
+      font-size: .96rem;
+    }
+
+    .notice {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-top: 28px;
+      padding: 18px 20px;
+      border: 1px solid rgba(176, 133, 36, .26);
+      border-radius: 18px;
+      background: var(--ambar);
+      color: #66511a;
+    }
+
+    .notice p {
+      color: #66511a;
+    }
+
+    .notice a {
+      color: var(--azul-900);
+      font-weight: 900;
+    }
+
+    /* ============================================================
+       08. GALERÍA DEL CENTRO
+       ============================================================ */
+    .center-gallery {
+      background: var(--azul-50);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 22px;
+    }
+
+    .gallery-main,
+    .gallery-side {
+      overflow: hidden;
+    }
+
+    .gallery-main img {
+      width: 100%;
+      height: 560px;
+      object-fit: cover;
+    }
+
+    .gallery-side {
+      display: grid;
+      gap: 22px;
+      background: transparent;
+      box-shadow: none;
+      border: 0;
+    }
+
+    .gallery-mini {
+      overflow: hidden;
+      border-radius: var(--radius-md);
+      background: var(--blanco);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .gallery-mini img {
+      width: 100%;
+      height: 269px;
+      object-fit: cover;
+    }
+
+    .gallery-caption {
+      padding: 18px;
+    }
+
+    .gallery-caption strong {
+      display: block;
+      color: var(--azul-900);
+      font-family: "Literata", Georgia, serif;
+      font-size: 1.08rem;
+    }
+
+    .gallery-caption span {
+      color: var(--texto-2);
+      font-size: .92rem;
+    }
+
+    /* ============================================================
+       09. ALZHEIMER Y FAMILIAS
+       ============================================================ */
+    .dementia {
+      background: var(--blanco);
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 28px;
+    }
+
+    .info-box {
+      padding: 30px;
+      border: 1px solid var(--borde-suave);
+      border-radius: var(--radius-md);
+      background: var(--marfil);
+    }
+
+    .info-box h3 {
+      margin-bottom: 18px;
+    }
+
+    .check-list {
+      display: grid;
+      gap: 13px;
+      list-style: none;
+    }
+
+    .check-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      color: var(--texto-2);
+    }
+
+    .check-list li::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      margin-top: 9px;
+      border-radius: 50%;
+      background: var(--terracota-600);
+      flex-shrink: 0;
+    }
+
+    .stat-card {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 24px;
+      align-items: center;
+      padding: 30px;
+      border-radius: var(--radius-md);
+      background: var(--azul-900);
+      color: var(--blanco);
+      box-shadow: var(--shadow-md);
+    }
+
+    .stat-number {
+      color: #f4d6c9;
+      font-family: "Literata", Georgia, serif;
+      font-size: clamp(3rem, 6vw, 5.6rem);
+      font-weight: 700;
+      line-height: .9;
+    }
+
+    .stat-card strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--blanco);
+      font-size: 1.08rem;
+    }
+
+    .stat-card span {
+      color: rgba(255,255,255,.78);
+    }
+
+    .families {
+      background: var(--arena);
+    }
+
+    .help-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .help-card {
+      padding: 24px;
+      border: 1px solid var(--borde-suave);
+      border-radius: var(--radius-md);
+      background: var(--blanco);
+    }
+
+    .step {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 34px;
+      height: 34px;
+      margin-bottom: 14px;
+      border-radius: 999px;
+      background: var(--azul-900);
+      color: var(--blanco);
+      font-weight: 900;
+    }
+
+    /* ============================================================
+       10. COLABORA Y NOTICIAS
+       ============================================================ */
+    .collaborate {
+      background: var(--blanco);
+    }
+
+    .collab-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-bottom: 44px;
+    }
+
+    .collab-card {
+      padding: 26px 22px;
+      text-align: center;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .collab-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .collab-icon {
+      margin-inline: auto;
+      background: var(--terracota-100);
+      color: var(--terracota-700);
+    }
+
+    .events-title {
+      margin-bottom: 18px;
+    }
+
+    .events-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .event-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 20px;
+      padding: 18px 22px;
+      border: 1px solid var(--borde-suave);
+      border-radius: 16px;
+      background: var(--marfil);
+    }
+
+    .event-row strong {
+      color: var(--azul-900);
+    }
+
+    .event-row span {
+      display: block;
+      margin-top: 2px;
+      color: var(--texto-2);
+      font-size: .92rem;
+    }
+
+    .amount {
+      color: var(--terracota-600);
+      font-family: "Literata", Georgia, serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .news {
+      background: var(--arena);
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    .news-card {
+      overflow: hidden;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .news-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .news-card img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+    }
+
+    .news-card.poster img {
+      object-fit: contain;
+      background: #102d33;
+    }
+
+    .news-body {
+      padding: 22px;
+    }
+
+    .tag {
+      display: inline-flex;
+      margin-bottom: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--azul-100);
+      color: var(--azul-900);
+      font-size: .72rem;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .news-body h3 {
+      margin-bottom: 10px;
+    }
+
+    .news-body time {
+      display: block;
+      margin-top: 16px;
+      color: var(--texto-3);
+      font-size: .86rem;
+      font-weight: 800;
+    }
+
+    /* ============================================================
+       11. CTA Y CONTACTO
+       ============================================================ */
+    .cta-band {
+      padding: 78px 0;
+      background:
+        radial-gradient(circle at 86% 20%, rgba(244, 214, 201, .18), transparent 30%),
+        linear-gradient(135deg, var(--azul-900), var(--azul-800));
+      color: var(--blanco);
+      text-align: center;
+    }
+
+    .cta-band h2 {
+      max-width: 820px;
+      margin-inline: auto;
+      color: var(--blanco);
+    }
+
+    .cta-band p {
+      max-width: 650px;
+      margin: 0 auto 28px;
+      color: rgba(255,255,255,.82);
+      font-size: 1.08rem;
+    }
+
+    .cta-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .cta-band .btn-primary {
+      background: var(--blanco);
+      color: var(--azul-900);
+    }
+
+    .cta-band .btn-secondary {
+      border-color: rgba(255,255,255,.24);
+      background: rgba(255,255,255,.12);
+      color: var(--blanco);
+      box-shadow: none;
+    }
+
+    .contact {
+      background: var(--marfil);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .82fr 1.18fr;
+      gap: 42px;
+      align-items: start;
+    }
+
+    .contact-panel,
+    .form-panel {
+      padding: 32px;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 22px;
+      margin-top: 24px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .contact-icon {
+      margin-bottom: 0;
+      flex-shrink: 0;
+    }
+
+    .contact-item strong {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--azul-900);
+      font-size: .86rem;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .contact-item a {
+      color: var(--azul-800);
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+
+    .phone-warning {
+      margin-top: 10px;
+      padding: 11px 12px;
+      border: 1px solid rgba(176, 133, 36, .28);
+      border-radius: 14px;
+      background: var(--ambar);
+      color: #66511a;
+      font-size: .88rem;
+      line-height: 1.45;
+    }
+
+    .map-link {
+      display: grid;
+      place-items: center;
+      min-height: 170px;
+      margin-top: 24px;
+      padding: 18px;
+      border: 1px dashed rgba(20, 63, 71, .28);
+      border-radius: 20px;
+      background:
+        linear-gradient(135deg, rgba(31, 86, 96, .14), rgba(127, 150, 120, .12)),
+        var(--arena);
+      color: var(--azul-900);
+      font-weight: 900;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .field {
+      margin-bottom: 16px;
+    }
+
+    .field.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--azul-900);
+      font-size: .92rem;
+      font-weight: 900;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid var(--borde);
+      border-radius: 14px;
+      background: var(--blanco);
+      color: var(--texto);
+      font: inherit;
+      transition: border-color .2s ease, box-shadow .2s ease;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: var(--azul-800);
+      box-shadow: 0 0 0 4px rgba(31, 86, 96, .13);
+    }
+
+    textarea {
+      min-height: 126px;
+      resize: vertical;
+    }
+
+    .privacy {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin: 4px 0 20px;
+    }
+
+    .privacy input {
+      width: 19px;
+      height: 19px;
+      margin-top: 4px;
+      accent-color: var(--azul-900);
+      flex-shrink: 0;
+    }
+
+    .privacy label {
+      margin: 0;
+      color: var(--texto-2);
+      font-size: .88rem;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    .privacy a {
+      color: var(--azul-800);
+      font-weight: 900;
+    }
+
+    .submit-btn {
+      width: 100%;
+      min-height: 52px;
+      border: 0;
+      border-radius: 999px;
+      background: var(--terracota-600);
+      color: var(--blanco);
+      font: inherit;
+      font-weight: 900;
+      cursor: pointer;
+      transition: transform .2s ease, background .2s ease;
+    }
+
+    .submit-btn:hover {
+      transform: translateY(-2px);
+      background: var(--terracota-700);
+    }
+
+    /* ============================================================
+       12. FOOTER
+       ============================================================ */
+    .site-footer {
+      padding: 58px 0 30px;
+      background: #102d33;
+      color: rgba(255,255,255,.74);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.35fr 1fr 1fr 1fr;
+      gap: 36px;
+      margin-bottom: 38px;
+    }
+
+    .site-footer .brand-text strong {
+      color: var(--blanco);
+    }
+
+    .site-footer .brand-text span,
+    .site-footer p {
+      color: rgba(255,255,255,.64);
+    }
+
+    .site-footer h4 {
+      margin-bottom: 14px;
+      color: var(--blanco);
+      font-size: .8rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .site-footer ul {
+      display: grid;
+      gap: 8px;
+      list-style: none;
+    }
+
+    .site-footer a {
+      color: rgba(255,255,255,.72);
+      font-size: .94rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .site-footer a:hover {
+      color: var(--blanco);
+      text-decoration: underline;
+    }
+
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 18px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255,255,255,.12);
+      color: rgba(255,255,255,.52);
+      font-size: .88rem;
+    }
+
+    .legal-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .pending,
+    .image-note {
+      margin-top: 10px;
+      color: rgba(255,255,255,.55);
+      font-size: .8rem;
+    }
+
+    /* ============================================================
+       13. RESPONSIVE
+       ============================================================ */
+    @media (max-width: 1080px) {
+      .main-nav a {
+        padding-inline: 9px;
+        font-size: .84rem;
+      }
+
+      .hero-grid,
+      .split,
+      .contact-grid,
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-media {
+        max-width: 760px;
+      }
+
+      .services-grid,
+      .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .help-grid,
+      .collab-grid,
+      .footer-grid,
+      .trust-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 820px) {
+      body {
+        font-size: 15.5px;
+      }
+
+      section {
+        padding: 70px 0;
+      }
+
+      .header-inner {
+        min-height: 76px;
+      }
+
+      .nav-button {
+        display: inline-flex;
+      }
+
+      .main-nav {
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 20px;
+        right: 20px;
+        padding: 12px;
+        border: 1px solid var(--borde);
+        border-radius: 22px;
+        background: rgba(255,255,255,.98);
+        box-shadow: var(--shadow-md);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-8px);
+        transition: opacity .2s ease, transform .2s ease;
+      }
+
+      .nav-toggle:checked ~ .main-nav {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
+
+      .main-nav ul {
+        display: grid;
+        gap: 3px;
+      }
+
+      .main-nav a,
+      .main-nav .nav-cta {
+        width: 100%;
+        justify-content: flex-start;
+        border-radius: 14px;
+        padding: 12px 14px;
+      }
+
+      .hero {
+        padding: 60px 0 64px;
+      }
+
+      .hero-media,
+      .hero-media img {
+        min-height: 380px;
+      }
+
+      .photo-card img,
+      .gallery-main img,
+      .gallery-mini img {
+        height: 300px;
+      }
+
+      .info-grid,
+      .services-grid,
+      .news-grid,
+      .help-grid,
+      .collab-grid,
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stat-card,
+      .event-row {
+        grid-template-columns: 1fr;
+      }
+
+      .stat-card {
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .container {
+        width: min(100% - 28px, var(--max-width));
+      }
+
+      .brand-text span {
+        display: none;
+      }
+
+      h1 {
+        font-size: clamp(2.28rem, 13vw, 3.35rem);
+      }
+
+      .hero-actions,
+      .cta-actions {
+        display: grid;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .hero-contact,
+      .trust-list,
+      .footer-grid {
+        grid-template-columns: 1fr;
+        display: grid;
+      }
+
+      .contact-panel,
+      .form-panel,
+      .info-box,
+      .service-card {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="AFABECO Béjar - Inicio">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+        </span>
+        <span class="brand-text">
+          <strong>AFABECO Béjar</strong>
+          <span>Alzheimer · Béjar y Comarca</span>
+        </span>
+      </a>
+
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Abrir o cerrar menú">
+      <label class="nav-button" for="nav-toggle" aria-hidden="true">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        Menú
+      </label>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#quienes">Quiénes somos</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#centro">Centro</a></li>
+          <li><a href="#alzheimer">Alzheimer</a></li>
+          <li><a href="#familias">Familias</a></li>
+          <li><a href="#colabora">Colabora</a></li>
+          <li><a href="#contacto" class="nav-cta">Contactar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="hero" aria-labelledby="titulo-principal">
+      <div class="container hero-grid">
+        <div>
+          <div class="local-chip">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-7.1 7-12A7 7 0 0 0 5 9c0 4.9 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            Béjar y comarca · Salamanca
+          </div>
+
+          <h1 id="titulo-principal">Apoyo especializado en <span>Alzheimer</span> para familias de Béjar</h1>
+          <p class="hero-lead">
+            AFABECO acompaña a personas con Alzheimer y otras demencias, y a quienes las cuidan, con orientación profesional, estimulación cognitiva, apoyo psicológico y respiro familiar.
+          </p>
+
+          <div class="hero-actions" aria-label="Acciones principales">
+            <a href="#contacto" class="btn btn-primary">Contactar ahora</a>
+            <a href="#servicios" class="btn btn-secondary">Ver servicios</a>
+            <a href="#colabora" class="btn btn-accent">Colaborar</a>
+          </div>
+
+          <div class="hero-contact" aria-label="Datos rápidos de contacto">
+            <a href="tel:923608004">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 11.2 19 19.5 19.5 0 0 1 5 12.8 19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2.1Z"/></svg>
+              923 608 004
+            </a>
+            <a href="mailto:afabeco@yahoo.es">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"/><path d="m22 6-10 7L2 6"/></svg>
+              afabeco@yahoo.es
+            </a>
+          </div>
+        </div>
+
+        <figure class="hero-media">
+          <img src="img/afabeco-centro-exterior.jpg" alt="Exterior del centro de AFABECO Béjar en El Castañar" width="750" height="562" loading="eager">
+          <figcaption class="hero-note">
+            <strong>Centro en El Castañar</strong>
+            <span>Un espacio cercano para orientar, cuidar y acompañar a las familias de Béjar y comarca.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="trust-strip" aria-label="Datos destacados">
+      <ul class="container trust-list">
+        <li><span class="trust-dot" aria-hidden="true"></span> Asociación local de referencia</li>
+        <li><span class="trust-dot" aria-hidden="true"></span> Medalla de Oro de Béjar 2015</li>
+        <li><span class="trust-dot" aria-hidden="true"></span> Centro en El Castañar</li>
+        <li><span class="trust-dot" aria-hidden="true"></span> Apoyo a familias cuidadoras</li>
+      </ul>
+    </div>
+
+    <section id="quienes" class="about" aria-labelledby="titulo-quienes">
+      <div class="container split">
+        <figure class="card photo-card">
+          <img src="img/afabeco-centro-amplio.jpg" alt="Vista exterior del edificio de AFABECO Béjar y su rampa de acceso" width="800" height="600" loading="lazy">
+          <figcaption class="photo-caption">
+            <span>Exterior del centro tras las mejoras de instalaciones.</span>
+            <span class="registry-note">Reg. Asoc. CyL nº 37/1/0003090</span>
+          </figcaption>
+        </figure>
+
+        <div>
+          <p class="section-label">Quiénes somos</p>
+          <h2 id="titulo-quienes">Una asociación nacida para acompañar a las familias</h2>
+          <p>
+            AFABECO, la Asociación de Familiares de Enfermos de Alzheimer de Béjar y Comarca, trabaja para que ninguna familia se sienta sola ante el Alzheimer u otras demencias.
+          </p>
+          <p>
+            Desde su centro en El Castañar, ofrece un espacio de orientación, cuidado y apoyo profesional para personas afectadas y para quienes las acompañan cada día.
+          </p>
+
+          <div class="recognition" role="note">
+            <div class="recognition-icon" aria-hidden="true">🥇</div>
+            <div>
+              <strong>Medalla de Oro de Béjar 2015</strong>
+              <p>Reconocimiento a la trayectoria, el compromiso y la labor social de la asociación.</p>
+            </div>
+          </div>
+
+          <blockquote class="quote">
+            <p>“No podemos curar el Alzheimer, pero sí alcanzar una mejor calidad de vida.”</p>
+            <cite>AFABECO Béjar</cite>
+          </blockquote>
+
+          <div class="pills" aria-label="Valores de la asociación">
+            <span class="pill">Cercanía</span>
+            <span class="pill">Dignidad</span>
+            <span class="pill">Acompañamiento</span>
+            <span class="pill">Profesionalidad</span>
+            <span class="pill">Comunidad</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="services" aria-labelledby="titulo-servicios">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Servicios</p>
+          <h2 id="titulo-servicios">Atención integral para la persona y su entorno</h2>
+          <p class="intro">
+            Servicios pensados para mejorar la calidad de vida de la persona con demencia y reducir la carga emocional, física y organizativa de las familias cuidadoras.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="card service-card">
+            <div class="service-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9.5" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/></svg></div>
+            <h3>Información y asesoramiento</h3>
+            <p>Orientación desde el primer momento: recursos disponibles, pasos a seguir, apoyos institucionales y acompañamiento familiar.</p>
+          </article>
+
+          <article class="card service-card">
+            <div class="service-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3v18M6 8h12M6 16h12"/><path d="M8 3a4 4 0 0 0 0 8M16 3a4 4 0 0 1 0 8M8 13a4 4 0 0 0 0 8M16 13a4 4 0 0 1 0 8"/></svg></div>
+            <h3>Estimulación cognitiva</h3>
+            <p>Actividades adaptadas para trabajar memoria, orientación, lenguaje, atención y capacidades conservadas.</p>
+          </article>
+
+          <article class="card service-card">
+            <div class="service-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H7l-4 4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg></div>
+            <h3>Apoyo psicológico</h3>
+            <p>Escucha y acompañamiento emocional para la persona afectada, familiares y personas cuidadoras.</p>
+          </article>
+
+          <article class="card service-card">
+            <div class="service-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><path d="M9 22V12h6v10"/></svg></div>
+            <h3>Respiro familiar</h3>
+            <p>Un apoyo clave para que la persona cuidadora pueda descansar, organizarse y cuidarse también.</p>
+          </article>
+
+          <article class="card service-card">
+            <div class="service-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <h3>Apoyo a cuidadores</h3>
+            <p>Herramientas, pautas y acompañamiento para afrontar el día a día con más seguridad y menos soledad.</p>
+          </article>
+
+          <article class="card service-card">
+            <div class="service-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+            <h3>Actividades y sensibilización</h3>
+            <p>Charlas, jornadas, talleres, Día Mundial del Alzheimer y eventos para visibilizar la enfermedad.</p>
+          </article>
+        </div>
+
+        <div class="notice" role="note">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+          <p><strong>Servicios sujetos a disponibilidad.</strong> Confirmar horarios, condiciones y denominación oficial del centro antes de publicar esta web. Contacto: <a href="tel:923608004">923 608 004</a> · <a href="mailto:afabeco@yahoo.es">afabeco@yahoo.es</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="centro" class="center-gallery" aria-labelledby="titulo-centro">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Centro e instalaciones</p>
+          <h2 id="titulo-centro">Un espacio en El Castañar para cuidar y acompañar</h2>
+          <p class="intro">La demo utiliza fotografías reales del centro y de las mejoras realizadas en sus instalaciones.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="card gallery-main">
+            <img src="img/afabeco-centro-amplio.jpg" alt="Vista exterior amplia del Centro de Alzheimer de Béjar" width="800" height="600" loading="lazy">
+          </figure>
+
+          <div class="gallery-side">
+            <figure class="gallery-mini">
+              <img src="img/afabeco-rampa.webp" alt="Detalle de la rampa de acceso del centro de AFABECO" width="800" height="600" loading="lazy">
+              <figcaption class="gallery-caption"><strong>Acceso al centro</strong><span>Detalle de la rampa y el exterior.</span></figcaption>
+            </figure>
+
+            <figure class="gallery-mini">
+              <img src="img/afabeco-cubierta.webp" alt="Vista de la cubierta del edificio de AFABECO" width="800" height="600" loading="lazy">
+              <figcaption class="gallery-caption"><strong>Mejoras del edificio</strong><span>Imagen de la cubierta y fachada.</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="alzheimer" class="dementia" aria-labelledby="titulo-alzheimer">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Alzheimer y demencias</p>
+          <h2 id="titulo-alzheimer">Entender la enfermedad ayuda a pedir apoyo a tiempo</h2>
+          <p class="intro">El Alzheimer afecta progresivamente a la memoria, la orientación, el lenguaje y la autonomía. La atención especializada y el apoyo familiar pueden mejorar la calidad de vida.</p>
+        </div>
+
+        <div class="info-grid">
+          <div class="info-box">
+            <h3>Señales de alerta</h3>
+            <ul class="check-list">
+              <li>Pérdida de memoria que afecta a la vida cotidiana.</li>
+              <li>Confusión con fechas, lugares o rutinas.</li>
+              <li>Dificultades para hablar, encontrar palabras o seguir conversaciones.</li>
+              <li>Cambios de ánimo, personalidad o iniciativa.</li>
+              <li>Problemas para realizar tareas habituales.</li>
+            </ul>
+          </div>
+
+          <div class="info-box">
+            <h3>Por qué actuar pronto</h3>
+            <ul class="check-list">
+              <li>Facilita una valoración médica y social más completa.</li>
+              <li>Ayuda a planificar cuidados y recursos.</li>
+              <li>Permite acompañar mejor a la persona y a su familia.</li>
+              <li>Reduce la incertidumbre y la sobrecarga emocional.</li>
+              <li>Favorece que la persona participe en sus decisiones.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="stat-card" role="note">
+          <div class="stat-number">57M</div>
+          <div>
+            <strong>personas vivían con demencia en el mundo en 2021, según la OMS.</strong>
+            <span>El Alzheimer representa aproximadamente entre el 60 % y el 70 % de los casos de demencia. En Béjar y comarca, AFABECO ofrece apoyo cercano a las familias.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="familias" class="families" aria-labelledby="titulo-familias">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Familias y cuidadores</p>
+          <h2 id="titulo-familias">No tienes que afrontar esto solo o sola</h2>
+          <p class="intro">Cuidar también requiere apoyo. AFABECO orienta, acompaña y ofrece recursos para que las familias puedan sostener mejor el día a día.</p>
+        </div>
+
+        <div class="help-grid">
+          <article class="help-card"><span class="step">1</span><h3>Consulta con profesionales</h3><p>Ante cambios de memoria, conducta u orientación, el primer paso es una valoración médica y una orientación adecuada.</p></article>
+          <article class="help-card"><span class="step">2</span><h3>Pide orientación</h3><p>Contacta con AFABECO para conocer recursos, servicios y opciones de apoyo disponibles en Béjar y comarca.</p></article>
+          <article class="help-card"><span class="step">3</span><h3>Cuida también de ti</h3><p>El descanso, la información y el apoyo emocional son fundamentales para evitar la sobrecarga del cuidador.</p></article>
+          <article class="help-card"><span class="step">4</span><h3>Apóyate en la comunidad</h3><p>Compartir experiencias con otras familias ayuda a sentirse acompañado y a tomar mejores decisiones.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="colabora" class="collaborate" aria-labelledby="titulo-colabora">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Colabora</p>
+          <h2 id="titulo-colabora">Tu apoyo sostiene una labor necesaria</h2>
+          <p class="intro">Como entidad social, AFABECO necesita el respaldo de personas, empresas e instituciones comprometidas con las familias de Béjar y comarca.</p>
+        </div>
+
+        <div class="collab-grid">
+          <article class="card collab-card"><div class="collab-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9.5" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9"/></svg></div><h3>Hazte socio/a</h3><p>Apoya de forma estable la actividad de la asociación. Confirmar cuota y condiciones.</p></article>
+          <article class="card collab-card"><div class="collab-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8Z"/></svg></div><h3>Dona</h3><p>Cualquier aportación ayuda a mantener servicios y actividades para familias de la comarca.</p></article>
+          <article class="card collab-card"><div class="collab-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div><h3>Voluntariado</h3><p>Dedica tiempo, talento o acompañamiento a una causa cercana y humana.</p></article>
+          <article class="card collab-card"><div class="collab-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div><h3>Empresas</h3><p>Colabora desde tu negocio o entidad y refuerza tu compromiso social con Béjar.</p></article>
+        </div>
+
+        <h3 class="events-title">Eventos solidarios que han apoyado a AFABECO</h3>
+        <div class="events-list">
+          <div class="event-row"><div><strong>I Jornada del Jamón Ciudad de Béjar</strong><span>2018 · Donación de beneficios</span></div><div class="amount">1.125 €</div></div>
+          <div class="event-row"><div><strong>Abejarock</strong><span>2019 · Festival solidario de Béjar</span></div><div class="amount">6.100 €</div></div>
+          <div class="event-row"><div><strong>Amigos de la Plaza de Toros de Béjar</strong><span>2021 · Donación solidaria</span></div><div class="amount">724 €</div></div>
+          <div class="event-row"><div><strong>D.O.P. Sierra de Salamanca</strong><span>2024 y 2026 · Catas benéficas a favor de AFABECO</span></div><div class="amount">Solidario</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="noticias" class="news" aria-labelledby="titulo-noticias">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Noticias y actividades</p>
+          <h2 id="titulo-noticias">Una asociación activa en la vida de Béjar</h2>
+          <p class="intro">Actividades de sensibilización, actos solidarios, colaboraciones locales y jornadas para dar visibilidad al Alzheimer y a las familias cuidadoras.</p>
+        </div>
+
+        <div class="news-grid">
+          <article class="card news-card poster">
+            <img src="img/afabeco-cartel-alzheimer-2023.jpg" alt="Cartel de actividades del Día Mundial del Alzheimer 2023 de AFABECO" width="707" height="1000" loading="lazy">
+            <div class="news-body"><span class="tag">Sensibilización</span><h3>Día Mundial del Alzheimer</h3><p>Programa de actividades de sensibilización, conferencias y encuentro comunitario.</p><time datetime="2023-09-21">Septiembre 2023</time></div>
+          </article>
+
+          <article class="card news-card">
+            <img src="img/afabeco-cheque-jamon-2018.jpg" alt="Entrega del cheque de la I Jornada del Jamón a AFABECO" width="1000" height="750" loading="lazy">
+            <div class="news-body"><span class="tag">Evento solidario</span><h3>I Jornada del Jamón</h3><p>Donación de los beneficios del evento a favor de AFABECO.</p><time datetime="2018-05-03">2018 · 1.125 €</time></div>
+          </article>
+
+          <article class="card news-card">
+            <img src="img/afabeco-abejarock-2019.jpg" alt="Cartel de donación de Abejarock a AFABECO" width="750" height="562" loading="lazy">
+            <div class="news-body"><span class="tag">Música solidaria</span><h3>Abejarock</h3><p>Festival solidario bejarano con recaudación destinada a AFABECO.</p><time datetime="2019">2019 · 6.100 €</time></div>
+          </article>
+
+          <article class="card news-card">
+            <img src="img/afabeco-cheque-plaza-toros-2021.jpg" alt="Entrega de donación de la Asociación Amigos de la Plaza de Toros a AFABECO" width="750" height="422" loading="lazy">
+            <div class="news-body"><span class="tag">Comunidad</span><h3>Apoyo local</h3><p>Donación solidaria de la Asociación Amigos de la Plaza de Toros de Béjar.</p><time datetime="2021">2021 · 724 €</time></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-labelledby="titulo-cta">
+      <div class="container">
+        <h2 id="titulo-cta">¿Necesitas orientación para tu familia?</h2>
+        <p>Cuéntanos tu situación. Te atenderemos con calma, respeto y profesionalidad.</p>
+        <div class="cta-actions">
+          <a href="#contacto" class="btn btn-primary">Contactar con AFABECO</a>
+          <a href="tel:923608004" class="btn btn-secondary">Llamar: 923 608 004</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact" aria-labelledby="titulo-contacto">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Contacto</p>
+          <h2 id="titulo-contacto">Contacta con AFABECO Béjar</h2>
+          <p class="intro">Puedes llamarnos, escribirnos o visitarnos en El Castañar. Confirma horarios antes de acudir.</p>
+        </div>
+
+        <div class="contact-grid">
+          <aside class="card contact-panel" aria-label="Datos de contacto">
+            <h3>Cómo encontrarnos</h3>
+            <p>Datos públicos recopilados. Teléfono y horarios pendientes de confirmación final por la asociación.</p>
+
+            <div class="contact-list">
+              <div class="contact-item"><div class="contact-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M12 21s7-7.1 7-12A7 7 0 0 0 5 9c0 4.9 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg></div><div><strong>Dirección</strong><p>C/ Los Magnolios 11, El Castañar<br>37700 Béjar, Salamanca</p></div></div>
+              <div class="contact-item"><div class="contact-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 11.2 19 19.5 19.5 0 0 1 5 12.8 19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2.1Z"/></svg></div><div><strong>Teléfono</strong><p><a href="tel:923608004">923 608 004</a></p><div class="phone-warning">Pendiente de confirmación oficial. Algunas fuentes muestran una variación del número.</div></div></div>
+              <div class="contact-item"><div class="contact-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"/><path d="m22 6-10 7L2 6"/></svg></div><div><strong>Email</strong><p><a href="mailto:afabeco@yahoo.es">afabeco@yahoo.es</a></p></div></div>
+              <div class="contact-item"><div class="contact-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></div><div><strong>Instagram</strong><p><a href="https://www.instagram.com/afabecobejar/" target="_blank" rel="noopener noreferrer">@afabecobejar</a></p></div></div>
+            </div>
+
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=C%2F%20Los%20Magnolios%2011%2C%20El%20Casta%C3%B1ar%2C%20B%C3%A9jar%2C%20Salamanca" target="_blank" rel="noopener noreferrer">Abrir ubicación en Google Maps</a>
+          </aside>
+
+          <div class="card form-panel" aria-labelledby="titulo-formulario">
+            <h3 id="titulo-formulario">Escríbenos</h3>
+            <p>Formulario preparado para conectar con Formspree, Netlify Forms u otro servicio.</p>
+
+            <form action="#" method="post">
+              <div class="form-grid">
+                <div class="field"><label for="nombre">Nombre y apellidos *</label><input type="text" id="nombre" name="nombre" autocomplete="name" required placeholder="Tu nombre completo"></div>
+                <div class="field"><label for="telefono">Teléfono</label><input type="tel" id="telefono" name="telefono" autocomplete="tel" placeholder="Tu teléfono"></div>
+                <div class="field"><label for="email">Correo electrónico *</label><input type="email" id="email" name="email" autocomplete="email" required placeholder="tu@email.com"></div>
+                <div class="field"><label for="motivo">Motivo</label><select id="motivo" name="motivo"><option value="">Selecciona una opción</option><option value="servicios">Información sobre servicios</option><option value="familiar">Tengo un familiar con Alzheimer o demencia</option><option value="socio">Quiero hacerme socio/a</option><option value="voluntariado">Voluntariado</option><option value="donacion">Donación o colaboración</option><option value="otro">Otro</option></select></div>
+                <div class="field full"><label for="mensaje">Mensaje *</label><textarea id="mensaje" name="mensaje" required placeholder="Cuéntanos en qué podemos ayudarte"></textarea></div>
+              </div>
+
+              <div class="privacy"><input type="checkbox" id="privacidad" name="privacidad" required><label for="privacidad">He leído y acepto la <a href="#privacidad-legal">política de privacidad</a> y consiento el tratamiento de mis datos para atender mi consulta. *</label></div>
+              <button class="submit-btn" type="submit">Enviar mensaje</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#inicio" class="brand" aria-label="AFABECO Béjar - Inicio">
+            <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8Z"/></svg></span>
+            <span class="brand-text"><strong>AFABECO Béjar</strong><span>Alzheimer · Béjar y Comarca</span></span>
+          </a>
+          <p style="margin-top:16px;">Asociación de Familiares de Enfermos de Alzheimer de Béjar y Comarca.</p>
+          <p>C/ Los Magnolios 11, El Castañar, 37700 Béjar, Salamanca.</p>
+          <p>Reg. Asoc. CyL nº 37/1/0003090</p>
+          <p class="image-note">Demo con imágenes reales descargadas en la carpeta <strong>img/</strong>. Revisar créditos/permisos finales antes de publicar.</p>
+        </div>
+
+        <nav aria-label="Enlaces de asociación">
+          <h4>Asociación</h4>
+          <ul><li><a href="#quienes">Quiénes somos</a></li><li><a href="#servicios">Servicios</a></li><li><a href="#noticias">Noticias</a></li><li><a href="#colabora">Colabora</a></li></ul>
+        </nav>
+
+        <nav aria-label="Enlaces de información">
+          <h4>Información</h4>
+          <ul><li><a href="#alzheimer">Alzheimer y demencias</a></li><li><a href="#familias">Familias cuidadoras</a></li><li><a href="https://www.afacayle.es/afa-bejar/" target="_blank" rel="noopener noreferrer">AFACAYLE</a></li><li><a href="https://crealzheimer.imserso.es" target="_blank" rel="noopener noreferrer">CRE Alzheimer</a></li></ul>
+        </nav>
+
+        <nav aria-label="Enlaces de contacto">
+          <h4>Contacto</h4>
+          <ul><li><a href="tel:923608004">923 608 004</a></li><li><a href="mailto:afabeco@yahoo.es">afabeco@yahoo.es</a></li><li><a href="https://www.instagram.com/afabecobejar/" target="_blank" rel="noopener noreferrer">Instagram</a></li><li><a href="#contacto">Formulario</a></li></ul>
+          <p class="pending">Teléfono y horarios pendientes de confirmación final.</p>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 AFABECO Béjar. Todos los derechos reservados.</span>
+        <div class="legal-links"><a href="#aviso-legal">Aviso legal</a><a href="#privacidad-legal" id="privacidad-legal">Privacidad</a><a href="#cookies">Cookies</a></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
