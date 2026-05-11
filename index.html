@@ -4,17 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>AFABECO Béjar | Apoyo especializado en Alzheimer y demencias</title>
-  <meta name="description" content="AFABECO Béjar acompaña a personas con Alzheimer y otras demencias, y a sus familias cuidadoras, en Béjar y comarca." />
-  <meta name="keywords" content="AFABECO Béjar, Alzheimer Béjar, asociación Alzheimer Béjar, demencias Béjar, apoyo cuidadores Béjar, respiro familiar Alzheimer " />
+  <title>AFABECO Béjar | AFA Béjar y Comarca</title>
+  <meta name="description" content="AFABECO, Asociación de Familiares de Enfermos de Alzheimer de Béjar y Comarca. Apoyo, orientación y atención especializada para personas con Alzheimer u otras demencias y sus familias." />
+  <meta name="keywords" content="AFABECO, AFA Béjar, Alzheimer Béjar, demencias Béjar, Asociación Alzheimer Béjar, cuidadores Béjar, El Castañar, Salamanca" />
   <meta name="author" content="AFABECO Béjar" />
-  <meta name="theme-color" content="#143f47" />
+  <meta name="theme-color" content="#123f47" />
 
-  <meta property="og:title" content="AFABECO Béjar | Apoyo especializado en Alzheimer y demencias" />
-  <meta property="og:description" content="Acompañamiento, orientación y apoyo especializado para familias de Béjar y comarca." />
+  <link rel="canonical" href="https://gm-neila.github.io/familiares-alzheimer/" />
+
+  <meta property="og:title" content="AFABECO Béjar | AFA Béjar y Comarca" />
+  <meta property="og:description" content="Acompañamiento, orientación y apoyo especializado para familias que conviven con el Alzheimer u otras demencias en Béjar y comarca." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_ES" />
-  <meta property="og:image" content="/familiares-alzheimer/imagenes/afabeco-centro-exterior.jpg" />
+  <meta property="og:url" content="https://gm-neila.github.io/familiares-alzheimer/" />
+  <meta property="og:image" content="https://gm-neila.github.io/familiares-alzheimer/imagenes/afabeco-centro-exterior.jpg" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23123f47'/%3E%3Cpath d='M45.5 17.8c-4.4-4-10.7-3.3-13.5 1.1-2.8-4.4-9.1-5.1-13.5-1.1-4.8 4.4-4.5 12.1.6 17L32 47l12.9-12.2c5.1-4.9 5.4-12.6.6-17Z' fill='%23fff'/%3E%3C/svg%3E" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,26 +27,35 @@
 
   <style>
     :root {
-      --azul-900: #143f47;
-      --azul-800: #1d5660;
+      --azul-950: #0f3036;
+      --azul-900: #123f47;
+      --azul-800: #1d5963;
       --azul-100: #dfecee;
-      --salvia-600: #7f9678;
+      --azul-50: #f2f8f8;
+
+      --salvia-700: #6f8569;
       --salvia-100: #edf3ea;
+
       --terracota-700: #914936;
       --terracota-600: #b76045;
-      --terracota-100: #f6ded4;
+      --terracota-100: #f7ded4;
+
       --marfil: #fbf8f1;
-      --arena: #f3eadc;
+      --arena: #f2eadc;
       --ambar: #fff4d8;
       --blanco: #ffffff;
+
       --texto: #1f2729;
-      --texto-2: #546366;
-      --texto-3: #7a8587;
+      --texto-2: #536265;
+      --texto-3: #7c8789;
       --borde: #dce2df;
       --borde-suave: #edf0ee;
-      --shadow-sm: 0 8px 24px rgba(20, 63, 71, .08);
-      --shadow-md: 0 18px 55px rgba(20, 63, 71, .15);
-      --shadow-lg: 0 25px 80px rgba(20, 63, 71, .20);
+
+      --shadow-sm: 0 8px 24px rgba(18, 63, 71, .08);
+      --shadow-md: 0 18px 55px rgba(18, 63, 71, .14);
+      --shadow-lg: 0 25px 80px rgba(18, 63, 71, .18);
+
+      --radius-sm: 14px;
       --radius-md: 22px;
       --radius-lg: 34px;
       --max-width: 1180px;
@@ -122,10 +136,10 @@
     }
 
     h1 {
-      max-width: 760px;
+      max-width: 800px;
       margin-bottom: 24px;
-      font-size: clamp(2.55rem, 5vw, 5rem);
-      line-height: .98;
+      font-size: clamp(2.45rem, 5vw, 4.8rem);
+      line-height: 1;
     }
 
     h1 span {
@@ -172,7 +186,7 @@
     }
 
     .intro {
-      max-width: 760px;
+      max-width: 780px;
       font-size: 1.08rem;
     }
 
@@ -219,17 +233,17 @@
     .btn-primary {
       background: var(--azul-900);
       color: var(--blanco);
-      box-shadow: 0 14px 30px rgba(20, 63, 71, .22);
+      box-shadow: 0 14px 30px rgba(18, 63, 71, .22);
     }
 
     .btn-primary:hover {
-      background: #0e3036;
+      background: var(--azul-950);
     }
 
     .btn-secondary {
       background: var(--blanco);
       color: var(--azul-900);
-      border-color: rgba(20, 63, 71, .22);
+      border-color: rgba(18, 63, 71, .22);
       box-shadow: var(--shadow-sm);
     }
 
@@ -252,7 +266,7 @@
       top: 0;
       z-index: 100;
       border-bottom: 1px solid rgba(220, 226, 223, .88);
-      background: rgba(251, 248, 241, .92);
+      background: rgba(251, 248, 241, .94);
       backdrop-filter: blur(18px);
     }
 
@@ -280,7 +294,7 @@
       place-items: center;
       background: linear-gradient(135deg, var(--azul-900), var(--azul-800));
       color: var(--blanco);
-      box-shadow: 0 12px 28px rgba(20, 63, 71, .22);
+      box-shadow: 0 12px 28px rgba(18, 63, 71, .22);
     }
 
     .brand-mark svg {
@@ -309,10 +323,6 @@
       text-transform: uppercase;
     }
 
-    .nav-toggle {
-      display: none;
-    }
-
     .nav-button {
       display: none;
       align-items: center;
@@ -322,6 +332,7 @@
       border-radius: 999px;
       background: var(--blanco);
       color: var(--azul-900);
+      font: inherit;
       font-weight: 900;
       cursor: pointer;
       box-shadow: var(--shadow-sm);
@@ -370,7 +381,7 @@
       padding: 88px 0 80px;
       background:
         radial-gradient(circle at 88% 10%, rgba(183, 96, 69, .16), transparent 28%),
-        radial-gradient(circle at 9% 18%, rgba(31, 86, 96, .14), transparent 29%),
+        radial-gradient(circle at 9% 18%, rgba(29, 89, 99, .14), transparent 29%),
         linear-gradient(135deg, #fbf8f1 0%, #f2eadc 48%, #e6efed 100%);
     }
 
@@ -399,9 +410,9 @@
       gap: 8px;
       margin-bottom: 24px;
       padding: 8px 14px;
-      border: 1px solid rgba(20, 63, 71, .16);
+      border: 1px solid rgba(18, 63, 71, .16);
       border-radius: 999px;
-      background: rgba(20, 63, 71, .08);
+      background: rgba(18, 63, 71, .08);
       color: var(--azul-900);
       font-size: .82rem;
       font-weight: 900;
@@ -456,12 +467,12 @@
       position: absolute;
       right: 34px;
       bottom: 34px;
-      max-width: 270px;
+      max-width: 300px;
       padding: 18px;
       border-radius: 22px;
       background: var(--azul-900);
       color: var(--blanco);
-      box-shadow: 0 18px 45px rgba(20, 63, 71, .3);
+      box-shadow: 0 18px 45px rgba(18, 63, 71, .3);
     }
 
     .hero-badge strong {
@@ -508,8 +519,44 @@
       flex-shrink: 0;
     }
 
-    .about {
+    .official {
       background: var(--blanco);
+    }
+
+    .official-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .official-card {
+      padding: 22px;
+    }
+
+    .official-card span {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--terracota-600);
+      font-size: .75rem;
+      font-weight: 900;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .official-card strong,
+    .official-card a {
+      color: var(--azul-900);
+      font-size: 1.02rem;
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    .official-card a:hover {
+      text-decoration: underline;
+    }
+
+    .about {
+      background: var(--marfil);
     }
 
     .split {
@@ -614,19 +661,19 @@
     }
 
     .services {
-      background: linear-gradient(180deg, var(--marfil), var(--arena));
+      background: linear-gradient(180deg, var(--blanco), var(--arena));
     }
 
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 22px;
     }
 
     .service-card {
       position: relative;
       overflow: hidden;
-      min-height: 270px;
+      min-height: 260px;
       padding: 28px;
       transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
     }
@@ -636,12 +683,12 @@
       position: absolute;
       inset: 0 0 auto;
       height: 5px;
-      background: linear-gradient(90deg, var(--azul-800), var(--salvia-600), var(--terracota-600));
+      background: linear-gradient(90deg, var(--azul-800), var(--salvia-700), var(--terracota-600));
     }
 
     .service-card:hover {
       transform: translateY(-5px);
-      border-color: rgba(31, 86, 96, .25);
+      border-color: rgba(29, 89, 99, .25);
       box-shadow: var(--shadow-md);
     }
 
@@ -672,9 +719,10 @@
     }
 
     .service-card p,
-    .help-card p,
+    .step-card p,
     .collab-card p,
-    .news-card p {
+    .news-card p,
+    .faq-item p {
       font-size: .96rem;
     }
 
@@ -696,6 +744,32 @@
 
     .notice a {
       color: var(--azul-900);
+      font-weight: 900;
+    }
+
+    .process {
+      background: var(--azul-50);
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .step-card {
+      padding: 24px;
+    }
+
+    .step-number {
+      display: inline-grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      margin-bottom: 16px;
+      border-radius: 50%;
+      background: var(--azul-900);
+      color: var(--blanco);
       font-weight: 900;
     }
 
@@ -741,30 +815,25 @@
       max-width: calc(100% - 36px);
       padding: 10px 12px;
       border-radius: 999px;
-      background: rgba(20, 63, 71, .9);
+      background: rgba(18, 63, 71, .9);
       color: var(--blanco);
       font-size: .86rem;
       font-weight: 900;
       backdrop-filter: blur(10px);
     }
 
-    .dementia {
-      background: var(--marfil);
+    .families {
+      background: var(--arena);
     }
 
-    .info-grid {
+    .two-col {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 24px;
-      margin-bottom: 28px;
     }
 
     .info-box {
       padding: 30px;
-      border: 1px solid var(--borde-suave);
-      border-radius: var(--radius-md);
-      background: var(--blanco);
-      box-shadow: var(--shadow-sm);
     }
 
     .info-box h3 {
@@ -794,68 +863,6 @@
       flex-shrink: 0;
     }
 
-    .stat-card {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 24px;
-      align-items: center;
-      padding: 30px;
-      border-radius: var(--radius-md);
-      background: var(--azul-900);
-      color: var(--blanco);
-      box-shadow: var(--shadow-md);
-    }
-
-    .stat-number {
-      color: #f4d6c9;
-      font-family: "Literata", Georgia, serif;
-      font-size: clamp(3rem, 6vw, 5.6rem);
-      font-weight: 700;
-      line-height: .9;
-    }
-
-    .stat-card strong {
-      display: block;
-      margin-bottom: 6px;
-      color: var(--blanco);
-      font-size: 1.08rem;
-    }
-
-    .stat-card span {
-      color: rgba(255, 255, 255, .78);
-    }
-
-    .families {
-      background: var(--arena);
-    }
-
-    .help-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
-
-    .help-card {
-      padding: 24px;
-      border: 1px solid var(--borde-suave);
-      border-radius: var(--radius-md);
-      background: var(--blanco);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .step {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 34px;
-      height: 34px;
-      margin-bottom: 14px;
-      border-radius: 999px;
-      background: var(--azul-900);
-      color: var(--blanco);
-      font-weight: 900;
-    }
-
     .collaborate {
       background: var(--blanco);
     }
@@ -882,45 +889,6 @@
       margin-inline: auto;
       background: var(--terracota-100);
       color: var(--terracota-700);
-    }
-
-    .events-title {
-      margin-bottom: 18px;
-    }
-
-    .events-list {
-      display: grid;
-      gap: 12px;
-    }
-
-    .event-row {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 20px;
-      align-items: center;
-      padding: 18px 22px;
-      border: 1px solid var(--borde-suave);
-      border-radius: 16px;
-      background: var(--marfil);
-    }
-
-    .event-row strong {
-      color: var(--azul-900);
-    }
-
-    .event-row span {
-      display: block;
-      margin-top: 2px;
-      color: var(--texto-2);
-      font-size: .92rem;
-    }
-
-    .amount {
-      color: var(--terracota-600);
-      font-family: "Literata", Georgia, serif;
-      font-size: 1.45rem;
-      font-weight: 700;
-      white-space: nowrap;
     }
 
     .news {
@@ -979,6 +947,25 @@
       color: var(--texto-3);
       font-size: .86rem;
       font-weight: 800;
+    }
+
+    .faq {
+      background: var(--blanco);
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .faq-item {
+      padding: 24px;
+    }
+
+    .faq-item h3 {
+      margin-bottom: 10px;
+      font-size: 1.15rem;
     }
 
     .cta-band {
@@ -1076,27 +1063,16 @@
       text-decoration: underline;
     }
 
-    .phone-warning {
-      margin-top: 10px;
-      padding: 11px 12px;
-      border: 1px solid rgba(176, 133, 36, .28);
-      border-radius: 14px;
-      background: var(--ambar);
-      color: #66511a;
-      font-size: .88rem;
-      line-height: 1.45;
-    }
-
     .map-link {
       display: grid;
       place-items: center;
       min-height: 154px;
       margin-top: 24px;
       padding: 18px;
-      border: 1px dashed rgba(20, 63, 71, .28);
+      border: 1px dashed rgba(18, 63, 71, .28);
       border-radius: 20px;
       background:
-        linear-gradient(135deg, rgba(31, 86, 96, .14), rgba(127, 150, 120, .12)),
+        linear-gradient(135deg, rgba(29, 89, 99, .14), rgba(127, 150, 120, .12)),
         var(--arena);
       color: var(--azul-900);
       font-weight: 900;
@@ -1144,7 +1120,7 @@
     textarea:focus {
       outline: none;
       border-color: var(--azul-800);
-      box-shadow: 0 0 0 4px rgba(31, 86, 96, .13);
+      box-shadow: 0 0 0 4px rgba(29, 89, 99, .13);
     }
 
     textarea {
@@ -1196,6 +1172,12 @@
     .submit-btn:hover {
       transform: translateY(-2px);
       background: var(--terracota-700);
+    }
+
+    .form-note {
+      margin-top: 14px;
+      color: var(--texto-3);
+      font-size: .86rem;
     }
 
     .site-footer {
@@ -1263,11 +1245,50 @@
       flex-wrap: wrap;
     }
 
-    .pending,
-    .image-note {
-      margin-top: 10px;
-      color: rgba(255, 255, 255, .55);
-      font-size: .8rem;
+    .legal-links button {
+      border: 0;
+      background: none;
+      color: rgba(255, 255, 255, .72);
+      font: inherit;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .legal-links button:hover {
+      color: var(--blanco);
+      text-decoration: underline;
+    }
+
+    dialog {
+      width: min(760px, calc(100% - 32px));
+      max-height: min(720px, calc(100% - 32px));
+      margin: auto;
+      padding: 0;
+      border: 0;
+      border-radius: 24px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    dialog::backdrop {
+      background: rgba(16, 45, 51, .62);
+      backdrop-filter: blur(4px);
+    }
+
+    .modal-content {
+      padding: 28px;
+      background: var(--blanco);
+    }
+
+    .modal-content h2 {
+      font-size: 1.8rem;
+    }
+
+    .modal-content p {
+      margin-bottom: 14px;
+    }
+
+    .modal-close {
+      margin-top: 8px;
     }
 
     @media (max-width: 1100px) {
@@ -1282,12 +1303,13 @@
         grid-template-columns: 1fr;
       }
 
+      .official-grid,
       .services-grid,
+      .steps-grid,
       .news-grid {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .help-grid,
       .collab-grid,
       .footer-grid,
       .trust-list {
@@ -1332,7 +1354,7 @@
         transition: opacity .2s ease, transform .2s ease;
       }
 
-      .nav-toggle:checked ~ .main-nav {
+      .main-nav.is-open {
         opacity: 1;
         pointer-events: auto;
         transform: translateY(0);
@@ -1362,10 +1384,12 @@
       }
 
       .photo-grid,
-      .info-grid,
+      .two-col,
+      .faq-grid,
+      .official-grid,
       .services-grid,
+      .steps-grid,
       .news-grid,
-      .help-grid,
       .collab-grid,
       .form-grid {
         grid-template-columns: 1fr;
@@ -1373,15 +1397,6 @@
 
       .photo-large img {
         min-height: 300px;
-      }
-
-      .stat-card {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-
-      .event-row {
-        grid-template-columns: 1fr;
       }
     }
 
@@ -1419,11 +1434,38 @@
       .contact-panel,
       .form-panel,
       .info-box,
-      .service-card {
+      .service-card,
+      .step-card,
+      .faq-item {
         padding: 22px;
       }
     }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "name": "Asociación de Familiares de Enfermos de Alzheimer de Béjar",
+    "alternateName": ["AFABECO", "AFA Béjar y Comarca"],
+    "url": "https://gm-neila.github.io/familiares-alzheimer/",
+    "email": "afabeco@yahoo.es",
+    "telephone": "+34 923 608 004",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "C/ Los Magnolios 11, El Castañar",
+      "postalCode": "37700",
+      "addressLocality": "Béjar",
+      "addressRegion": "Salamanca",
+      "addressCountry": "ES"
+    },
+    "areaServed": ["Béjar", "Comarca de Béjar", "Salamanca"],
+    "sameAs": [
+      "https://www.afacayle.es/afa-bejar/",
+      "https://www.instagram.com/afabecobejar/"
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -1438,28 +1480,27 @@
           </svg>
         </span>
         <span class="brand-text">
-          <strong>AFABECO Béjar</strong>
-          <span>Alzheimer · Béjar y Comarca</span>
+          <strong>AFABECO</strong>
+          <span>AFA Béjar y Comarca</span>
         </span>
       </a>
 
-      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Abrir o cerrar menú" />
-
-      <label class="nav-button" for="nav-toggle">
+      <button class="nav-button" type="button" aria-controls="main-nav" aria-expanded="false">
         <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
           <path d="M4 7h16M4 12h16M4 17h16" />
         </svg>
         Menú
-      </label>
+      </button>
 
-      <nav class="main-nav" aria-label="Navegación principal">
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
         <ul>
+          <li><a href="#datos">Datos oficiales</a></li>
           <li><a href="#quienes">Quiénes somos</a></li>
           <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#instalaciones">Instalaciones</a></li>
-          <li><a href="#alzheimer">Alzheimer</a></li>
+          <li><a href="#proceso">Primer contacto</a></li>
+          <li><a href="#instalaciones">Centro</a></li>
           <li><a href="#familias">Familias</a></li>
-          <li><a href="#colabora">Colabora</a></li>
+          <li><a href="#faq">FAQ</a></li>
           <li><a href="#contacto" class="nav-cta">Contactar</a></li>
         </ul>
       </nav>
@@ -1475,20 +1516,19 @@
               <path d="M12 21s7-7.1 7-12A7 7 0 0 0 5 9c0 4.9 7 12 7 12Z" />
               <circle cx="12" cy="9" r="2.5" />
             </svg>
-            Béjar y comarca · Salamanca
+            El Castañar · Béjar · Salamanca
           </div>
 
           <h1 id="titulo-principal">
-            Apoyo especializado en <span>Alzheimer</span> para familias de Béjar
+            Cuando el Alzheimer llega a una familia, no hay que recorrer el camino en <span>soledad</span>
           </h1>
 
           <p class="hero-lead">
-            Acompañamos a personas con Alzheimer y otras demencias, y a quienes las cuidan,
-            con orientación profesional, estimulación cognitiva, apoyo psicológico y respiro familiar.
+            AFABECO, AFA Béjar y Comarca, acompaña a personas con Alzheimer u otras demencias y a sus familias con información, asesoramiento, atención especializada, apoyo psicológico y respiro familiar.
           </p>
 
           <div class="hero-actions" aria-label="Acciones principales">
-            <a href="#contacto" class="btn btn-primary">Contactar ahora</a>
+            <a href="#contacto" class="btn btn-primary">Pedir orientación</a>
             <a href="#servicios" class="btn btn-secondary">Ver servicios</a>
             <a href="#colabora" class="btn btn-accent">Colaborar</a>
           </div>
@@ -1512,10 +1552,17 @@
         </div>
 
         <aside class="hero-media" aria-label="Centro de Alzheimer de Béjar">
-          <img src="/familiares-alzheimer/imagenes/afabeco-centro-exterior.jpg" alt="Exterior del Centro de Alzheimer de Béjar donde AFABECO desarrolla su actividad" width="1000" height="750" />
+          <img
+            src="/familiares-alzheimer/imagenes/afabeco-centro-exterior.jpg"
+            data-fallback="/familiares-alzheimer/imagenes/afabeco-centro-exterior.webp"
+            alt="Exterior del Centro de Alzheimer de Béjar donde AFABECO desarrolla su actividad"
+            width="1000"
+            height="750"
+            fetchpriority="high"
+          />
           <div class="hero-badge">
             <strong>Desde El Castañar</strong>
-            <span>Un espacio cercano para acompañar, orientar y cuidar a las familias de Béjar y comarca.</span>
+            <span>Un espacio cercano para orientar, acompañar y cuidar a las familias de Béjar y comarca.</span>
           </div>
         </aside>
       </div>
@@ -1523,40 +1570,80 @@
 
     <div class="trust-strip" aria-label="Datos destacados">
       <ul class="container trust-list">
-        <li><span class="trust-dot" aria-hidden="true"></span> Asociación local de referencia</li>
-        <li><span class="trust-dot" aria-hidden="true"></span> Medalla de Oro de Béjar 2015</li>
+        <li><span class="trust-dot" aria-hidden="true"></span> Asociación integrada en AFACAYLE</li>
+        <li><span class="trust-dot" aria-hidden="true"></span> Registro CyL nº 37/1/0003090</li>
         <li><span class="trust-dot" aria-hidden="true"></span> Centro en El Castañar</li>
-        <li><span class="trust-dot" aria-hidden="true"></span> Apoyo a familias cuidadoras</li>
+        <li><span class="trust-dot" aria-hidden="true"></span> Apoyo a personas y familias</li>
       </ul>
     </div>
+
+    <section id="datos" class="official" aria-labelledby="titulo-datos">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Datos oficiales</p>
+          <h2 id="titulo-datos">AFABECO · AFA Béjar y Comarca</h2>
+          <p class="intro">
+            Datos de contacto publicados por AFACAYLE y por el directorio de asociaciones de pacientes y familiares de Castilla y León.
+          </p>
+        </div>
+
+        <div class="official-grid">
+          <div class="card official-card">
+            <span>Denominación</span>
+            <strong>Asociación de Familiares de Enfermos de Alzheimer de Béjar</strong>
+          </div>
+
+          <div class="card official-card">
+            <span>Dirección</span>
+            <strong>C/ Los Magnolios 11, El Castañar, 37700 Béjar</strong>
+          </div>
+
+          <div class="card official-card">
+            <span>Teléfono</span>
+            <a href="tel:923608004">923 608 004</a>
+          </div>
+
+          <div class="card official-card">
+            <span>Email</span>
+            <a href="mailto:afabeco@yahoo.es">afabeco@yahoo.es</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="quienes" class="about" aria-labelledby="titulo-quienes">
       <div class="container split">
         <div class="card image-card">
-          <img src="/familiares-alzheimer/imagenes/afabeco-centro-amplio.jpg" alt="Vista del Centro de Alzheimer de Béjar en El Castañar" width="1000" height="750" loading="lazy" />
+          <img
+            src="/familiares-alzheimer/imagenes/afabeco-centro-amplio.jpg"
+            data-fallback="/familiares-alzheimer/imagenes/afabeco-centro-amplio.webp"
+            alt="Vista del Centro de Alzheimer de Béjar en El Castañar"
+            width="1000"
+            height="750"
+            loading="lazy"
+            decoding="async"
+          />
           <p class="caption">Centro de Alzheimer de Béjar · El Castañar</p>
           <div class="registry-note">Registro de Asociaciones de Castilla y León nº 37/1/0003090</div>
         </div>
 
         <div>
           <p class="section-label">Quiénes somos</p>
-          <h2 id="titulo-quienes">Una asociación nacida para acompañar a las familias</h2>
+          <h2 id="titulo-quienes">Una asociación de familias para familias</h2>
 
           <p>
-            AFABECO, la Asociación de Familiares de Enfermos de Alzheimer de Béjar y Comarca,
-            trabaja para que ninguna familia se sienta sola ante el Alzheimer u otras demencias.
+            AFABECO nace para acompañar a las personas afectadas por Alzheimer u otras demencias y a las familias que sostienen el cuidado diario en Béjar y su comarca.
           </p>
 
           <p>
-            Desde su centro en El Castañar, ofrece un espacio de orientación, cuidado y apoyo profesional
-            para personas afectadas y para quienes las acompañan cada día.
+            Desde El Castañar, la asociación ofrece un punto de referencia cercano para pedir orientación, conocer recursos, recibir apoyo y no afrontar este proceso en soledad.
           </p>
 
           <div class="recognition" role="note">
             <div class="recognition-icon" aria-hidden="true">🥇</div>
             <div>
-              <strong>Medalla de Oro de Béjar 2015</strong>
-              <p>Reconocimiento a la trayectoria, el compromiso y la labor social de la asociación.</p>
+              <strong>Reconocimiento social en Béjar</strong>
+              <p>La labor de AFABECO forma parte de la vida comunitaria de Béjar y ha contado con el apoyo de entidades, asociaciones y vecinos.</p>
             </div>
           </div>
 
@@ -1568,8 +1655,8 @@
           <div class="pills" aria-label="Valores de la asociación">
             <span class="pill">Cercanía</span>
             <span class="pill">Dignidad</span>
-            <span class="pill">Acompañamiento</span>
-            <span class="pill">Profesionalidad</span>
+            <span class="pill">Orientación</span>
+            <span class="pill">Apoyo familiar</span>
             <span class="pill">Comunidad</span>
           </div>
         </div>
@@ -1580,10 +1667,9 @@
       <div class="container">
         <div class="section-head">
           <p class="section-label">Servicios</p>
-          <h2 id="titulo-servicios">Atención integral para la persona y su entorno</h2>
+          <h2 id="titulo-servicios">Apoyo para personas con demencia y para quienes las cuidan</h2>
           <p class="intro">
-            Servicios pensados para mejorar la calidad de vida de la persona con demencia y reducir la carga
-            emocional, física y organizativa de las familias cuidadoras.
+            Los servicios de AFABECO se centran en orientar a las familias, atender a personas afectadas por deterioro cognitivo o demencias y ofrecer apoyo durante el proceso de cuidado.
           </p>
         </div>
 
@@ -1591,14 +1677,12 @@
           <article class="card service-card">
             <div class="service-icon" aria-hidden="true">
               <svg class="icon" viewBox="0 0 24 24">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                <circle cx="9.5" cy="7" r="4" />
-                <path d="M22 21v-2a4 4 0 0 0-3-3.9" />
-                <path d="M16 3.1a4 4 0 0 1 0 7.8" />
+                <path d="M4 19V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14" />
+                <path d="M8 7h8M8 11h8M8 15h5" />
               </svg>
             </div>
             <h3>Información y asesoramiento</h3>
-            <p>Orientación desde el primer momento: recursos disponibles, pasos a seguir, apoyos institucionales y acompañamiento familiar.</p>
+            <p>Orientación sobre recursos, servicios, primeros pasos y atención personalizada para familias y personas afectadas.</p>
           </article>
 
           <article class="card service-card">
@@ -1608,8 +1692,8 @@
                 <path d="M8 3a4 4 0 0 0 0 8M16 3a4 4 0 0 1 0 8M8 13a4 4 0 0 0 0 8M16 13a4 4 0 0 1 0 8" />
               </svg>
             </div>
-            <h3>Estimulación cognitiva</h3>
-            <p>Actividades adaptadas para trabajar memoria, orientación, lenguaje, atención y capacidades conservadas.</p>
+            <h3>Atención especializada</h3>
+            <p>Actividades y talleres dirigidos a personas con deterioro cognitivo, Alzheimer u otras demencias.</p>
           </article>
 
           <article class="card service-card">
@@ -1619,7 +1703,7 @@
               </svg>
             </div>
             <h3>Apoyo psicológico</h3>
-            <p>Escucha y acompañamiento emocional para la persona afectada, familiares y personas cuidadoras.</p>
+            <p>Escucha y acompañamiento emocional para la persona afectada y para familiares cuidadores.</p>
           </article>
 
           <article class="card service-card">
@@ -1629,30 +1713,8 @@
                 <path d="M9 22V12h6v10" />
               </svg>
             </div>
-            <h3>Respiro familiar</h3>
-            <p>Un apoyo clave para que la persona cuidadora pueda descansar, organizarse y cuidarse también.</p>
-          </article>
-
-          <article class="card service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg class="icon" viewBox="0 0 24 24">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
-                <path d="m9 12 2 2 4-4" />
-              </svg>
-            </div>
-            <h3>Apoyo a cuidadores</h3>
-            <p>Herramientas, pautas y acompañamiento para afrontar el día a día con más seguridad y menos soledad.</p>
-          </article>
-
-          <article class="card service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg class="icon" viewBox="0 0 24 24">
-                <rect x="3" y="4" width="18" height="18" rx="2" />
-                <path d="M16 2v4M8 2v4M3 10h18" />
-              </svg>
-            </div>
-            <h3>Actividades y sensibilización</h3>
-            <p>Charlas, jornadas, talleres, Día Mundial del Alzheimer y eventos para visibilizar la enfermedad.</p>
+            <h3>Unidad de respiro familiar</h3>
+            <p>Apoyo para aliviar la sobrecarga del cuidador y facilitar momentos de descanso y organización familiar.</p>
           </article>
         </div>
 
@@ -1662,9 +1724,47 @@
             <path d="M12 8v4M12 16h.01" />
           </svg>
           <p>
-            <strong>Servicios sujetos a disponibilidad.</strong> Confirma horarios, condiciones y denominación oficial del centro antes de publicar esta web.
-            Contacto: <a href="tel:923608004">923 608 004</a> · <a href="mailto:afabeco@yahoo.es">afabeco@yahoo.es</a>.
+            <strong>Antes de acudir al centro, llama para confirmar horario y disponibilidad.</strong>
+            Contacto oficial: <a href="tel:923608004">923 608 004</a> · <a href="mailto:afabeco@yahoo.es">afabeco@yahoo.es</a>.
           </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="proceso" class="process" aria-labelledby="titulo-proceso">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Primer contacto</p>
+          <h2 id="titulo-proceso">Qué ocurre cuando contactas con AFABECO</h2>
+          <p class="intro">
+            Muchas familias llaman por primera vez con dudas, miedo o sensación de desbordamiento. El objetivo del primer contacto es escuchar, orientar y ayudar a ordenar los siguientes pasos.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="card step-card">
+            <span class="step-number">1</span>
+            <h3>Te escuchamos</h3>
+            <p>Nos cuentas la situación familiar, el momento en el que estáis y qué preocupación os ha llevado a pedir ayuda.</p>
+          </article>
+
+          <article class="card step-card">
+            <span class="step-number">2</span>
+            <h3>Orientamos</h3>
+            <p>Recibes información sobre recursos, atención disponible y pasos útiles según el caso.</p>
+          </article>
+
+          <article class="card step-card">
+            <span class="step-number">3</span>
+            <h3>Valoramos opciones</h3>
+            <p>Se estudia qué apoyo puede encajar mejor: información, atención especializada, apoyo psicológico o respiro familiar.</p>
+          </article>
+
+          <article class="card step-card">
+            <span class="step-number">4</span>
+            <h3>Acompañamos</h3>
+            <p>AFABECO puede seguir siendo un punto de referencia para la familia durante la evolución de la enfermedad.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -1672,77 +1772,53 @@
     <section id="instalaciones" class="facilities" aria-labelledby="titulo-instalaciones">
       <div class="container">
         <div class="section-head">
-          <p class="section-label">Instalaciones</p>
-          <h2 id="titulo-instalaciones">Un centro cercano en El Castañar</h2>
+          <p class="section-label">Centro</p>
+          <h2 id="titulo-instalaciones">Un espacio de referencia en El Castañar</h2>
           <p class="intro">
-            Imágenes reales del centro y de las mejoras realizadas en las instalaciones del Centro de Alzheimer de Béjar.
+            El centro de AFABECO se ubica en C/ Los Magnolios 11, en El Castañar, Béjar. Las imágenes muestran el entorno y mejoras realizadas en las instalaciones.
           </p>
         </div>
 
         <div class="photo-grid">
           <figure class="photo-large">
-            <img src="/familiares-alzheimer/imagenes/afabeco-centro-amplio.jpg" alt="Vista amplia del Centro de Alzheimer de Béjar" width="1000" height="750" loading="lazy" />
+            <img
+              src="/familiares-alzheimer/imagenes/afabeco-centro-amplio.jpg"
+              data-fallback="/familiares-alzheimer/imagenes/afabeco-centro-amplio.webp"
+              alt="Vista amplia del Centro de Alzheimer de Béjar"
+              width="1000"
+              height="750"
+              loading="lazy"
+              decoding="async"
+            />
             <figcaption class="photo-label">Centro de Alzheimer de Béjar</figcaption>
           </figure>
 
           <div class="photo-stack">
             <figure class="photo-small">
-              <img src="/familiares-alzheimer/imagenes/afabeco-rampa.jpg" alt="Rampa de acceso del Centro de Alzheimer de Béjar" width="1000" height="750" loading="lazy" />
+              <img
+                src="/familiares-alzheimer/imagenes/afabeco-rampa.jpg"
+                data-fallback="/familiares-alzheimer/imagenes/afabeco-rampa.webp"
+                alt="Rampa de acceso del Centro de Alzheimer de Béjar"
+                width="1000"
+                height="750"
+                loading="lazy"
+                decoding="async"
+              />
               <figcaption class="photo-label">Acceso y entorno</figcaption>
             </figure>
 
             <figure class="photo-small">
-              <img src="/familiares-alzheimer/imagenes/afabeco-cubierta.jpg" alt="Mejoras en la cubierta del Centro de Alzheimer de Béjar" width="1000" height="750" loading="lazy" />
+              <img
+                src="/familiares-alzheimer/imagenes/afabeco-cubierta.jpg"
+                data-fallback="/familiares-alzheimer/imagenes/afabeco-cubierta.webp"
+                alt="Mejoras en la cubierta del Centro de Alzheimer de Béjar"
+                width="1000"
+                height="750"
+                loading="lazy"
+                decoding="async"
+              />
               <figcaption class="photo-label">Mejoras en instalaciones</figcaption>
             </figure>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="alzheimer" class="dementia" aria-labelledby="titulo-alzheimer">
-      <div class="container">
-        <div class="section-head">
-          <p class="section-label">Alzheimer y demencias</p>
-          <h2 id="titulo-alzheimer">Entender la enfermedad ayuda a pedir apoyo a tiempo</h2>
-          <p class="intro">
-            El Alzheimer afecta progresivamente a la memoria, la orientación, el lenguaje y la autonomía.
-            La atención especializada y el apoyo familiar pueden mejorar la calidad de vida.
-          </p>
-        </div>
-
-        <div class="info-grid">
-          <div class="info-box">
-            <h3>Señales de alerta</h3>
-            <ul class="check-list">
-              <li>Pérdida de memoria que afecta a la vida cotidiana.</li>
-              <li>Confusión con fechas, lugares o rutinas.</li>
-              <li>Dificultades para hablar, encontrar palabras o seguir conversaciones.</li>
-              <li>Cambios de ánimo, personalidad o iniciativa.</li>
-              <li>Problemas para realizar tareas habituales.</li>
-            </ul>
-          </div>
-
-          <div class="info-box">
-            <h3>Por qué actuar pronto</h3>
-            <ul class="check-list">
-              <li>Facilita una valoración médica y social más completa.</li>
-              <li>Ayuda a planificar cuidados y recursos.</li>
-              <li>Permite acompañar mejor a la persona y a su familia.</li>
-              <li>Reduce la incertidumbre y la sobrecarga emocional.</li>
-              <li>Favorece que la persona participe en sus decisiones.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="stat-card" role="note">
-          <div class="stat-number">57M</div>
-          <div>
-            <strong>personas vivían con demencia en el mundo en 2021, según la OMS.</strong>
-            <span>
-              El Alzheimer representa aproximadamente entre el 60 % y el 70 % de los casos de demencia.
-              En Béjar y comarca, AFABECO ofrece apoyo cercano a las familias.
-            </span>
           </div>
         </div>
       </div>
@@ -1751,38 +1827,33 @@
     <section id="familias" class="families" aria-labelledby="titulo-familias">
       <div class="container">
         <div class="section-head">
-          <p class="section-label">Familias y cuidadores</p>
-          <h2 id="titulo-familias">No tienes que afrontar esto solo o sola</h2>
+          <p class="section-label">Familias cuidadoras</p>
+          <h2 id="titulo-familias">Cuidar también requiere apoyo</h2>
           <p class="intro">
-            Cuidar también requiere apoyo. AFABECO orienta, acompaña y ofrece recursos
-            para que las familias puedan sostener mejor el día a día.
+            El Alzheimer y otras demencias no afectan solo a la persona diagnosticada. También transforman la vida de la familia, especialmente de quienes asumen el cuidado diario.
           </p>
         </div>
 
-        <div class="help-grid">
-          <article class="help-card">
-            <span class="step">1</span>
-            <h3>Consulta con profesionales</h3>
-            <p>Ante cambios de memoria, conducta u orientación, el primer paso es una valoración médica y una orientación adecuada.</p>
-          </article>
+        <div class="two-col">
+          <div class="card info-box">
+            <h3>Cuándo pedir ayuda</h3>
+            <ul class="check-list">
+              <li>Cuando aparecen olvidos frecuentes que afectan a la vida cotidiana.</li>
+              <li>Cuando hay desorientación, cambios de conducta o dificultades para comunicarse.</li>
+              <li>Cuando la familia no sabe qué recursos existen ni por dónde empezar.</li>
+              <li>Cuando la persona cuidadora se siente cansada, sola o desbordada.</li>
+            </ul>
+          </div>
 
-          <article class="help-card">
-            <span class="step">2</span>
-            <h3>Pide orientación</h3>
-            <p>Contacta con AFABECO para conocer recursos, servicios y opciones de apoyo disponibles en Béjar y comarca.</p>
-          </article>
-
-          <article class="help-card">
-            <span class="step">3</span>
-            <h3>Cuida también de ti</h3>
-            <p>El descanso, la información y el apoyo emocional son fundamentales para evitar la sobrecarga del cuidador.</p>
-          </article>
-
-          <article class="help-card">
-            <span class="step">4</span>
-            <h3>Apóyate en la comunidad</h3>
-            <p>Compartir experiencias con otras familias ayuda a sentirse acompañado y a tomar mejores decisiones.</p>
-          </article>
+          <div class="card info-box">
+            <h3>Cómo puede ayudar AFABECO</h3>
+            <ul class="check-list">
+              <li>Ofreciendo información y asesoramiento personalizado.</li>
+              <li>Orientando sobre recursos y servicios disponibles.</li>
+              <li>Facilitando apoyo emocional a la familia.</li>
+              <li>Proporcionando atención especializada y respiro familiar cuando sea posible.</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -1793,8 +1864,7 @@
           <p class="section-label">Colabora</p>
           <h2 id="titulo-colabora">Tu apoyo sostiene una labor necesaria</h2>
           <p class="intro">
-            Como entidad social, AFABECO necesita el respaldo de personas, empresas e instituciones
-            comprometidas con las familias de Béjar y comarca.
+            La labor de AFABECO se fortalece gracias al respaldo de familias, personas voluntarias, empresas, asociaciones y vecinos de Béjar y comarca.
           </p>
         </div>
 
@@ -1808,7 +1878,7 @@
               </svg>
             </div>
             <h3>Hazte socio/a</h3>
-            <p>Apoya de forma estable la actividad de la asociación. Confirmar cuota y condiciones.</p>
+            <p>Pregunta por las condiciones y formas de colaboración estable con la asociación.</p>
           </article>
 
           <article class="card collab-card">
@@ -1818,7 +1888,7 @@
               </svg>
             </div>
             <h3>Dona</h3>
-            <p>Cualquier aportación ayuda a mantener servicios y actividades para familias de la comarca.</p>
+            <p>Tu aportación ayuda a mantener recursos y actividades para personas y familias.</p>
           </article>
 
           <article class="card collab-card">
@@ -1829,7 +1899,7 @@
               </svg>
             </div>
             <h3>Voluntariado</h3>
-            <p>Dedica tiempo, talento o acompañamiento a una causa cercana y humana.</p>
+            <p>Dedica tiempo y cercanía a una causa profundamente humana y local.</p>
           </article>
 
           <article class="card collab-card">
@@ -1840,44 +1910,8 @@
               </svg>
             </div>
             <h3>Empresas</h3>
-            <p>Colabora desde tu negocio o entidad y refuerza tu compromiso social con Béjar.</p>
+            <p>Comercios y entidades pueden apoyar mediante campañas, eventos o donaciones.</p>
           </article>
-        </div>
-
-        <h3 class="events-title">Eventos solidarios que han apoyado a AFABECO</h3>
-
-        <div class="events-list">
-          <div class="event-row">
-            <div>
-              <strong>I Jornada del Jamón Ciudad de Béjar</strong>
-              <span>2018 · Donación de beneficios</span>
-            </div>
-            <div class="amount">1.125 €</div>
-          </div>
-
-          <div class="event-row">
-            <div>
-              <strong>Abejarock</strong>
-              <span>2019 · Festival solidario de Béjar</span>
-            </div>
-            <div class="amount">6.100 €</div>
-          </div>
-
-          <div class="event-row">
-            <div>
-              <strong>Amigos de la Plaza de Toros de Béjar</strong>
-              <span>2021 · Donación solidaria</span>
-            </div>
-            <div class="amount">724 €</div>
-          </div>
-
-          <div class="event-row">
-            <div>
-              <strong>D.O.P. Sierra de Salamanca</strong>
-              <span>2024 y 2026 · Catas benéficas a favor de AFABECO</span>
-            </div>
-            <div class="amount">Solidario</div>
-          </div>
         </div>
       </div>
     </section>
@@ -1885,53 +1919,128 @@
     <section id="noticias" class="news" aria-labelledby="titulo-noticias">
       <div class="container">
         <div class="section-head">
-          <p class="section-label">Noticias y actividades</p>
-          <h2 id="titulo-noticias">Una asociación activa en la vida de Béjar</h2>
+          <p class="section-label">Comunidad</p>
+          <h2 id="titulo-noticias">Béjar también cuida</h2>
           <p class="intro">
-            Actividades de sensibilización, actos solidarios, colaboraciones locales y jornadas
-            para dar visibilidad al Alzheimer y a las familias cuidadoras.
+            La trayectoria de AFABECO está vinculada al apoyo de la comunidad local, las actividades de sensibilización y los eventos solidarios.
           </p>
         </div>
 
         <div class="news-grid">
           <article class="card news-card poster">
-            <img src="/familiares-alzheimer/imagenes/afabeco-cartel-alzheimer-2023.jpg" alt="Cartel de actividades del Día Mundial del Alzheimer 2023 de AFABECO" width="707" height="1000" loading="lazy" />
+            <img
+              src="/familiares-alzheimer/imagenes/afabeco-cartel-alzheimer-2023.jpg"
+              data-fallback="/familiares-alzheimer/imagenes/afabeco-cartel-alzheimer-2023.webp"
+              alt="Cartel de actividades del Día Mundial del Alzheimer 2023 de AFABECO"
+              width="707"
+              height="1000"
+              loading="lazy"
+              decoding="async"
+            />
             <div class="news-body">
               <span class="tag">Sensibilización</span>
               <h3>Día Mundial del Alzheimer</h3>
-              <p>Programa de actividades de sensibilización, conferencias y encuentro comunitario.</p>
+              <p>Actividades para dar visibilidad a la enfermedad y a las familias cuidadoras.</p>
               <time datetime="2023-09-21">Septiembre 2023</time>
             </div>
           </article>
 
           <article class="card news-card">
-            <img src="/familiares-alzheimer/imagenes/afabeco-cheque-jamon-2018.jpg" alt="Entrega del cheque de la I Jornada del Jamón a AFABECO" width="1000" height="750" loading="lazy" />
+            <img
+              src="/familiares-alzheimer/imagenes/afabeco-cheque-jamon-2018.jpg"
+              data-fallback="/familiares-alzheimer/imagenes/afabeco-cheque-jamon-2018.webp"
+              alt="Entrega del cheque de la I Jornada del Jamón a AFABECO"
+              width="1000"
+              height="750"
+              loading="lazy"
+              decoding="async"
+            />
             <div class="news-body">
               <span class="tag">Evento solidario</span>
               <h3>I Jornada del Jamón</h3>
-              <p>Donación de los beneficios del evento a favor de AFABECO.</p>
-              <time datetime="2018-05-03">2018 · 1.125 €</time>
+              <p>Donación de beneficios a favor de AFABECO.</p>
+              <time datetime="2018-05-03">2018</time>
             </div>
           </article>
 
           <article class="card news-card">
-            <img src="/familiares-alzheimer/imagenes/afabeco-abejarock-2019.jpg" alt="Cartel de donación de Abejarock a AFABECO" width="750" height="562" loading="lazy" />
+            <img
+              src="/familiares-alzheimer/imagenes/afabeco-abejarock-2019.jpg"
+              data-fallback="/familiares-alzheimer/imagenes/afabeco-abejarock-2019.webp"
+              alt="Cartel de donación de Abejarock a AFABECO"
+              width="750"
+              height="562"
+              loading="lazy"
+              decoding="async"
+            />
             <div class="news-body">
               <span class="tag">Música solidaria</span>
               <h3>Abejarock</h3>
               <p>Festival solidario bejarano con recaudación destinada a AFABECO.</p>
-              <time datetime="2019">2019 · 6.100 €</time>
+              <time datetime="2019">2019</time>
             </div>
           </article>
 
           <article class="card news-card">
-            <img src="/familiares-alzheimer/imagenes/afabeco-cheque-plaza-toros-2021.jpg" alt="Entrega de donación de la Asociación Amigos de la Plaza de Toros a AFABECO" width="750" height="422" loading="lazy" />
+            <img
+              src="/familiares-alzheimer/imagenes/afabeco-cheque-plaza-toros-2021.jpg"
+              data-fallback="/familiares-alzheimer/imagenes/afabeco-cheque-plaza-toros-2021.webp"
+              alt="Entrega de donación de la Asociación Amigos de la Plaza de Toros a AFABECO"
+              width="750"
+              height="422"
+              loading="lazy"
+              decoding="async"
+            />
             <div class="news-body">
-              <span class="tag">Comunidad</span>
-              <h3>Apoyo local</h3>
-              <p>Donación solidaria de la Asociación Amigos de la Plaza de Toros de Béjar.</p>
-              <time datetime="2021">2021 · 724 €</time>
+              <span class="tag">Apoyo local</span>
+              <h3>Comunidad bejarana</h3>
+              <p>Entidades y asociaciones locales han colaborado con la labor de AFABECO.</p>
+              <time datetime="2021">2021</time>
             </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq" aria-labelledby="titulo-faq">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Preguntas frecuentes</p>
+          <h2 id="titulo-faq">Dudas habituales antes de llamar</h2>
+          <p class="intro">
+            Estas respuestas ayudan a orientar el primer contacto. Para cualquier situación concreta, lo mejor es llamar o escribir directamente a AFABECO.
+          </p>
+        </div>
+
+        <div class="faq-grid">
+          <article class="card faq-item">
+            <h3>¿Tengo que tener diagnóstico para contactar?</h3>
+            <p>No necesariamente. Si hay dudas, sospechas o preocupación familiar, puedes contactar para recibir orientación inicial.</p>
+          </article>
+
+          <article class="card faq-item">
+            <h3>¿Atendéis solo Alzheimer?</h3>
+            <p>AFABECO orienta a personas afectadas por Alzheimer, deterioro cognitivo u otras demencias, así como a sus familias.</p>
+          </article>
+
+          <article class="card faq-item">
+            <h3>¿Puedo llamar si soy cuidador/a?</h3>
+            <p>Sí. El apoyo a la familia cuidadora forma parte esencial de la labor de la asociación.</p>
+          </article>
+
+          <article class="card faq-item">
+            <h3>¿Dónde está el centro?</h3>
+            <p>En C/ Los Magnolios 11, El Castañar, 37700 Béjar, Salamanca.</p>
+          </article>
+
+          <article class="card faq-item">
+            <h3>¿Cuál es el horario?</h3>
+            <p>Antes de acudir, llama al 923 608 004 para confirmar horario de atención y disponibilidad.</p>
+          </article>
+
+          <article class="card faq-item">
+            <h3>¿Cómo puedo colaborar?</h3>
+            <p>Puedes preguntar por asociación, voluntariado, donaciones o colaboración de empresas y entidades locales.</p>
           </article>
         </div>
       </div>
@@ -1940,7 +2049,7 @@
     <section class="cta-band" aria-labelledby="titulo-cta">
       <div class="container">
         <h2 id="titulo-cta">¿Necesitas orientación para tu familia?</h2>
-        <p>Cuéntanos tu situación. Te atenderemos con calma, respeto y profesionalidad.</p>
+        <p>Cuéntanos tu situación. Te atenderán con calma, respeto y cercanía.</p>
         <div class="cta-actions">
           <a href="#contacto" class="btn btn-primary">Contactar con AFABECO</a>
           <a href="tel:923608004" class="btn btn-secondary">Llamar: 923 608 004</a>
@@ -1953,13 +2062,13 @@
         <div class="section-head">
           <p class="section-label">Contacto</p>
           <h2 id="titulo-contacto">Contacta con AFABECO Béjar</h2>
-          <p class="intro">Puedes llamarnos, escribirnos o visitarnos en El Castañar. Confirma horarios antes de acudir.</p>
+          <p class="intro">Puedes llamar, escribir o acudir al centro. Se recomienda confirmar horario antes de desplazarse.</p>
         </div>
 
         <div class="contact-grid">
           <aside class="card contact-panel" aria-label="Datos de contacto">
             <h3>Cómo encontrarnos</h3>
-            <p>Datos públicos recopilados. Teléfono y horarios pendientes de confirmación final por la asociación.</p>
+            <p>Datos oficiales publicados por AFACAYLE y por la Junta de Castilla y León.</p>
 
             <div class="contact-list">
               <div class="contact-item">
@@ -1984,7 +2093,6 @@
                 <div>
                   <strong>Teléfono</strong>
                   <p><a href="tel:923608004">923 608 004</a></p>
-                  <div class="phone-warning">Pendiente de confirmación oficial. Algunas fuentes muestran una variación del número.</div>
                 </div>
               </div>
 
@@ -2023,9 +2131,15 @@
 
           <div class="card form-panel" aria-labelledby="titulo-formulario">
             <h3 id="titulo-formulario">Escríbenos</h3>
-            <p>Formulario preparado para conectar con Formspree, Netlify Forms u otro servicio.</p>
+            <p>Este formulario envía el mensaje al correo oficial de AFABECO.</p>
 
-            <form action="#" method="post">
+            <form action="https://formsubmit.co/afabeco@yahoo.es" method="POST">
+              <input type="hidden" name="_subject" value="Nueva consulta desde la web de AFABECO" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_next" value="https://gm-neila.github.io/familiares-alzheimer/?enviado=1#contacto" />
+              <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
               <div class="form-grid">
                 <div class="field">
                   <label for="nombre">Nombre y apellidos *</label>
@@ -2046,12 +2160,12 @@
                   <label for="motivo">Motivo</label>
                   <select id="motivo" name="motivo">
                     <option value="">Selecciona una opción</option>
-                    <option value="servicios">Información sobre servicios</option>
-                    <option value="familiar">Tengo un familiar con Alzheimer o demencia</option>
-                    <option value="socio">Quiero hacerme socio/a</option>
-                    <option value="voluntariado">Voluntariado</option>
-                    <option value="donacion">Donación o colaboración</option>
-                    <option value="otro">Otro</option>
+                    <option value="Información sobre servicios">Información sobre servicios</option>
+                    <option value="Tengo un familiar con Alzheimer o demencia">Tengo un familiar con Alzheimer o demencia</option>
+                    <option value="Apoyo familiar o respiro">Apoyo familiar o respiro</option>
+                    <option value="Colaboración">Colaboración</option>
+                    <option value="Voluntariado">Voluntariado</option>
+                    <option value="Otro">Otro</option>
                   </select>
                 </div>
 
@@ -2064,11 +2178,12 @@
               <div class="privacy">
                 <input type="checkbox" id="privacidad" name="privacidad" required />
                 <label for="privacidad">
-                  He leído y acepto la <a href="#privacidad-legal">política de privacidad</a> y consiento el tratamiento de mis datos para atender mi consulta. *
+                  Acepto que mis datos se utilicen únicamente para responder a esta consulta. Evita incluir información médica sensible en este formulario; para situaciones personales, es preferible contactar por teléfono.
                 </label>
               </div>
 
               <button class="submit-btn" type="submit">Enviar mensaje</button>
+              <p class="form-note">La primera vez que se use FormSubmit, el correo de destino puede recibir un email de confirmación para activar el servicio.</p>
             </form>
           </div>
         </div>
@@ -2087,33 +2202,32 @@
               </svg>
             </span>
             <span class="brand-text">
-              <strong>AFABECO Béjar</strong>
-              <span>Alzheimer · Béjar y Comarca</span>
+              <strong>AFABECO</strong>
+              <span>AFA Béjar y Comarca</span>
             </span>
           </a>
 
-          <p style="margin-top:16px;">Asociación de Familiares de Enfermos de Alzheimer de Béjar y Comarca.</p>
+          <p style="margin-top:16px;">Asociación de Familiares de Enfermos de Alzheimer de Béjar.</p>
           <p>C/ Los Magnolios 11, El Castañar, 37700 Béjar, Salamanca.</p>
-          <p>Reg. Asoc. CyL nº 37/1/0003090</p>
-          <p class="image-note">Demo con imágenes reales descargadas en la carpeta <strong>imagenes/</strong>.</p>
+          <p>Registro de Asociaciones de Castilla y León nº 37/1/0003090.</p>
         </div>
 
         <nav aria-label="Enlaces de asociación">
           <h4>Asociación</h4>
           <ul>
+            <li><a href="#datos">Datos oficiales</a></li>
             <li><a href="#quienes">Quiénes somos</a></li>
             <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#instalaciones">Instalaciones</a></li>
-            <li><a href="#colabora">Colabora</a></li>
+            <li><a href="#instalaciones">Centro</a></li>
           </ul>
         </nav>
 
         <nav aria-label="Enlaces de información">
           <h4>Información</h4>
           <ul>
-            <li><a href="#alzheimer">Alzheimer y demencias</a></li>
             <li><a href="#familias">Familias cuidadoras</a></li>
-            <li><a href="https://www.afacayle.es/afa-bejar/" target="_blank" rel="noopener noreferrer">AFACAYLE</a></li>
+            <li><a href="#faq">Preguntas frecuentes</a></li>
+            <li><a href="https://www.afacayle.es/afa-bejar/" target="_blank" rel="noopener noreferrer">Ficha en AFACAYLE</a></li>
             <li><a href="https://crealzheimer.imserso.es" target="_blank" rel="noopener noreferrer">CRE Alzheimer</a></li>
           </ul>
         </nav>
@@ -2126,19 +2240,104 @@
             <li><a href="https://www.instagram.com/afabecobejar/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
             <li><a href="#contacto">Formulario</a></li>
           </ul>
-          <p class="pending">Teléfono y horarios pendientes de confirmación final.</p>
         </nav>
       </div>
 
       <div class="footer-bottom">
         <span>© 2026 AFABECO Béjar. Todos los derechos reservados.</span>
         <div class="legal-links">
-          <a href="#aviso-legal">Aviso legal</a>
-          <a href="#privacidad-legal" id="privacidad-legal">Privacidad</a>
-          <a href="#cookies">Cookies</a>
+          <button type="button" data-modal="legal-modal">Aviso legal y privacidad</button>
+          <button type="button" data-modal="cookies-modal">Cookies</button>
         </div>
       </div>
     </div>
   </footer>
+
+  <dialog id="legal-modal">
+    <div class="modal-content">
+      <h2>Aviso legal y privacidad</h2>
+      <p>Esta web muestra información pública de AFABECO, AFA Béjar y Comarca, con finalidad informativa y de contacto.</p>
+      <p>El formulario recoge nombre, email, teléfono opcional, motivo y mensaje para responder a la consulta enviada. No incluyas información médica sensible en el formulario.</p>
+      <p>Para ejercer cualquier derecho o solicitar información sobre el tratamiento de datos, contacta con AFABECO en <a href="mailto:afabeco@yahoo.es">afabeco@yahoo.es</a>.</p>
+      <button class="btn btn-primary modal-close" type="button">Cerrar</button>
+    </div>
+  </dialog>
+
+  <dialog id="cookies-modal">
+    <div class="modal-content">
+      <h2>Cookies</h2>
+      <p>Esta página no instala cookies propias de seguimiento. Puede realizar conexiones externas para cargar tipografías de Google Fonts y para enviar el formulario mediante FormSubmit.</p>
+      <button class="btn btn-primary modal-close" type="button">Cerrar</button>
+    </div>
+  </dialog>
+
+  <script>
+    const navButton = document.querySelector(".nav-button");
+    const nav = document.querySelector(".main-nav");
+
+    function closeMenu() {
+      nav.classList.remove("is-open");
+      navButton.setAttribute("aria-expanded", "false");
+    }
+
+    function openMenu() {
+      nav.classList.add("is-open");
+      navButton.setAttribute("aria-expanded", "true");
+    }
+
+    navButton.addEventListener("click", () => {
+      const isOpen = nav.classList.contains("is-open");
+      isOpen ? closeMenu() : openMenu();
+    });
+
+    nav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", closeMenu);
+    });
+
+    document.addEventListener("click", (event) => {
+      const clickedInside = nav.contains(event.target) || navButton.contains(event.target);
+      if (!clickedInside) closeMenu();
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeMenu();
+        document.querySelectorAll("dialog[open]").forEach((dialog) => dialog.close());
+      }
+    });
+
+    document.querySelectorAll("img[data-fallback]").forEach((img) => {
+      img.addEventListener("error", () => {
+        const fallback = img.getAttribute("data-fallback");
+        if (fallback && img.src !== fallback) {
+          img.src = fallback;
+          img.removeAttribute("data-fallback");
+        }
+      });
+    });
+
+    document.querySelectorAll("[data-modal]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const modal = document.getElementById(button.dataset.modal);
+        if (modal) modal.showModal();
+      });
+    });
+
+    document.querySelectorAll(".modal-close").forEach((button) => {
+      button.addEventListener("click", () => {
+        button.closest("dialog").close();
+      });
+    });
+
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("enviado") === "1") {
+      const contact = document.getElementById("contacto");
+      const success = document.createElement("div");
+      success.className = "notice";
+      success.style.marginBottom = "24px";
+      success.innerHTML = "<p><strong>Mensaje enviado.</strong> Gracias por contactar con AFABECO. Te responderán lo antes posible.</p>";
+      contact.querySelector(".container").prepend(success);
+    }
+  </script>
 </body>
 </html>
