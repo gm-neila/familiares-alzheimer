@@ -3,93 +3,116 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>AFABECO Béjar | AFA Béjar y Comarca</title>
-  <meta name="description" content="AFABECO, Asociación de Familiares de Enfermos de Alzheimer de Béjar y Comarca. Apoyo, orientación y atención especializada para personas con Alzheimer u otras demencias y sus familias." />
-  <meta name="keywords" content="AFABECO, AFA Béjar, Alzheimer Béjar, demencias Béjar, Asociación Alzheimer Béjar, cuidadores Béjar, El Castañar, Salamanca" />
-  <meta name="author" content="AFABECO Béjar" />
+  <title>AFABECO Béjar y Comarca | Asociación Alzheimer</title>
+  <meta name="description" content="AFABECO, Asociación de Familiares de Enfermos de Alzheimer de Béjar y Comarca. Apoyo, orientación, respiro familiar y atención especializada." />
   <meta name="theme-color" content="#123f47" />
-
-  <link rel="canonical" href="https://gm-neila.github.io/familiares-alzheimer/" />
-
-  <meta property="og:title" content="AFABECO Béjar | AFA Béjar y Comarca" />
-  <meta property="og:description" content="Acompañamiento, orientación y apoyo especializado para familias que conviven con el Alzheimer u otras demencias en Béjar y comarca." />
+  <meta property="og:title" content="AFABECO Béjar y Comarca" />
+  <meta property="og:description" content="Acompañamiento cercano para personas con Alzheimer u otras demencias y sus familias en Béjar y comarca." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_ES" />
-  <meta property="og:url" content="https://gm-neila.github.io/familiares-alzheimer/" />
-  <meta property="og:image" content="https://gm-neila.github.io/familiares-alzheimer/imagenes/afabeco-centro-exterior.jpg" />
-
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23123f47'/%3E%3Cpath d='M45.5 17.8c-4.4-4-10.7-3.3-13.5 1.1-2.8-4.4-9.1-5.1-13.5-1.1-4.8 4.4-4.5 12.1.6 17L32 47l12.9-12.2c5.1-4.9 5.4-12.6.6-17Z' fill='%23fff'/%3E%3C/svg%3E" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Literata:opsz,wght@7..72,500;7..72,600;7..72,700&display=swap" rel="stylesheet" />
+  <meta property="og:image" content="./assets/afabeco-centro-exterior.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23123f47'/%3E%3Cpath d='M18 33c0-8 6-14 14-14s14 6 14 14-6 14-14 14-14-6-14-14Z' fill='%23fff7ea'/%3E%3Cpath d='M32 18v30M18 33h28M23 23c8 7 10 13 18 20M41 23c-8 7-10 13-18 20' stroke='%23d56c46' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" />
 
   <style>
     :root {
-      --azul-950: #0f3036;
-      --azul-900: #123f47;
-      --azul-800: #1d5963;
-      --azul-100: #dfecee;
-      --azul-50: #f2f8f8;
-
-      --salvia-700: #6f8569;
-      --salvia-100: #edf3ea;
-
-      --terracota-700: #914936;
-      --terracota-600: #b76045;
-      --terracota-100: #f7ded4;
-
-      --marfil: #fbf8f1;
-      --arena: #f2eadc;
-      --ambar: #fff4d8;
-      --blanco: #ffffff;
-
-      --texto: #1f2729;
-      --texto-2: #536265;
-      --texto-3: #7c8789;
-      --borde: #dce2df;
-      --borde-suave: #edf0ee;
-
-      --shadow-sm: 0 8px 24px rgba(18, 63, 71, .08);
-      --shadow-md: 0 18px 55px rgba(18, 63, 71, .14);
-      --shadow-lg: 0 25px 80px rgba(18, 63, 71, .18);
-
-      --radius-sm: 14px;
-      --radius-md: 22px;
-      --radius-lg: 34px;
-      --max-width: 1180px;
+      color-scheme: light;
+      --ink: #122126;
+      --muted: #5c6c70;
+      --soft: #eef5f3;
+      --paper: #f9faf8;
+      --white: #ffffff;
+      --teal-950: #0b2b31;
+      --teal-850: #123f47;
+      --teal-700: #1f6670;
+      --mint: #77c9b2;
+      --sage: #8a9f6f;
+      --coral: #d56c46;
+      --coral-dark: #a94d31;
+      --gold: #f2b84b;
+      --blue: #5eb5d6;
+      --line: rgba(18, 33, 38, 0.14);
+      --line-strong: rgba(18, 33, 38, 0.28);
+      --shadow: 0 20px 60px rgba(18, 33, 38, 0.14);
+      --radius: 8px;
+      --radius-sm: 6px;
+      --container: 1180px;
+      --header-h: 76px;
     }
 
     * {
       box-sizing: border-box;
-      margin: 0;
-      padding: 0;
     }
 
     html {
       scroll-behavior: smooth;
-      scroll-padding-top: 92px;
+      scroll-padding-top: calc(var(--header-h) + 24px);
     }
 
     body {
-      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--texto);
-      background: var(--marfil);
-      line-height: 1.65;
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 14% 18%, rgba(94, 181, 214, 0.16), transparent 24rem),
+        radial-gradient(circle at 82% 12%, rgba(242, 184, 75, 0.14), transparent 23rem),
+        radial-gradient(circle at 68% 72%, rgba(119, 201, 178, 0.18), transparent 28rem),
+        linear-gradient(115deg, rgba(119, 201, 178, 0.16), transparent 32%, rgba(242, 184, 75, 0.1) 63%, rgba(213, 108, 70, 0.1)),
+        url("./assets/neural-field.svg"),
+        var(--paper);
+      background-size: 58rem 58rem, 54rem 54rem, 66rem 66rem, 100% 100%, 420px 420px, auto;
+      background-position: -14rem -10rem, calc(100% + 10rem) -8rem, 50% 60%, center, 0 0, center;
+      animation: neural-drift 38s linear infinite;
       font-size: 16px;
+      line-height: 1.6;
       text-rendering: optimizeLegibility;
     }
 
+    @keyframes neural-drift {
+      from {
+        background-position: -14rem -10rem, calc(100% + 10rem) -8rem, 50% 60%, center, 0 0, center;
+      }
+
+      to {
+        background-position: -10rem -6rem, calc(100% + 4rem) -4rem, 54% 64%, center, 420px 210px, center;
+      }
+    }
+
+    @keyframes ambient-flow {
+      from {
+        background-position: 0 0, 12% 18%, 82% 14%, 54% 76%, 0 0, 0 0;
+      }
+
+      to {
+        background-position: 420px 210px, 18% 24%, 76% 20%, 60% 70%, 280px -140px, 180px 0;
+      }
+    }
+
+    @keyframes signal-sweep {
+      from {
+        transform: translateX(-34%) skewX(-12deg);
+      }
+
+      to {
+        transform: translateX(34%) skewX(-12deg);
+      }
+    }
+
+    body.no-scroll {
+      overflow: hidden;
+    }
+
     img,
-    svg {
+    svg,
+    canvas {
+      display: block;
       max-width: 100%;
     }
 
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
     }
 
     a {
@@ -97,1261 +120,1331 @@
     }
 
     :focus-visible {
-      outline: 3px solid rgba(183, 96, 69, .45);
+      outline: 3px solid rgba(213, 108, 70, 0.42);
       outline-offset: 3px;
     }
 
     .skip-link {
-      position: absolute;
-      top: -80px;
+      position: fixed;
+      top: -100px;
       left: 18px;
-      z-index: 999;
+      z-index: 200;
       padding: 10px 14px;
-      border-radius: 999px;
-      background: var(--azul-900);
-      color: var(--blanco);
-      text-decoration: none;
+      border-radius: var(--radius-sm);
+      background: var(--teal-850);
+      color: var(--white);
       font-weight: 800;
+      text-decoration: none;
     }
 
     .skip-link:focus {
       top: 18px;
     }
 
+    .page-progress {
+      position: fixed;
+      inset: 0 0 auto 0;
+      z-index: 160;
+      height: 3px;
+      transform: scaleX(0);
+      transform-origin: left;
+      background: linear-gradient(90deg, var(--mint), var(--gold), var(--coral));
+    }
+
     .container {
-      width: min(var(--max-width), calc(100% - 40px));
+      width: min(var(--container), calc(100% - 40px));
       margin-inline: auto;
-    }
-
-    section {
-      padding: 92px 0;
-    }
-
-    h1,
-    h2,
-    h3 {
-      font-family: "Literata", Georgia, serif;
-      color: var(--azul-900);
-      letter-spacing: -.025em;
-    }
-
-    h1 {
-      max-width: 800px;
-      margin-bottom: 24px;
-      font-size: clamp(2.45rem, 5vw, 4.8rem);
-      line-height: 1;
-    }
-
-    h1 span {
-      color: var(--terracota-600);
-    }
-
-    h2 {
-      margin-bottom: 18px;
-      font-size: clamp(2rem, 3.2vw, 3.35rem);
-      line-height: 1.08;
-    }
-
-    h3 {
-      font-size: 1.28rem;
-      line-height: 1.25;
-    }
-
-    p {
-      color: var(--texto-2);
-    }
-
-    .section-head {
-      margin-bottom: 38px;
-    }
-
-    .section-label {
-      display: inline-flex;
-      align-items: center;
-      gap: 9px;
-      margin-bottom: 12px;
-      color: var(--terracota-600);
-      font-size: .76rem;
-      font-weight: 900;
-      letter-spacing: .13em;
-      text-transform: uppercase;
-    }
-
-    .section-label::before {
-      content: "";
-      width: 32px;
-      height: 2px;
-      border-radius: 999px;
-      background: currentColor;
-    }
-
-    .intro {
-      max-width: 780px;
-      font-size: 1.08rem;
-    }
-
-    .card {
-      border: 1px solid var(--borde-suave);
-      border-radius: var(--radius-md);
-      background: var(--blanco);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .icon {
-      width: 21px;
-      height: 21px;
-      fill: none;
-      stroke: currentColor;
-      stroke-width: 2;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      flex: 0 0 auto;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      min-height: 50px;
-      padding: 14px 23px;
-      border: 1px solid transparent;
-      border-radius: 999px;
-      font-family: inherit;
-      font-size: .96rem;
-      font-weight: 900;
-      line-height: 1;
-      text-decoration: none;
-      cursor: pointer;
-      transition: transform .2s ease, background .2s ease, border-color .2s ease, box-shadow .2s ease;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-    }
-
-    .btn-primary {
-      background: var(--azul-900);
-      color: var(--blanco);
-      box-shadow: 0 14px 30px rgba(18, 63, 71, .22);
-    }
-
-    .btn-primary:hover {
-      background: var(--azul-950);
-    }
-
-    .btn-secondary {
-      background: var(--blanco);
-      color: var(--azul-900);
-      border-color: rgba(18, 63, 71, .22);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .btn-secondary:hover {
-      border-color: var(--azul-800);
-    }
-
-    .btn-accent {
-      background: var(--terracota-600);
-      color: var(--blanco);
-      box-shadow: 0 14px 30px rgba(183, 96, 69, .22);
-    }
-
-    .btn-accent:hover {
-      background: var(--terracota-700);
     }
 
     .site-header {
       position: sticky;
       top: 0;
-      z-index: 100;
-      border-bottom: 1px solid rgba(220, 226, 223, .88);
-      background: rgba(251, 248, 241, .94);
-      backdrop-filter: blur(18px);
+      z-index: 150;
+      height: var(--header-h);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+      background: rgba(11, 43, 49, 0.78);
+      color: var(--white);
+      backdrop-filter: blur(20px);
     }
 
     .header-inner {
-      min-height: 84px;
+      height: var(--header-h);
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 24px;
+      gap: 22px;
     }
 
     .brand {
       display: inline-flex;
       align-items: center;
       gap: 12px;
+      min-width: 0;
+      color: inherit;
       text-decoration: none;
-      flex-shrink: 0;
     }
 
     .brand-mark {
-      width: 48px;
-      height: 48px;
-      border-radius: 17px;
+      width: 44px;
+      height: 44px;
+      flex: 0 0 auto;
       display: grid;
       place-items: center;
-      background: linear-gradient(135deg, var(--azul-900), var(--azul-800));
-      color: var(--blanco);
-      box-shadow: 0 12px 28px rgba(18, 63, 71, .22);
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, #fff7ea, #dff6ef);
+      color: var(--teal-850);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
     }
 
     .brand-mark svg {
-      width: 25px;
-      height: 25px;
-      fill: none;
-      stroke: currentColor;
-      stroke-width: 1.8;
+      width: 28px;
+      height: 28px;
     }
 
-    .brand-text strong {
-      display: block;
-      font-family: "Literata", Georgia, serif;
-      color: var(--azul-900);
-      font-size: 1.16rem;
-      line-height: 1;
+    .brand-name {
+      display: grid;
+      gap: 1px;
+      min-width: 0;
     }
 
-    .brand-text span {
-      display: block;
-      margin-top: 4px;
-      color: var(--texto-3);
-      font-size: .74rem;
-      font-weight: 800;
-      letter-spacing: .04em;
-      text-transform: uppercase;
+    .brand-name strong {
+      font-size: 1rem;
+      line-height: 1.05;
+      white-space: nowrap;
     }
 
-    .nav-button {
-      display: none;
-      align-items: center;
-      gap: 8px;
-      padding: 10px 14px;
-      border: 1px solid var(--borde);
-      border-radius: 999px;
-      background: var(--blanco);
-      color: var(--azul-900);
-      font: inherit;
-      font-weight: 900;
-      cursor: pointer;
-      box-shadow: var(--shadow-sm);
+    .brand-name span {
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.78rem;
+      font-weight: 700;
+      white-space: nowrap;
     }
 
-    .main-nav ul {
+    .main-nav {
       display: flex;
       align-items: center;
       gap: 4px;
-      list-style: none;
     }
 
     .main-nav a {
+      min-height: 42px;
       display: inline-flex;
       align-items: center;
-      min-height: 42px;
       padding: 9px 12px;
-      border-radius: 999px;
-      color: var(--texto-2);
-      font-size: .9rem;
+      border: 1px solid transparent;
+      border-radius: var(--radius-sm);
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 0.91rem;
       font-weight: 800;
       text-decoration: none;
-      transition: background .18s ease, color .18s ease;
+      transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
     }
 
-    .main-nav a:hover {
-      background: var(--azul-100);
-      color: var(--azul-900);
+    .main-nav a:hover,
+    .main-nav a.is-active {
+      color: var(--white);
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.14);
     }
 
     .main-nav .nav-cta {
-      padding-inline: 17px;
-      background: var(--azul-900);
-      color: var(--blanco);
+      margin-left: 4px;
+      background: var(--coral);
+      color: var(--white);
+      border-color: rgba(255, 255, 255, 0.14);
     }
 
-    .main-nav .nav-cta:hover {
-      background: var(--terracota-600);
-      color: var(--blanco);
+    .menu-toggle {
+      width: 44px;
+      height: 44px;
+      display: none;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--white);
+      cursor: pointer;
+    }
+
+    .menu-toggle svg {
+      width: 23px;
+      height: 23px;
     }
 
     .hero {
       position: relative;
+      min-height: 84svh;
       isolation: isolate;
+      display: flex;
+      align-items: center;
       overflow: hidden;
-      padding: 88px 0 80px;
+      margin-top: calc(var(--header-h) * -1);
+      padding: calc(var(--header-h) + 64px) 0 70px;
+      color: var(--white);
       background:
-        radial-gradient(circle at 88% 10%, rgba(183, 96, 69, .16), transparent 28%),
-        radial-gradient(circle at 9% 18%, rgba(29, 89, 99, .14), transparent 29%),
-        linear-gradient(135deg, #fbf8f1 0%, #f2eadc 48%, #e6efed 100%);
+        linear-gradient(90deg, rgba(6, 24, 29, 0.92) 0%, rgba(9, 38, 44, 0.78) 42%, rgba(9, 38, 44, 0.28) 100%),
+        linear-gradient(180deg, rgba(6, 24, 29, 0.16), rgba(6, 24, 29, 0.78)),
+        url("./assets/afabeco-centro-amplio.jpg") center / cover no-repeat;
     }
 
-    .hero::after {
+    .hero::before {
       content: "";
       position: absolute;
-      right: -150px;
-      bottom: -200px;
-      width: 530px;
-      height: 530px;
-      border-radius: 999px;
-      background: rgba(127, 150, 120, .16);
+      inset: 0;
+      z-index: -2;
+      background:
+        linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+      background-size: 58px 58px;
+      mask-image: linear-gradient(90deg, black, transparent 76%);
+    }
+
+    .hero-canvas {
+      position: absolute;
+      inset: 0;
       z-index: -1;
+      width: 100%;
+      height: 100%;
+      opacity: 0.88;
+      pointer-events: none;
     }
 
-    .hero-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.06fr) minmax(360px, .94fr);
-      gap: 56px;
-      align-items: center;
+    .hero-content {
+      width: min(800px, 100%);
+      padding-top: 26px;
     }
 
-    .location-chip {
+    .eyebrow {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      margin-bottom: 24px;
-      padding: 8px 14px;
-      border: 1px solid rgba(18, 63, 71, .16);
-      border-radius: 999px;
-      background: rgba(18, 63, 71, .08);
-      color: var(--azul-900);
-      font-size: .82rem;
+      gap: 10px;
+      margin: 0 0 18px;
+      color: #dff6ef;
+      font-size: 0.82rem;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 36px;
+      height: 2px;
+      background: var(--gold);
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      max-width: 780px;
+      font-size: 4.35rem;
       font-weight: 900;
     }
 
-    .hero-lead {
+    .hero-copy {
       max-width: 720px;
-      margin-bottom: 30px;
-      color: #405154;
-      font-size: clamp(1.08rem, 1.8vw, 1.28rem);
+      margin: 22px 0 0;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 1.22rem;
     }
 
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
-      margin-bottom: 30px;
+      margin-top: 34px;
+    }
+
+    .btn {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 13px 18px;
+      border: 1px solid transparent;
+      border-radius: var(--radius);
+      font-weight: 900;
+      line-height: 1;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn svg {
+      width: 19px;
+      height: 19px;
+    }
+
+    .btn-primary {
+      background: var(--coral);
+      color: var(--white);
+      box-shadow: 0 16px 34px rgba(213, 108, 70, 0.32);
+    }
+
+    .btn-primary:hover {
+      background: var(--coral-dark);
+    }
+
+    .btn-ghost {
+      background: rgba(255, 255, 255, 0.12);
+      color: var(--white);
+      border-color: rgba(255, 255, 255, 0.26);
+      backdrop-filter: blur(16px);
+    }
+
+    .btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.2);
     }
 
     .hero-contact {
       display: flex;
       flex-wrap: wrap;
-      gap: 16px;
+      gap: 10px;
+      margin-top: 28px;
     }
 
-    .hero-contact a {
+    .contact-chip {
+      min-height: 42px;
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      color: var(--azul-900);
-      font-size: .96rem;
-      font-weight: 900;
-      text-decoration: none;
-    }
-
-    .hero-media {
-      position: relative;
-      padding: 16px;
-      border: 1px solid rgba(255, 255, 255, .8);
-      border-radius: var(--radius-lg);
-      background: rgba(255, 255, 255, .78);
-      box-shadow: var(--shadow-lg);
-    }
-
-    .hero-media img {
-      aspect-ratio: 4 / 3;
-      object-fit: cover;
-      border-radius: 26px;
-    }
-
-    .hero-badge {
-      position: absolute;
-      right: 34px;
-      bottom: 34px;
-      max-width: 300px;
-      padding: 18px;
-      border-radius: 22px;
-      background: var(--azul-900);
-      color: var(--blanco);
-      box-shadow: 0 18px 45px rgba(18, 63, 71, .3);
-    }
-
-    .hero-badge strong {
-      display: block;
-      margin-bottom: 4px;
-      font-family: "Literata", Georgia, serif;
-      font-size: 1.35rem;
-    }
-
-    .hero-badge span {
-      display: block;
-      color: rgba(255, 255, 255, .82);
-      font-size: .9rem;
-      line-height: 1.45;
-    }
-
-    .trust-strip {
-      padding: 18px 0;
-      background: var(--azul-900);
-      color: var(--blanco);
-    }
-
-    .trust-list {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 14px;
-      list-style: none;
-    }
-
-    .trust-list li {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: rgba(255, 255, 255, .84);
-      font-size: .94rem;
+      gap: 9px;
+      padding: 9px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: var(--radius);
+      background: rgba(5, 20, 25, 0.24);
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 0.94rem;
       font-weight: 800;
+      text-decoration: none;
+      backdrop-filter: blur(16px);
     }
 
-    .trust-dot {
-      width: 9px;
-      height: 9px;
-      border-radius: 50%;
-      background: var(--terracota-600);
-      flex-shrink: 0;
+    .contact-chip svg {
+      width: 18px;
+      height: 18px;
+      color: var(--mint);
     }
 
-    .official {
-      background: var(--blanco);
+    section {
+      padding: 86px 0;
     }
 
-    .official-grid {
+    .official,
+    .service-lab,
+    .facilities,
+    .community,
+    .care,
+    .faq {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+    }
+
+    .official::before,
+    .service-lab::before,
+    .facilities::before,
+    .community::before,
+    .care::before,
+    .faq::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background:
+        url("./assets/neural-field.svg"),
+        radial-gradient(circle at 12% 22%, rgba(94, 181, 214, 0.22), transparent 22rem),
+        radial-gradient(circle at 86% 18%, rgba(242, 184, 75, 0.18), transparent 20rem),
+        radial-gradient(circle at 58% 82%, rgba(119, 201, 178, 0.2), transparent 26rem),
+        repeating-linear-gradient(112deg, transparent 0 62px, rgba(119, 201, 178, 0.1) 62px 63px, transparent 63px 126px),
+        linear-gradient(120deg, rgba(255, 255, 255, 0.92), rgba(238, 245, 243, 0.72));
+      background-size: 420px 420px, 100% 100%, 100% 100%, 100% 100%, 260px 260px, 100% 100%;
+      opacity: 0.88;
+      filter: saturate(1.16);
+      animation: ambient-flow 30s linear infinite;
+    }
+
+    .official::after,
+    .service-lab::after,
+    .facilities::after,
+    .community::after,
+    .care::after,
+    .faq::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(100deg, transparent 0%, rgba(119, 201, 178, 0.28) 38%, rgba(94, 181, 214, 0.22) 50%, transparent 68%),
+        radial-gradient(circle at 22% 30%, rgba(213, 108, 70, 0.11), transparent 16rem),
+        radial-gradient(circle at 72% 64%, rgba(45, 111, 97, 0.12), transparent 18rem),
+        repeating-linear-gradient(28deg, transparent 0 90px, rgba(242, 184, 75, 0.08) 90px 91px, transparent 91px 180px);
+      opacity: 0.64;
+      transform: translateX(-34%) skewX(-12deg);
+      animation: signal-sweep 16s ease-in-out infinite alternate;
+    }
+
+    .official > .container,
+    .service-lab > .container,
+    .facilities > .container,
+    .community > .container,
+    .care > .container,
+    .faq > .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-head {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
+      gap: 14px;
+      margin-bottom: 34px;
     }
 
-    .official-card {
-      padding: 22px;
-    }
-
-    .official-card span {
-      display: block;
-      margin-bottom: 8px;
-      color: var(--terracota-600);
-      font-size: .75rem;
+    .section-kicker {
+      margin: 0;
+      color: var(--coral-dark);
+      font-size: 0.82rem;
       font-weight: 900;
-      letter-spacing: .1em;
       text-transform: uppercase;
     }
 
-    .official-card strong,
-    .official-card a {
-      color: var(--azul-900);
-      font-size: 1.02rem;
+    .section-title {
+      max-width: 760px;
+      color: var(--teal-850);
+      font-size: 2.75rem;
+      font-weight: 900;
+    }
+
+    .section-intro {
+      max-width: 790px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .impact-strip {
+      padding: 22px 0;
+      background: var(--teal-950);
+      color: var(--white);
+    }
+
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .impact-item {
+      min-height: 112px;
+      display: grid;
+      align-content: center;
+      gap: 4px;
+      padding: 20px;
+      background: rgba(11, 43, 49, 0.92);
+    }
+
+    .impact-item strong {
+      font-size: 2rem;
+      line-height: 1;
+    }
+
+    .impact-item span {
+      color: rgba(255, 255, 255, 0.7);
+      font-weight: 750;
+    }
+
+    .data-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      gap: 16px;
+    }
+
+    .data-tile {
+      min-height: 170px;
+      display: grid;
+      gap: 12px;
+      align-content: space-between;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: 0 12px 34px rgba(18, 33, 38, 0.07);
+    }
+
+    .data-tile:first-child {
+      grid-row: span 2;
+      background:
+        linear-gradient(135deg, rgba(119, 201, 178, 0.22), transparent),
+        var(--white);
+    }
+
+    .data-tile small {
+      color: var(--muted);
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .data-tile strong,
+    .data-tile a {
+      color: var(--teal-850);
+      font-size: 1.18rem;
       font-weight: 900;
       text-decoration: none;
     }
 
-    .official-card a:hover {
-      text-decoration: underline;
+    .service-lab {
+      background:
+        linear-gradient(180deg, rgba(18, 63, 71, 0.06), rgba(213, 108, 70, 0.05)),
+        var(--white);
     }
 
-    .about {
-      background: var(--marfil);
-    }
-
-    .split {
+    .service-layout {
       display: grid;
-      grid-template-columns: .95fr 1.05fr;
-      gap: 58px;
-      align-items: center;
+      grid-template-columns: 0.86fr 1.14fr;
+      gap: 26px;
+      align-items: stretch;
     }
 
-    .image-card {
-      overflow: hidden;
-      padding: 14px;
-    }
-
-    .image-card img {
-      aspect-ratio: 4 / 3;
-      object-fit: cover;
-      border-radius: 18px;
-    }
-
-    .caption {
-      padding: 14px 4px 2px;
-      color: var(--texto-3);
-      font-size: .88rem;
-      font-weight: 700;
-    }
-
-    .registry-note {
-      display: inline-flex;
-      align-items: center;
-      margin-top: 14px;
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: var(--salvia-100);
-      color: var(--azul-900);
-      font-size: .82rem;
-      font-weight: 900;
-    }
-
-    .recognition {
-      display: flex;
-      gap: 14px;
-      align-items: flex-start;
-      margin: 24px 0;
-      padding: 18px;
-      border-radius: 18px;
-      background: var(--azul-100);
-      color: var(--azul-900);
-    }
-
-    .recognition-icon {
-      width: 44px;
-      height: 44px;
+    .service-tabs {
       display: grid;
-      place-items: center;
-      flex-shrink: 0;
-      border-radius: 14px;
-      background: var(--blanco);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .quote {
-      margin: 24px 0;
-      padding: 24px;
-      border-left: 5px solid var(--terracota-600);
-      border-radius: 0 20px 20px 0;
-      background: var(--arena);
-    }
-
-    .quote p {
-      color: var(--azul-900);
-      font-family: "Literata", Georgia, serif;
-      font-size: 1.35rem;
-      line-height: 1.35;
-    }
-
-    .quote cite {
-      display: block;
-      margin-top: 10px;
-      color: var(--texto-2);
-      font-style: normal;
-      font-size: .9rem;
-      font-weight: 900;
-    }
-
-    .pills {
-      display: flex;
-      flex-wrap: wrap;
       gap: 10px;
-      margin-top: 24px;
     }
 
-    .pill {
-      display: inline-flex;
-      align-items: center;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: var(--salvia-100);
-      color: var(--azul-900);
-      font-size: .88rem;
-      font-weight: 900;
-    }
-
-    .services {
-      background: linear-gradient(180deg, var(--blanco), var(--arena));
-    }
-
-    .services-grid {
+    .service-tab {
+      width: 100%;
+      min-height: 78px;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 22px;
+      grid-template-columns: 42px 1fr 22px;
+      align-items: center;
+      gap: 14px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper);
+      color: var(--ink);
+      text-align: left;
+      cursor: pointer;
+      transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
     }
 
-    .service-card {
+    .service-tab:hover,
+    .service-tab[aria-selected="true"] {
+      transform: translateY(-2px);
+      border-color: rgba(31, 102, 112, 0.38);
+      background: var(--white);
+      box-shadow: 0 16px 34px rgba(18, 33, 38, 0.1);
+    }
+
+    .service-tab svg {
+      width: 42px;
+      height: 42px;
+      padding: 9px;
+      border-radius: var(--radius-sm);
+      background: rgba(31, 102, 112, 0.1);
+      color: var(--teal-700);
+    }
+
+    .service-tab strong {
+      display: block;
+      line-height: 1.2;
+    }
+
+    .service-tab span {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 650;
+    }
+
+    .service-arrow {
+      color: var(--coral);
+    }
+
+    .service-panels {
       position: relative;
+      min-height: 490px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
       overflow: hidden;
-      min-height: 260px;
-      padding: 28px;
-      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+      background:
+        linear-gradient(135deg, rgba(18, 63, 71, 0.44), rgba(31, 102, 112, 0.28)),
+        url("./assets/afabeco-centro-exterior.jpg") center / cover no-repeat;
+      color: var(--white);
+      box-shadow: var(--shadow);
     }
 
-    .service-card::before {
+    .service-panel {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      align-content: end;
+      gap: 18px;
+      padding: 34px;
+      opacity: 0;
+      transform: translateY(18px);
+      pointer-events: none;
+      transition: opacity 0.34s ease, transform 0.34s ease;
+    }
+
+    .service-panel.is-active {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    .service-panel::before {
       content: "";
       position: absolute;
-      inset: 0 0 auto;
-      height: 5px;
-      background: linear-gradient(90deg, var(--azul-800), var(--salvia-700), var(--terracota-600));
+      inset: 0;
+      z-index: -1;
+      background:
+        linear-gradient(180deg, rgba(7, 28, 34, 0.04) 0%, rgba(7, 28, 34, 0.32) 50%, rgba(7, 28, 34, 0.68) 100%),
+        repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.055) 0 1px, transparent 1px 56px);
     }
 
-    .service-card:hover {
-      transform: translateY(-5px);
-      border-color: rgba(29, 89, 99, .25);
-      box-shadow: var(--shadow-md);
+    .service-panel h3 {
+      max-width: 650px;
+      color: var(--white);
+      font-size: 2.25rem;
+      font-weight: 900;
+      text-shadow: 0 3px 18px rgba(0, 0, 0, 0.44);
     }
 
-    .service-icon,
-    .contact-icon,
-    .collab-icon {
-      width: 54px;
-      height: 54px;
-      display: grid;
-      place-items: center;
-      margin-bottom: 18px;
-      border-radius: 18px;
-      background: var(--azul-100);
-      color: var(--azul-900);
+    .service-panel p {
+      max-width: 620px;
+      margin: 0;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 1.05rem;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.34);
     }
 
-    .service-card:nth-child(2n) .service-icon {
-      background: var(--salvia-100);
-    }
-
-    .service-card:nth-child(3n) .service-icon {
-      background: var(--terracota-100);
-      color: var(--terracota-700);
-    }
-
-    .service-card h3 {
-      margin-bottom: 10px;
-    }
-
-    .service-card p,
-    .step-card p,
-    .collab-card p,
-    .news-card p,
-    .faq-item p {
-      font-size: .96rem;
-    }
-
-    .notice {
+    .panel-tags {
       display: flex;
-      gap: 14px;
-      align-items: flex-start;
-      margin-top: 28px;
-      padding: 18px 20px;
-      border: 1px solid rgba(176, 133, 36, .26);
-      border-radius: 18px;
-      background: var(--ambar);
-      color: #66511a;
-    }
-
-    .notice p {
-      color: #66511a;
-    }
-
-    .notice a {
-      color: var(--azul-900);
-      font-weight: 900;
-    }
-
-    .process {
-      background: var(--azul-50);
-    }
-
-    .steps-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
-
-    .step-card {
-      padding: 24px;
-    }
-
-    .step-number {
-      display: inline-grid;
-      place-items: center;
-      width: 38px;
-      height: 38px;
-      margin-bottom: 16px;
-      border-radius: 50%;
-      background: var(--azul-900);
-      color: var(--blanco);
-      font-weight: 900;
-    }
-
-    .facilities {
-      background: var(--blanco);
-    }
-
-    .photo-grid {
-      display: grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap: 22px;
-    }
-
-    .photo-large,
-    .photo-small {
-      position: relative;
-      overflow: hidden;
-      border-radius: var(--radius-md);
-      background: var(--blanco);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .photo-large img {
-      height: 100%;
-      min-height: 500px;
-      object-fit: cover;
-    }
-
-    .photo-stack {
-      display: grid;
-      gap: 22px;
-    }
-
-    .photo-small img {
-      aspect-ratio: 4 / 3;
-      object-fit: cover;
-    }
-
-    .photo-label {
-      position: absolute;
-      left: 18px;
-      bottom: 18px;
-      max-width: calc(100% - 36px);
-      padding: 10px 12px;
-      border-radius: 999px;
-      background: rgba(18, 63, 71, .9);
-      color: var(--blanco);
-      font-size: .86rem;
-      font-weight: 900;
-      backdrop-filter: blur(10px);
-    }
-
-    .families {
-      background: var(--arena);
-    }
-
-    .two-col {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
-    }
-
-    .info-box {
-      padding: 30px;
-    }
-
-    .info-box h3 {
-      margin-bottom: 18px;
-    }
-
-    .check-list {
-      display: grid;
-      gap: 13px;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
       list-style: none;
     }
 
-    .check-list li {
+    .panel-tags li {
+      padding: 7px 9px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: var(--radius-sm);
+      background: rgba(255, 255, 255, 0.16);
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 0.84rem;
+      font-weight: 850;
+    }
+
+    .path-section {
+      background: var(--teal-950);
+      color: var(--white);
+    }
+
+    .path-section .section-title,
+    .path-section .section-kicker {
+      color: var(--white);
+    }
+
+    .path-section .section-intro {
+      color: rgba(255, 255, 255, 0.74);
+    }
+
+    .path-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .path-card {
+      min-height: 260px;
+      display: grid;
+      align-content: space-between;
+      padding: 22px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: var(--radius);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.04)),
+        rgba(255, 255, 255, 0.03);
+    }
+
+    .path-number {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: var(--radius-sm);
+      background: var(--gold);
+      color: var(--teal-950);
+      font-weight: 950;
+    }
+
+    .path-card h3 {
+      color: var(--white);
+      font-size: 1.36rem;
+      font-weight: 900;
+    }
+
+    .path-card p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    .facilities {
+      overflow: hidden;
+    }
+
+    .gallery-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.12fr) minmax(360px, 0.88fr);
+      gap: 46px;
+      align-items: center;
+    }
+
+    .gallery-shell {
+      position: relative;
+      min-height: 560px;
+      overflow: hidden;
+      perspective: 1200px;
+      z-index: 1;
+    }
+
+    .gallery-stage {
+      position: absolute;
+      inset: 22px 0;
+      transform-style: preserve-3d;
+    }
+
+    .gallery-card {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 84%;
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: 0 26px 70px rgba(18, 33, 38, 0.2);
+      opacity: 0;
+      transform: translate3d(-50%, 0, -110px) rotateY(0deg) scale(0.84);
+      transition: transform 0.5s ease, opacity 0.5s ease, filter 0.5s ease;
+      will-change: transform, opacity;
+    }
+
+    .gallery-card img {
+      width: 100%;
+      height: 100%;
+      min-height: 516px;
+      object-fit: cover;
+    }
+
+    .gallery-card figcaption {
+      position: absolute;
+      left: 16px;
+      right: 16px;
+      bottom: 16px;
       display: flex;
+      justify-content: space-between;
       gap: 12px;
-      align-items: flex-start;
-      color: var(--texto-2);
+      padding: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      border-radius: var(--radius-sm);
+      background: rgba(7, 28, 34, 0.76);
+      color: var(--white);
+      backdrop-filter: blur(14px);
     }
 
-    .check-list li::before {
-      content: "";
-      width: 9px;
-      height: 9px;
-      margin-top: 9px;
-      border-radius: 50%;
-      background: var(--terracota-600);
-      flex-shrink: 0;
+    .gallery-card figcaption span {
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.86rem;
+      font-weight: 800;
     }
 
-    .collaborate {
-      background: var(--blanco);
+    .gallery-card.is-active {
+      z-index: 4;
+      opacity: 1;
+      transform: translate3d(-50%, 0, 0) rotateY(0deg) scale(1);
     }
 
-    .collab-grid {
+    .gallery-card.is-prev {
+      z-index: 3;
+      opacity: 0.44;
+      filter: saturate(0.84) contrast(0.94);
+      transform: translate3d(-94%, 2%, -70px) rotateY(12deg) scale(0.82);
+    }
+
+    .gallery-card.is-next {
+      z-index: 2;
+      opacity: 0.44;
+      filter: saturate(0.84) contrast(0.94);
+      transform: translate3d(-6%, -2%, -70px) rotateY(-12deg) scale(0.82);
+    }
+
+    .gallery-notes {
+      position: relative;
+      z-index: 3;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
       gap: 18px;
-      margin-bottom: 44px;
     }
 
-    .collab-card {
-      padding: 26px 22px;
+    .gallery-notes p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .gallery-controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .icon-btn {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--white);
+      color: var(--teal-850);
+      cursor: pointer;
+      transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+    }
+
+    .icon-btn:hover {
+      transform: translateY(-2px);
+      border-color: var(--line-strong);
+      background: var(--soft);
+    }
+
+    .icon-btn svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .gallery-arrow {
+      position: absolute;
+      top: 50%;
+      z-index: 8;
+      width: 48px;
+      height: 48px;
+      transform: translateY(-50%);
+      border: 1px solid rgba(18, 33, 38, 0.18);
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 16px 34px rgba(18, 33, 38, 0.18);
+      backdrop-filter: blur(12px);
+    }
+
+    .gallery-arrow:hover {
+      transform: translateY(-50%) scale(1.04);
+    }
+
+    .gallery-arrow-prev {
+      left: 12px;
+    }
+
+    .gallery-arrow-next {
+      right: 12px;
+    }
+
+    .gallery-count {
+      min-width: 76px;
+      color: var(--muted);
+      font-weight: 900;
       text-align: center;
-      transition: transform .2s ease, box-shadow .2s ease;
     }
 
-    .collab-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-md);
+    .mini-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 12px;
     }
 
-    .collab-icon {
-      margin-inline: auto;
-      background: var(--terracota-100);
-      color: var(--terracota-700);
+    .mini-grid button {
+      overflow: hidden;
+      aspect-ratio: 1.35;
+      padding: 0;
+      border: 2px solid transparent;
+      border-radius: var(--radius-sm);
+      background: var(--white);
+      cursor: pointer;
     }
 
-    .news {
-      background: var(--arena);
+    .mini-grid button.is-active {
+      border-color: var(--coral);
     }
 
-    .news-grid {
+    .mini-grid img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .care {
+      background: var(--white);
+    }
+
+    .care-layout {
+      display: grid;
+      grid-template-columns: minmax(300px, 0.9fr) minmax(0, 1.1fr);
+      gap: 30px;
+      align-items: start;
+    }
+
+    .care-image {
+      position: sticky;
+      top: calc(var(--header-h) + 24px);
+      margin: 0;
+      overflow: hidden;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .care-image img {
+      width: 100%;
+      min-height: 520px;
+      object-fit: cover;
+    }
+
+    .care-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .care-item {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 14px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper);
+    }
+
+    .care-item svg {
+      width: 42px;
+      height: 42px;
+      padding: 9px;
+      border-radius: var(--radius-sm);
+      background: rgba(213, 108, 70, 0.12);
+      color: var(--coral);
+    }
+
+    .care-item h3 {
+      color: var(--teal-850);
+      font-size: 1.18rem;
+      font-weight: 900;
+    }
+
+    .care-item p {
+      margin: 5px 0 0;
+      color: var(--muted);
+    }
+
+    .community-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 22px;
+      gap: 14px;
     }
 
     .news-card {
+      display: grid;
+      grid-template-rows: 210px 1fr;
       overflow: hidden;
-      transition: transform .2s ease, box-shadow .2s ease;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: 0 14px 36px rgba(18, 33, 38, 0.08);
+      transition: transform 0.22s ease, box-shadow 0.22s ease;
     }
 
     .news-card:hover {
       transform: translateY(-4px);
-      box-shadow: var(--shadow-md);
+      box-shadow: 0 24px 54px rgba(18, 33, 38, 0.14);
     }
 
     .news-card img {
-      aspect-ratio: 4 / 3;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
     }
 
     .news-card.poster img {
-      object-position: top center;
+      object-position: top;
     }
 
     .news-body {
-      padding: 22px;
+      display: grid;
+      gap: 10px;
+      padding: 18px;
     }
 
     .tag {
-      display: inline-flex;
-      margin-bottom: 12px;
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: var(--azul-100);
-      color: var(--azul-900);
-      font-size: .72rem;
+      width: max-content;
+      padding: 5px 8px;
+      border-radius: var(--radius-sm);
+      background: rgba(119, 201, 178, 0.18);
+      color: var(--teal-850);
+      font-size: 0.78rem;
       font-weight: 900;
-      letter-spacing: .08em;
-      text-transform: uppercase;
     }
 
     .news-body h3 {
-      margin-bottom: 10px;
+      color: var(--teal-850);
+      font-size: 1.12rem;
+      font-weight: 900;
+    }
+
+    .news-body p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.94rem;
     }
 
     .news-body time {
-      display: block;
-      margin-top: 16px;
-      color: var(--texto-3);
-      font-size: .86rem;
-      font-weight: 800;
+      color: var(--coral-dark);
+      font-size: 0.86rem;
+      font-weight: 900;
     }
 
     .faq {
-      background: var(--blanco);
+      background: linear-gradient(180deg, rgba(31, 102, 112, 0.07), rgba(242, 184, 75, 0.08));
     }
 
     .faq-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
     }
 
-    .faq-item {
-      padding: 24px;
+    details {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: 0 12px 32px rgba(18, 33, 38, 0.06);
     }
 
-    .faq-item h3 {
-      margin-bottom: 10px;
-      font-size: 1.15rem;
-    }
-
-    .cta-band {
-      padding: 78px 0;
-      background:
-        radial-gradient(circle at 86% 20%, rgba(244, 214, 201, .18), transparent 30%),
-        linear-gradient(135deg, var(--azul-900), var(--azul-800));
-      color: var(--blanco);
-      text-align: center;
-    }
-
-    .cta-band h2 {
-      max-width: 820px;
-      margin-inline: auto;
-      color: var(--blanco);
-    }
-
-    .cta-band p {
-      max-width: 650px;
-      margin: 0 auto 28px;
-      color: rgba(255, 255, 255, .82);
-      font-size: 1.08rem;
-    }
-
-    .cta-actions {
+    summary {
+      min-height: 78px;
       display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 20px;
+      color: var(--teal-850);
+      font-weight: 900;
+      cursor: pointer;
+      list-style: none;
     }
 
-    .cta-band .btn-primary {
-      background: var(--blanco);
-      color: var(--azul-900);
+    summary::-webkit-details-marker {
+      display: none;
     }
 
-    .cta-band .btn-secondary {
-      background: rgba(255, 255, 255, .12);
-      color: var(--blanco);
-      border-color: rgba(255, 255, 255, .24);
-      box-shadow: none;
+    summary svg {
+      width: 20px;
+      height: 20px;
+      flex: 0 0 auto;
+      transition: transform 0.2s ease;
+    }
+
+    details[open] summary svg {
+      transform: rotate(45deg);
+    }
+
+    details p {
+      margin: 0;
+      padding: 0 20px 20px;
+      color: var(--muted);
     }
 
     .contact {
-      background: var(--marfil);
+      background:
+        linear-gradient(120deg, rgba(7, 28, 34, 0.94), rgba(18, 63, 71, 0.86)),
+        url("./assets/afabeco-centro-exterior.jpg") center / cover no-repeat;
+      color: var(--white);
     }
 
-    .contact-grid {
+    .contact .section-title,
+    .contact .section-kicker {
+      color: var(--white);
+    }
+
+    .contact .section-intro {
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    .contact-layout {
       display: grid;
-      grid-template-columns: .82fr 1.18fr;
-      gap: 42px;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 20px;
       align-items: start;
     }
 
     .contact-panel,
     .form-panel {
-      padding: 32px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 26px 70px rgba(0, 0, 0, 0.24);
     }
 
-    .contact-list {
+    .contact-panel {
       display: grid;
-      gap: 22px;
-      margin-top: 24px;
-    }
-
-    .contact-item {
-      display: flex;
       gap: 14px;
-      align-items: flex-start;
+      padding: 22px;
     }
 
-    .contact-icon {
-      width: 46px;
-      height: 46px;
-      margin-bottom: 0;
-      flex-shrink: 0;
-    }
-
-    .contact-item strong {
-      display: block;
-      margin-bottom: 3px;
-      color: var(--azul-900);
-      font-size: .86rem;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-    }
-
-    .contact-item a {
-      color: var(--azul-800);
-      font-weight: 900;
-      text-decoration: none;
-    }
-
-    .contact-item a:hover {
-      text-decoration: underline;
-    }
-
-    .map-link {
+    .contact-row {
       display: grid;
-      place-items: center;
-      min-height: 154px;
-      margin-top: 24px;
-      padding: 18px;
-      border: 1px dashed rgba(18, 63, 71, .28);
-      border-radius: 20px;
-      background:
-        linear-gradient(135deg, rgba(29, 89, 99, .14), rgba(127, 150, 120, .12)),
-        var(--arena);
-      color: var(--azul-900);
-      font-weight: 900;
-      text-align: center;
+      grid-template-columns: 40px 1fr;
+      gap: 12px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-sm);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .contact-row svg {
+      width: 40px;
+      height: 40px;
+      padding: 9px;
+      border-radius: var(--radius-sm);
+      background: rgba(119, 201, 178, 0.16);
+      color: var(--mint);
+    }
+
+    .contact-row strong {
+      display: block;
+      color: var(--white);
+    }
+
+    .contact-row a,
+    .contact-row span {
+      color: rgba(255, 255, 255, 0.76);
       text-decoration: none;
+    }
+
+    .form-panel {
+      padding: 22px;
     }
 
     .form-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
     }
 
     .field {
-      margin-bottom: 16px;
+      display: grid;
+      gap: 7px;
     }
 
     .field.full {
       grid-column: 1 / -1;
     }
 
-    label {
-      display: block;
-      margin-bottom: 7px;
-      color: var(--azul-900);
-      font-size: .92rem;
-      font-weight: 900;
+    .field label,
+    .privacy label {
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 0.9rem;
+      font-weight: 800;
     }
 
-    input,
-    select,
-    textarea {
+    .field input,
+    .field select,
+    .field textarea {
       width: 100%;
-      padding: 13px 14px;
-      border: 1px solid var(--borde);
-      border-radius: 14px;
-      background: var(--blanco);
-      color: var(--texto);
-      font: inherit;
-      transition: border-color .2s ease, box-shadow .2s ease;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: var(--radius-sm);
+      background: rgba(255, 255, 255, 0.9);
+      color: var(--ink);
     }
 
-    input:focus,
-    select:focus,
-    textarea:focus {
-      outline: none;
-      border-color: var(--azul-800);
-      box-shadow: 0 0 0 4px rgba(29, 89, 99, .13);
+    .field input,
+    .field select {
+      min-height: 48px;
+      padding: 0 12px;
     }
 
-    textarea {
-      min-height: 126px;
+    .field textarea {
+      min-height: 140px;
       resize: vertical;
+      padding: 12px;
     }
 
     .privacy {
-      display: flex;
-      align-items: flex-start;
+      display: grid;
+      grid-template-columns: 20px 1fr;
       gap: 10px;
-      margin: 4px 0 20px;
+      margin: 16px 0;
     }
 
     .privacy input {
-      width: 19px;
-      height: 19px;
-      margin-top: 4px;
-      accent-color: var(--azul-900);
-      flex-shrink: 0;
-    }
-
-    .privacy label {
-      margin: 0;
-      color: var(--texto-2);
-      font-size: .88rem;
-      font-weight: 500;
-      line-height: 1.5;
-    }
-
-    .privacy a {
-      color: var(--azul-800);
-      font-weight: 900;
+      width: 18px;
+      height: 18px;
+      margin-top: 2px;
+      accent-color: var(--coral);
     }
 
     .submit-btn {
       width: 100%;
-      min-height: 52px;
+      min-height: 50px;
       border: 0;
-      border-radius: 999px;
-      background: var(--terracota-600);
-      color: var(--blanco);
-      font: inherit;
-      font-weight: 900;
+      border-radius: var(--radius);
+      background: var(--gold);
+      color: var(--teal-950);
+      font-weight: 950;
       cursor: pointer;
-      transition: transform .2s ease, background .2s ease;
+      transition: transform 0.2s ease, background 0.2s ease;
     }
 
     .submit-btn:hover {
       transform: translateY(-2px);
-      background: var(--terracota-700);
-    }
-
-    .form-note {
-      margin-top: 14px;
-      color: var(--texto-3);
-      font-size: .86rem;
+      background: #ffd16a;
     }
 
     .site-footer {
-      padding: 58px 0 30px;
-      background: #102d33;
-      color: rgba(255, 255, 255, .74);
+      padding: 42px 0 24px;
+      background: #071c22;
+      color: rgba(255, 255, 255, 0.72);
     }
 
     .footer-grid {
       display: grid;
-      grid-template-columns: 1.35fr 1fr 1fr 1fr;
-      gap: 36px;
-      margin-bottom: 38px;
+      grid-template-columns: 1.3fr 1fr 1fr 1fr;
+      gap: 26px;
+      align-items: start;
     }
 
-    .site-footer .brand-text strong {
-      color: var(--blanco);
+    .site-footer h2,
+    .site-footer h3 {
+      color: var(--white);
+      font-size: 0.98rem;
+      font-weight: 900;
     }
 
-    .site-footer .brand-text span,
     .site-footer p {
-      color: rgba(255, 255, 255, .64);
-    }
-
-    .site-footer h4 {
-      margin-bottom: 14px;
-      color: var(--blanco);
-      font-size: .8rem;
-      letter-spacing: .12em;
-      text-transform: uppercase;
+      margin: 12px 0 0;
+      color: rgba(255, 255, 255, 0.62);
     }
 
     .site-footer ul {
       display: grid;
       gap: 8px;
+      margin: 12px 0 0;
+      padding: 0;
       list-style: none;
     }
 
     .site-footer a {
-      color: rgba(255, 255, 255, .72);
-      font-size: .94rem;
-      font-weight: 600;
+      color: rgba(255, 255, 255, 0.72);
+      font-weight: 700;
       text-decoration: none;
     }
 
     .site-footer a:hover {
-      color: var(--blanco);
+      color: var(--white);
       text-decoration: underline;
     }
 
     .footer-bottom {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
-      gap: 18px;
-      flex-wrap: wrap;
-      padding-top: 22px;
-      border-top: 1px solid rgba(255, 255, 255, .12);
-      color: rgba(255, 255, 255, .52);
-      font-size: .88rem;
+      gap: 12px;
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      color: rgba(255, 255, 255, 0.54);
+      font-size: 0.9rem;
     }
 
-    .legal-links {
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.52s ease, transform 0.52s ease;
     }
 
-    .legal-links button {
-      border: 0;
-      background: none;
-      color: rgba(255, 255, 255, .72);
-      font: inherit;
-      cursor: pointer;
-      text-decoration: none;
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
     }
 
-    .legal-links button:hover {
-      color: var(--blanco);
-      text-decoration: underline;
-    }
-
-    dialog {
-      width: min(760px, calc(100% - 32px));
-      max-height: min(720px, calc(100% - 32px));
-      margin: auto;
-      padding: 0;
-      border: 0;
-      border-radius: 24px;
-      box-shadow: var(--shadow-lg);
-    }
-
-    dialog::backdrop {
-      background: rgba(16, 45, 51, .62);
-      backdrop-filter: blur(4px);
-    }
-
-    .modal-content {
-      padding: 28px;
-      background: var(--blanco);
-    }
-
-    .modal-content h2 {
-      font-size: 1.8rem;
-    }
-
-    .modal-content p {
-      margin-bottom: 14px;
-    }
-
-    .modal-close {
-      margin-top: 8px;
-    }
-
-    @media (max-width: 1100px) {
+    @media (max-width: 1120px) {
       .main-nav a {
         padding-inline: 9px;
-        font-size: .84rem;
+        font-size: 0.86rem;
       }
 
-      .hero-grid,
-      .split,
-      .contact-grid {
+      .service-layout,
+      .gallery-layout,
+      .care-layout,
+      .contact-layout {
         grid-template-columns: 1fr;
       }
 
-      .official-grid,
-      .services-grid,
-      .steps-grid,
-      .news-grid {
-        grid-template-columns: repeat(2, 1fr);
+      .care-image {
+        position: relative;
+        top: auto;
       }
 
-      .collab-grid,
-      .footer-grid,
-      .trust-list {
+      .community-grid {
         grid-template-columns: repeat(2, 1fr);
-      }
-
-      .hero-media {
-        max-width: 760px;
       }
     }
 
-    @media (max-width: 840px) {
+    @media (max-width: 900px) {
+      :root {
+        --header-h: 70px;
+      }
+
       body {
         font-size: 15.5px;
       }
 
-      section {
-        padding: 68px 0;
+      .container {
+        width: min(100% - 30px, var(--container));
       }
 
-      .header-inner {
-        min-height: 76px;
-      }
-
-      .nav-button {
-        display: inline-flex;
+      .menu-toggle {
+        display: grid;
       }
 
       .main-nav {
-        position: absolute;
-        top: calc(100% + 8px);
-        left: 20px;
-        right: 20px;
-        padding: 12px;
-        border: 1px solid var(--borde);
-        border-radius: 22px;
-        background: rgba(255, 255, 255, .98);
-        box-shadow: var(--shadow-md);
+        position: fixed;
+        inset: var(--header-h) 14px auto 14px;
+        display: grid;
+        gap: 4px;
+        padding: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: var(--radius);
+        background: rgba(7, 28, 34, 0.96);
+        box-shadow: var(--shadow);
         opacity: 0;
         pointer-events: none;
-        transform: translateY(-8px);
-        transition: opacity .2s ease, transform .2s ease;
+        transform: translateY(-10px);
+        transition: opacity 0.22s ease, transform 0.22s ease;
       }
 
       .main-nav.is-open {
@@ -1360,84 +1453,149 @@
         transform: translateY(0);
       }
 
-      .main-nav ul {
-        display: grid;
-        gap: 3px;
-      }
-
       .main-nav a,
       .main-nav .nav-cta {
         width: 100%;
+        margin: 0;
         justify-content: flex-start;
-        padding: 12px 14px;
-        border-radius: 14px;
       }
 
-      .hero {
-        padding: 58px 0 60px;
-      }
-
-      .hero-badge {
-        position: static;
-        max-width: none;
-        margin-top: 14px;
-      }
-
-      .photo-grid,
-      .two-col,
-      .faq-grid,
-      .official-grid,
-      .services-grid,
-      .steps-grid,
-      .news-grid,
-      .collab-grid,
-      .form-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .photo-large img {
-        min-height: 300px;
-      }
-    }
-
-    @media (max-width: 560px) {
-      .container {
-        width: min(100% - 28px, var(--max-width));
-      }
-
-      .brand-text span {
+      .brand-name span {
         display: none;
       }
 
+      .hero {
+        min-height: 82svh;
+        padding: calc(var(--header-h) + 40px) 0 52px;
+      }
+
       h1 {
-        font-size: clamp(2.25rem, 13vw, 3.3rem);
+        font-size: 3.2rem;
       }
 
+      .hero-copy {
+        font-size: 1.05rem;
+      }
+
+      .section-title {
+        font-size: 2.15rem;
+      }
+
+      section {
+        padding: 66px 0;
+      }
+
+      .impact-grid,
+      .path-grid,
+      .data-grid,
+      .faq-grid,
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .data-tile:first-child {
+        grid-row: auto;
+        grid-column: 1 / -1;
+      }
+
+      .gallery-shell,
+      .gallery-card img {
+        min-height: 430px;
+      }
+
+      .gallery-stage {
+        inset: 0;
+      }
+
+      .gallery-card {
+        width: 88%;
+      }
+    }
+
+    @media (max-width: 620px) {
       .hero-actions,
-      .cta-actions {
-        display: grid;
-      }
-
-      .btn {
-        width: 100%;
-      }
-
       .hero-contact {
         display: grid;
       }
 
-      .trust-list,
-      .footer-grid {
+      .btn,
+      .contact-chip {
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 2.55rem;
+      }
+
+      .section-title {
+        font-size: 1.86rem;
+      }
+
+      .impact-grid,
+      .path-grid,
+      .data-grid,
+      .community-grid,
+      .faq-grid,
+      .footer-grid,
+      .form-grid {
         grid-template-columns: 1fr;
       }
 
-      .contact-panel,
-      .form-panel,
-      .info-box,
-      .service-card,
-      .step-card,
-      .faq-item {
-        padding: 22px;
+      .service-panel {
+        padding: 24px;
+      }
+
+      .service-panel h3 {
+        font-size: 1.75rem;
+      }
+
+      .gallery-shell,
+      .gallery-card img {
+        min-height: 360px;
+      }
+
+      .gallery-layout {
+        gap: 24px;
+      }
+
+      .gallery-card {
+        width: 92%;
+      }
+
+      .gallery-card.is-prev {
+        transform: translate3d(-98%, 1%, -70px) rotateY(10deg) scale(0.78);
+      }
+
+      .gallery-card.is-next {
+        transform: translate3d(-2%, -1%, -70px) rotateY(-10deg) scale(0.78);
+      }
+
+      .gallery-arrow {
+        width: 42px;
+        height: 42px;
+      }
+
+      .gallery-card figcaption {
+        display: grid;
+      }
+
+      .mini-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+
+      .hero-canvas {
+        opacity: 0.45;
       }
     }
   </style>
@@ -1448,7 +1606,6 @@
     "@type": "NGO",
     "name": "Asociación de Familiares de Enfermos de Alzheimer de Béjar",
     "alternateName": ["AFABECO", "AFA Béjar y Comarca"],
-    "url": "https://gm-neila.github.io/familiares-alzheimer/",
     "email": "afabeco@yahoo.es",
     "telephone": "+34 923 608 004",
     "address": {
@@ -1459,90 +1616,81 @@
       "addressRegion": "Salamanca",
       "addressCountry": "ES"
     },
-    "areaServed": ["Béjar", "Comarca de Béjar", "Salamanca"],
-    "sameAs": [
-      "https://www.afacayle.es/afa-bejar/",
-      "https://www.instagram.com/afabecobejar/"
-    ]
+    "areaServed": ["Béjar", "Comarca de Béjar", "Salamanca"]
   }
   </script>
 </head>
 
 <body>
-  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="page-progress" aria-hidden="true"></div>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#inicio" class="brand" aria-label="AFABECO Béjar - Inicio">
+      <a class="brand" href="#inicio" aria-label="AFABECO Béjar y Comarca">
         <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24">
-            <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8Z" />
+          <svg viewBox="0 0 32 32" fill="none">
+            <path d="M16 4v24M4 16h24M8 8c5 4 8 9 16 16M24 8c-5 4-8 9-16 16" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+            <circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2.2" />
           </svg>
         </span>
-        <span class="brand-text">
+        <span class="brand-name">
           <strong>AFABECO</strong>
-          <span>AFA Béjar y Comarca</span>
+          <span>Béjar y Comarca</span>
         </span>
       </a>
 
-      <button class="nav-button" type="button" aria-controls="main-nav" aria-expanded="false">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="main-nav" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
           <path d="M4 7h16M4 12h16M4 17h16" />
         </svg>
-        Menú
       </button>
 
-      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
-        <ul>
-          <li><a href="#datos">Datos oficiales</a></li>
-          <li><a href="#quienes">Quiénes somos</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#proceso">Primer contacto</a></li>
-          <li><a href="#instalaciones">Centro</a></li>
-          <li><a href="#familias">Familias</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contacto" class="nav-cta">Contactar</a></li>
-        </ul>
+      <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+        <a href="#datos">Datos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#recorrido">Recorrido</a>
+        <a href="#centro">Centro</a>
+        <a href="#comunidad">Comunidad</a>
+        <a href="#familias">Familias</a>
+        <a href="#contacto" class="nav-cta">Contactar</a>
       </nav>
     </div>
   </header>
 
   <main id="contenido">
-    <section id="inicio" class="hero" aria-labelledby="titulo-principal">
-      <div class="container hero-grid">
-        <div>
-          <div class="location-chip">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12 21s7-7.1 7-12A7 7 0 0 0 5 9c0 4.9 7 12 7 12Z" />
-              <circle cx="12" cy="9" r="2.5" />
-            </svg>
-            El Castañar · Béjar · Salamanca
-          </div>
-
-          <h1 id="titulo-principal">
-            Cuando el Alzheimer llega a una familia, no hay que recorrer el camino en <span>soledad</span>
-          </h1>
-
-          <p class="hero-lead">
-            AFABECO, AFA Béjar y Comarca, acompaña a personas con Alzheimer u otras demencias y a sus familias con información, asesoramiento, atención especializada, apoyo psicológico y respiro familiar.
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <canvas id="memory-scene" class="hero-canvas" aria-hidden="true"></canvas>
+      <div class="container">
+        <div class="hero-content">
+          <p class="eyebrow">El Castañar · Béjar · Salamanca</p>
+          <h1 id="hero-title">AFABECO Béjar y Comarca</h1>
+          <p class="hero-copy">
+            Acompañamiento, orientación y apoyo especializado para personas con Alzheimer u otras demencias y para las familias que sostienen el cuidado diario.
           </p>
-
           <div class="hero-actions" aria-label="Acciones principales">
-            <a href="#contacto" class="btn btn-primary">Pedir orientación</a>
-            <a href="#servicios" class="btn btn-secondary">Ver servicios</a>
-            <a href="#colabora" class="btn btn-accent">Colaborar</a>
+            <a class="btn btn-primary" href="#contacto">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z" />
+              </svg>
+              Pedir orientación
+            </a>
+            <a class="btn btn-ghost" href="#servicios">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M5 12h14M13 5l7 7-7 7" />
+              </svg>
+              Ver servicios
+            </a>
           </div>
-
-          <div class="hero-contact" aria-label="Datos rápidos de contacto">
-            <a href="tel:923608004">
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <div class="hero-contact" aria-label="Contacto rápido">
+            <a class="contact-chip" href="tel:923608004">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 11.2 19 19.5 19.5 0 0 1 5 12.8 19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2.1Z" />
               </svg>
               923 608 004
             </a>
-
-            <a href="mailto:afabeco@yahoo.es">
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <a class="contact-chip" href="mailto:afabeco@yahoo.es">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" />
                 <path d="m22 6-10 7L2 6" />
               </svg>
@@ -1550,451 +1698,294 @@
             </a>
           </div>
         </div>
-
-        <aside class="hero-media" aria-label="Centro de Alzheimer de Béjar">
-          <img
-            src="/familiares-alzheimer/imagenes/afabeco-centro-exterior.jpg"
-            data-fallback="/familiares-alzheimer/imagenes/afabeco-centro-exterior.webp"
-            alt="Exterior del Centro de Alzheimer de Béjar donde AFABECO desarrolla su actividad"
-            width="1000"
-            height="750"
-            fetchpriority="high"
-          />
-          <div class="hero-badge">
-            <strong>Desde El Castañar</strong>
-            <span>Un espacio cercano para orientar, acompañar y cuidar a las familias de Béjar y comarca.</span>
-          </div>
-        </aside>
       </div>
     </section>
 
-    <div class="trust-strip" aria-label="Datos destacados">
-      <ul class="container trust-list">
-        <li><span class="trust-dot" aria-hidden="true"></span> Asociación integrada en AFACAYLE</li>
-        <li><span class="trust-dot" aria-hidden="true"></span> Registro CyL nº 37/1/0003090</li>
-        <li><span class="trust-dot" aria-hidden="true"></span> Centro en El Castañar</li>
-        <li><span class="trust-dot" aria-hidden="true"></span> Apoyo a personas y familias</li>
-      </ul>
-    </div>
+    <aside class="impact-strip" aria-label="Resumen de AFABECO">
+      <div class="container impact-grid">
+        <div class="impact-item">
+          <strong>37700</strong>
+          <span>C/ Los Magnolios 11, Béjar</span>
+        </div>
+        <div class="impact-item">
+          <strong>923</strong>
+          <span>608 004 · atención directa</span>
+        </div>
+        <div class="impact-item">
+          <strong>AFA</strong>
+          <span>familias, demencia y cuidado</span>
+        </div>
+        <div class="impact-item">
+          <strong>CyL</strong>
+          <span>registro 37/1/0003090</span>
+        </div>
+      </div>
+    </aside>
 
-    <section id="datos" class="official" aria-labelledby="titulo-datos">
+    <section id="datos" class="official reveal" aria-labelledby="datos-title">
       <div class="container">
         <div class="section-head">
-          <p class="section-label">Datos oficiales</p>
-          <h2 id="titulo-datos">AFABECO · AFA Béjar y Comarca</h2>
-          <p class="intro">
-            Datos de contacto publicados por AFACAYLE y por el directorio de asociaciones de pacientes y familiares de Castilla y León.
+          <p class="section-kicker">Datos oficiales</p>
+          <h2 id="datos-title" class="section-title">Una asociación local con atención cercana y datos claros</h2>
+          <p class="section-intro">
+            AFABECO es la Asociación de Familiares de Enfermos de Alzheimer de Béjar. Su sede está en El Castañar y funciona como punto de referencia para familias de Béjar y comarca.
           </p>
         </div>
 
-        <div class="official-grid">
-          <div class="card official-card">
-            <span>Denominación</span>
+        <div class="data-grid">
+          <article class="data-tile">
+            <small>Denominación</small>
             <strong>Asociación de Familiares de Enfermos de Alzheimer de Béjar</strong>
-          </div>
-
-          <div class="card official-card">
-            <span>Dirección</span>
+            <span>AFABECO · AFA Béjar y Comarca</span>
+          </article>
+          <article class="data-tile">
+            <small>Dirección</small>
             <strong>C/ Los Magnolios 11, El Castañar, 37700 Béjar</strong>
-          </div>
-
-          <div class="card official-card">
-            <span>Teléfono</span>
+          </article>
+          <article class="data-tile">
+            <small>Teléfono</small>
             <a href="tel:923608004">923 608 004</a>
-          </div>
-
-          <div class="card official-card">
-            <span>Email</span>
+          </article>
+          <article class="data-tile">
+            <small>Email</small>
             <a href="mailto:afabeco@yahoo.es">afabeco@yahoo.es</a>
-          </div>
+          </article>
+          <article class="data-tile">
+            <small>Instagram</small>
+            <a href="https://www.instagram.com/afabecobejar/" target="_blank" rel="noopener noreferrer">@afabecobejar</a>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="quienes" class="about" aria-labelledby="titulo-quienes">
-      <div class="container split">
-        <div class="card image-card">
-          <img
-            src="/familiares-alzheimer/imagenes/afabeco-centro-amplio.jpg"
-            data-fallback="/familiares-alzheimer/imagenes/afabeco-centro-amplio.webp"
-            alt="Vista del Centro de Alzheimer de Béjar en El Castañar"
-            width="1000"
-            height="750"
-            loading="lazy"
-            decoding="async"
-          />
-          <p class="caption">Centro de Alzheimer de Béjar · El Castañar</p>
-          <div class="registry-note">Registro de Asociaciones de Castilla y León nº 37/1/0003090</div>
-        </div>
-
-        <div>
-          <p class="section-label">Quiénes somos</p>
-          <h2 id="titulo-quienes">Una asociación de familias para familias</h2>
-
-          <p>
-            AFABECO nace para acompañar a las personas afectadas por Alzheimer u otras demencias y a las familias que sostienen el cuidado diario en Béjar y su comarca.
-          </p>
-
-          <p>
-            Desde El Castañar, la asociación ofrece un punto de referencia cercano para pedir orientación, conocer recursos, recibir apoyo y no afrontar este proceso en soledad.
-          </p>
-
-          <div class="recognition" role="note">
-            <div class="recognition-icon" aria-hidden="true">🥇</div>
-            <div>
-              <strong>Reconocimiento social en Béjar</strong>
-              <p>La labor de AFABECO forma parte de la vida comunitaria de Béjar y ha contado con el apoyo de entidades, asociaciones y vecinos.</p>
-            </div>
-          </div>
-
-          <blockquote class="quote">
-            <p>“No podemos curar el Alzheimer, pero sí alcanzar una mejor calidad de vida.”</p>
-            <cite>AFABECO Béjar</cite>
-          </blockquote>
-
-          <div class="pills" aria-label="Valores de la asociación">
-            <span class="pill">Cercanía</span>
-            <span class="pill">Dignidad</span>
-            <span class="pill">Orientación</span>
-            <span class="pill">Apoyo familiar</span>
-            <span class="pill">Comunidad</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="servicios" class="services" aria-labelledby="titulo-servicios">
+    <section id="servicios" class="service-lab reveal" aria-labelledby="servicios-title">
       <div class="container">
         <div class="section-head">
-          <p class="section-label">Servicios</p>
-          <h2 id="titulo-servicios">Apoyo para personas con demencia y para quienes las cuidan</h2>
-          <p class="intro">
-            Los servicios de AFABECO se centran en orientar a las familias, atender a personas afectadas por deterioro cognitivo o demencias y ofrecer apoyo durante el proceso de cuidado.
+          <p class="section-kicker">Servicios</p>
+          <h2 id="servicios-title" class="section-title">Apoyo para la persona afectada y para quien cuida</h2>
+          <p class="section-intro">
+            El primer contacto sirve para escuchar la situación, orientar a la familia y valorar qué recursos pueden encajar mejor en cada momento.
           </p>
         </div>
 
-        <div class="services-grid">
-          <article class="card service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg class="icon" viewBox="0 0 24 24">
+        <div class="service-layout">
+          <div class="service-tabs" role="tablist" aria-label="Servicios de AFABECO">
+            <button id="tab-info" class="service-tab" type="button" role="tab" aria-selected="true" aria-controls="panel-info">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path d="M4 19V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14" />
                 <path d="M8 7h8M8 11h8M8 15h5" />
               </svg>
-            </div>
-            <h3>Información y asesoramiento</h3>
-            <p>Orientación sobre recursos, servicios, primeros pasos y atención personalizada para familias y personas afectadas.</p>
-          </article>
-
-          <article class="card service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg class="icon" viewBox="0 0 24 24">
+              <span><strong>Información y asesoramiento</strong><span>Primeros pasos y recursos</span></span>
+              <span class="service-arrow" aria-hidden="true">→</span>
+            </button>
+            <button id="tab-care" class="service-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-care">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path d="M12 3v18M6 8h12M6 16h12" />
                 <path d="M8 3a4 4 0 0 0 0 8M16 3a4 4 0 0 1 0 8M8 13a4 4 0 0 0 0 8M16 13a4 4 0 0 1 0 8" />
               </svg>
-            </div>
-            <h3>Atención especializada</h3>
-            <p>Actividades y talleres dirigidos a personas con deterioro cognitivo, Alzheimer u otras demencias.</p>
-          </article>
-
-          <article class="card service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg class="icon" viewBox="0 0 24 24">
+              <span><strong>Atención especializada</strong><span>Estimulación y actividades</span></span>
+              <span class="service-arrow" aria-hidden="true">→</span>
+            </button>
+            <button id="tab-family" class="service-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-family">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path d="M21 15a4 4 0 0 1-4 4H7l-4 4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z" />
               </svg>
-            </div>
-            <h3>Apoyo psicológico</h3>
-            <p>Escucha y acompañamiento emocional para la persona afectada y para familiares cuidadores.</p>
-          </article>
-
-          <article class="card service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg class="icon" viewBox="0 0 24 24">
+              <span><strong>Apoyo psicológico</strong><span>Escucha y acompañamiento</span></span>
+              <span class="service-arrow" aria-hidden="true">→</span>
+            </button>
+            <button id="tab-respite" class="service-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-respite">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path d="m3 10 9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z" />
                 <path d="M9 22V12h6v10" />
               </svg>
-            </div>
-            <h3>Unidad de respiro familiar</h3>
-            <p>Apoyo para aliviar la sobrecarga del cuidador y facilitar momentos de descanso y organización familiar.</p>
-          </article>
-        </div>
+              <span><strong>Unidad de respiro</strong><span>Descanso para cuidadores</span></span>
+              <span class="service-arrow" aria-hidden="true">→</span>
+            </button>
+          </div>
 
-        <div class="notice" role="note">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="12" cy="12" r="10" />
-            <path d="M12 8v4M12 16h.01" />
-          </svg>
-          <p>
-            <strong>Antes de acudir al centro, llama para confirmar horario y disponibilidad.</strong>
-            Contacto oficial: <a href="tel:923608004">923 608 004</a> · <a href="mailto:afabeco@yahoo.es">afabeco@yahoo.es</a>.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="proceso" class="process" aria-labelledby="titulo-proceso">
-      <div class="container">
-        <div class="section-head">
-          <p class="section-label">Primer contacto</p>
-          <h2 id="titulo-proceso">Qué ocurre cuando contactas con AFABECO</h2>
-          <p class="intro">
-            Muchas familias llaman por primera vez con dudas, miedo o sensación de desbordamiento. El objetivo del primer contacto es escuchar, orientar y ayudar a ordenar los siguientes pasos.
-          </p>
-        </div>
-
-        <div class="steps-grid">
-          <article class="card step-card">
-            <span class="step-number">1</span>
-            <h3>Te escuchamos</h3>
-            <p>Nos cuentas la situación familiar, el momento en el que estáis y qué preocupación os ha llevado a pedir ayuda.</p>
-          </article>
-
-          <article class="card step-card">
-            <span class="step-number">2</span>
-            <h3>Orientamos</h3>
-            <p>Recibes información sobre recursos, atención disponible y pasos útiles según el caso.</p>
-          </article>
-
-          <article class="card step-card">
-            <span class="step-number">3</span>
-            <h3>Valoramos opciones</h3>
-            <p>Se estudia qué apoyo puede encajar mejor: información, atención especializada, apoyo psicológico o respiro familiar.</p>
-          </article>
-
-          <article class="card step-card">
-            <span class="step-number">4</span>
-            <h3>Acompañamos</h3>
-            <p>AFABECO puede seguir siendo un punto de referencia para la familia durante la evolución de la enfermedad.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="instalaciones" class="facilities" aria-labelledby="titulo-instalaciones">
-      <div class="container">
-        <div class="section-head">
-          <p class="section-label">Centro</p>
-          <h2 id="titulo-instalaciones">Un espacio de referencia en El Castañar</h2>
-          <p class="intro">
-            El centro de AFABECO se ubica en C/ Los Magnolios 11, en El Castañar, Béjar. Las imágenes muestran el entorno y mejoras realizadas en las instalaciones.
-          </p>
-        </div>
-
-        <div class="photo-grid">
-          <figure class="photo-large">
-            <img
-              src="/familiares-alzheimer/imagenes/afabeco-centro-amplio.jpg"
-              data-fallback="/familiares-alzheimer/imagenes/afabeco-centro-amplio.webp"
-              alt="Vista amplia del Centro de Alzheimer de Béjar"
-              width="1000"
-              height="750"
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption class="photo-label">Centro de Alzheimer de Béjar</figcaption>
-          </figure>
-
-          <div class="photo-stack">
-            <figure class="photo-small">
-              <img
-                src="/familiares-alzheimer/imagenes/afabeco-rampa.jpg"
-                data-fallback="/familiares-alzheimer/imagenes/afabeco-rampa.webp"
-                alt="Rampa de acceso del Centro de Alzheimer de Béjar"
-                width="1000"
-                height="750"
-                loading="lazy"
-                decoding="async"
-              />
-              <figcaption class="photo-label">Acceso y entorno</figcaption>
-            </figure>
-
-            <figure class="photo-small">
-              <img
-                src="/familiares-alzheimer/imagenes/afabeco-cubierta.jpg"
-                data-fallback="/familiares-alzheimer/imagenes/afabeco-cubierta.webp"
-                alt="Mejoras en la cubierta del Centro de Alzheimer de Béjar"
-                width="1000"
-                height="750"
-                loading="lazy"
-                decoding="async"
-              />
-              <figcaption class="photo-label">Mejoras en instalaciones</figcaption>
-            </figure>
+          <div class="service-panels">
+            <article id="panel-info" class="service-panel is-active" role="tabpanel" tabindex="0" aria-labelledby="tab-info">
+              <h3>Ordenar dudas antes de que todo parezca demasiado grande</h3>
+              <p>Orientación sobre recursos, primeras llamadas, señales de alerta, servicios disponibles y formas de iniciar el acompañamiento.</p>
+              <ul class="panel-tags">
+                <li>Primer contacto</li>
+                <li>Recursos locales</li>
+                <li>Orientación familiar</li>
+              </ul>
+            </article>
+            <article id="panel-care" class="service-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-care">
+              <h3>Rutinas y actividades pensadas para mantener capacidades</h3>
+              <p>Apoyo a personas con deterioro cognitivo, Alzheimer u otras demencias mediante atención especializada y actividades adaptadas.</p>
+              <ul class="panel-tags">
+                <li>Estimulación</li>
+                <li>Talleres</li>
+                <li>Atención personalizada</li>
+              </ul>
+            </article>
+            <article id="panel-family" class="service-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-family">
+              <h3>Cuidar sin quedarse solo en la parte emocional</h3>
+              <p>Espacios de escucha y acompañamiento para familiares que necesitan sostén, claridad y herramientas durante el proceso.</p>
+              <ul class="panel-tags">
+                <li>Escucha</li>
+                <li>Duelo anticipado</li>
+                <li>Sobrecarga</li>
+              </ul>
+            </article>
+            <article id="panel-respite" class="service-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-respite">
+              <h3>Tiempo de respiro para reorganizar el cuidado</h3>
+              <p>Apoyo para aliviar la carga diaria, facilitar descanso y ayudar a que la familia pueda sostener el cuidado con más equilibrio.</p>
+              <ul class="panel-tags">
+                <li>Respiro familiar</li>
+                <li>Apoyo continuado</li>
+                <li>Conciliación</li>
+              </ul>
+            </article>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="familias" class="families" aria-labelledby="titulo-familias">
+    <section id="recorrido" class="path-section reveal" aria-labelledby="recorrido-title">
       <div class="container">
         <div class="section-head">
-          <p class="section-label">Familias cuidadoras</p>
-          <h2 id="titulo-familias">Cuidar también requiere apoyo</h2>
-          <p class="intro">
-            El Alzheimer y otras demencias no afectan solo a la persona diagnosticada. También transforman la vida de la familia, especialmente de quienes asumen el cuidado diario.
+          <p class="section-kicker">Primer contacto</p>
+          <h2 id="recorrido-title" class="section-title">Qué ocurre cuando una familia llama</h2>
+          <p class="section-intro">
+            No hace falta llegar con todo claro. La llamada inicial ayuda a poner nombre a lo que ocurre y a decidir el siguiente paso con calma.
           </p>
         </div>
-
-        <div class="two-col">
-          <div class="card info-box">
-            <h3>Cuándo pedir ayuda</h3>
-            <ul class="check-list">
-              <li>Cuando aparecen olvidos frecuentes que afectan a la vida cotidiana.</li>
-              <li>Cuando hay desorientación, cambios de conducta o dificultades para comunicarse.</li>
-              <li>Cuando la familia no sabe qué recursos existen ni por dónde empezar.</li>
-              <li>Cuando la persona cuidadora se siente cansada, sola o desbordada.</li>
-            </ul>
-          </div>
-
-          <div class="card info-box">
-            <h3>Cómo puede ayudar AFABECO</h3>
-            <ul class="check-list">
-              <li>Ofreciendo información y asesoramiento personalizado.</li>
-              <li>Orientando sobre recursos y servicios disponibles.</li>
-              <li>Facilitando apoyo emocional a la familia.</li>
-              <li>Proporcionando atención especializada y respiro familiar cuando sea posible.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="colabora" class="collaborate" aria-labelledby="titulo-colabora">
-      <div class="container">
-        <div class="section-head">
-          <p class="section-label">Colabora</p>
-          <h2 id="titulo-colabora">Tu apoyo sostiene una labor necesaria</h2>
-          <p class="intro">
-            La labor de AFABECO se fortalece gracias al respaldo de familias, personas voluntarias, empresas, asociaciones y vecinos de Béjar y comarca.
-          </p>
-        </div>
-
-        <div class="collab-grid">
-          <article class="card collab-card">
-            <div class="collab-icon" aria-hidden="true">
-              <svg class="icon" viewBox="0 0 24 24">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                <circle cx="9.5" cy="7" r="4" />
-                <path d="M22 21v-2a4 4 0 0 0-3-3.9" />
-              </svg>
+        <div class="path-grid">
+          <article class="path-card">
+            <span class="path-number">1</span>
+            <div>
+              <h3>Escucha</h3>
+              <p>Se recoge la situación familiar, el momento del proceso y la preocupación principal.</p>
             </div>
-            <h3>Hazte socio/a</h3>
-            <p>Pregunta por las condiciones y formas de colaboración estable con la asociación.</p>
           </article>
-
-          <article class="card collab-card">
-            <div class="collab-icon" aria-hidden="true">
-              <svg class="icon" viewBox="0 0 24 24">
-                <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8Z" />
-              </svg>
+          <article class="path-card">
+            <span class="path-number">2</span>
+            <div>
+              <h3>Orientación</h3>
+              <p>La familia recibe información útil sobre recursos, servicios y opciones disponibles.</p>
             </div>
-            <h3>Dona</h3>
-            <p>Tu aportación ayuda a mantener recursos y actividades para personas y familias.</p>
           </article>
-
-          <article class="card collab-card">
-            <div class="collab-icon" aria-hidden="true">
-              <svg class="icon" viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="10" />
-                <path d="M12 6v6l4 2" />
-              </svg>
+          <article class="path-card">
+            <span class="path-number">3</span>
+            <div>
+              <h3>Valoración</h3>
+              <p>Se revisa qué apoyo puede encajar mejor: información, atención, apoyo emocional o respiro.</p>
             </div>
-            <h3>Voluntariado</h3>
-            <p>Dedica tiempo y cercanía a una causa profundamente humana y local.</p>
           </article>
-
-          <article class="card collab-card">
-            <div class="collab-icon" aria-hidden="true">
-              <svg class="icon" viewBox="0 0 24 24">
-                <rect x="2" y="7" width="20" height="14" rx="2" />
-                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
-              </svg>
+          <article class="path-card">
+            <span class="path-number">4</span>
+            <div>
+              <h3>Acompañamiento</h3>
+              <p>AFABECO puede seguir como referencia cercana durante la evolución de la enfermedad.</p>
             </div>
-            <h3>Empresas</h3>
-            <p>Comercios y entidades pueden apoyar mediante campañas, eventos o donaciones.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="noticias" class="news" aria-labelledby="titulo-noticias">
+    <section id="centro" class="facilities reveal" aria-labelledby="centro-title">
+      <div class="container">
+        <div class="gallery-layout">
+          <div class="gallery-shell" data-gallery>
+            <div class="gallery-stage">
+              <figure class="gallery-card is-active">
+                <img src="./assets/afabeco-centro-amplio.jpg" alt="Vista amplia del Centro de Alzheimer de Béjar" loading="lazy" decoding="async" />
+                <figcaption><strong>Centro de Alzheimer de Béjar</strong><span>El Castañar</span></figcaption>
+              </figure>
+              <figure class="gallery-card is-next">
+                <img src="./assets/afabeco-centro-exterior.jpg" alt="Equipo de AFABECO junto a la entrada del centro" loading="lazy" decoding="async" />
+                <figcaption><strong>Entrada y equipo</strong><span>C/ Los Magnolios 11</span></figcaption>
+              </figure>
+              <figure class="gallery-card is-prev">
+                <img src="./assets/afabeco-rampa.webp" alt="Rampa de acceso del Centro de Alzheimer de Béjar" loading="lazy" decoding="async" />
+                <figcaption><strong>Accesibilidad</strong><span>Acceso al centro</span></figcaption>
+              </figure>
+              <figure class="gallery-card">
+                <img src="./assets/afabeco-cubierta.webp" alt="Cubierta del Centro de Alzheimer de Béjar" loading="lazy" decoding="async" />
+                <figcaption><strong>Instalaciones</strong><span>Mejoras del edificio</span></figcaption>
+              </figure>
+              <figure class="gallery-card">
+                <img src="./assets/afabeco-cheque-plaza-toros-2021.jpg" alt="Entrega de donación de la Asociación Amigos de la Plaza de Toros a AFABECO" loading="lazy" decoding="async" />
+                <figcaption><strong>Apoyo local</strong><span>Comunidad bejarana</span></figcaption>
+              </figure>
+              <figure class="gallery-card">
+                <img src="./assets/afabeco-cheque-jamon-2018.jpg" alt="Entrega del cheque de la Jornada del Jamón a AFABECO" loading="lazy" decoding="async" />
+                <figcaption><strong>Eventos solidarios</strong><span>Colaboraciones</span></figcaption>
+              </figure>
+            </div>
+            <button class="icon-btn gallery-arrow gallery-arrow-prev" type="button" data-gallery-prev aria-label="Imagen anterior">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6" /></svg>
+            </button>
+            <button class="icon-btn gallery-arrow gallery-arrow-next" type="button" data-gallery-next aria-label="Imagen siguiente">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6" /></svg>
+            </button>
+          </div>
+
+          <div class="gallery-notes">
+            <div class="section-head">
+              <p class="section-kicker">Centro</p>
+              <h2 id="centro-title" class="section-title">Un espacio visible, accesible y conectado con Béjar</h2>
+              <p class="section-intro">
+                La galería muestra el centro en El Castañar, su entorno y parte del apoyo social que ha acompañado la labor de AFABECO.
+              </p>
+            </div>
+            <div class="gallery-controls" aria-label="Controles de galería">
+              <span class="gallery-count" data-gallery-count>1 / 6</span>
+            </div>
+            <div class="mini-grid" data-gallery-thumbs aria-label="Miniaturas de galería"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="comunidad" class="community reveal" aria-labelledby="comunidad-title">
       <div class="container">
         <div class="section-head">
-          <p class="section-label">Comunidad</p>
-          <h2 id="titulo-noticias">Béjar también cuida</h2>
-          <p class="intro">
-            La trayectoria de AFABECO está vinculada al apoyo de la comunidad local, las actividades de sensibilización y los eventos solidarios.
+          <p class="section-kicker">Comunidad</p>
+          <h2 id="comunidad-title" class="section-title">Béjar también cuida</h2>
+          <p class="section-intro">
+            La asociación se sostiene gracias a familias, personas voluntarias, entidades locales y actividades de sensibilización que ayudan a hacer visible la enfermedad.
           </p>
         </div>
 
-        <div class="news-grid">
-          <article class="card news-card poster">
-            <img
-              src="/familiares-alzheimer/imagenes/afabeco-cartel-alzheimer-2023.jpg"
-              data-fallback="/familiares-alzheimer/imagenes/afabeco-cartel-alzheimer-2023.webp"
-              alt="Cartel de actividades del Día Mundial del Alzheimer 2023 de AFABECO"
-              width="707"
-              height="1000"
-              loading="lazy"
-              decoding="async"
-            />
+        <div class="community-grid">
+          <article class="news-card poster">
+            <img src="./assets/afabeco-cartel-alzheimer-2023.jpg" alt="Cartel del programa de actividades Día Mundial del Alzheimer 2023" loading="lazy" decoding="async" />
             <div class="news-body">
               <span class="tag">Sensibilización</span>
               <h3>Día Mundial del Alzheimer</h3>
-              <p>Actividades para dar visibilidad a la enfermedad y a las familias cuidadoras.</p>
-              <time datetime="2023-09-21">Septiembre 2023</time>
+              <p>Actividades para visibilizar la enfermedad y apoyar a las familias cuidadoras.</p>
+              <time datetime="2023-09">Septiembre 2023</time>
             </div>
           </article>
-
-          <article class="card news-card">
-            <img
-              src="/familiares-alzheimer/imagenes/afabeco-cheque-jamon-2018.jpg"
-              data-fallback="/familiares-alzheimer/imagenes/afabeco-cheque-jamon-2018.webp"
-              alt="Entrega del cheque de la I Jornada del Jamón a AFABECO"
-              width="1000"
-              height="750"
-              loading="lazy"
-              decoding="async"
-            />
-            <div class="news-body">
-              <span class="tag">Evento solidario</span>
-              <h3>I Jornada del Jamón</h3>
-              <p>Donación de beneficios a favor de AFABECO.</p>
-              <time datetime="2018-05-03">2018</time>
-            </div>
-          </article>
-
-          <article class="card news-card">
-            <img
-              src="/familiares-alzheimer/imagenes/afabeco-abejarock-2019.jpg"
-              data-fallback="/familiares-alzheimer/imagenes/afabeco-abejarock-2019.webp"
-              alt="Cartel de donación de Abejarock a AFABECO"
-              width="750"
-              height="562"
-              loading="lazy"
-              decoding="async"
-            />
+          <article class="news-card">
+            <img src="./assets/afabeco-abejarock-2019.jpg" alt="Cartel de donación de Abejarock a AFABECO" loading="lazy" decoding="async" />
             <div class="news-body">
               <span class="tag">Música solidaria</span>
               <h3>Abejarock</h3>
-              <p>Festival solidario bejarano con recaudación destinada a AFABECO.</p>
+              <p>El festival bejarano ha colaborado con donaciones destinadas a AFABECO.</p>
               <time datetime="2019">2019</time>
             </div>
           </article>
-
-          <article class="card news-card">
-            <img
-              src="/familiares-alzheimer/imagenes/afabeco-cheque-plaza-toros-2021.jpg"
-              data-fallback="/familiares-alzheimer/imagenes/afabeco-cheque-plaza-toros-2021.webp"
-              alt="Entrega de donación de la Asociación Amigos de la Plaza de Toros a AFABECO"
-              width="750"
-              height="422"
-              loading="lazy"
-              decoding="async"
-            />
+          <article class="news-card">
+            <img src="./assets/afabeco-cheque-jamon-2018.jpg" alt="Entrega de cheque de una jornada gastronómica a AFABECO" loading="lazy" decoding="async" />
+            <div class="news-body">
+              <span class="tag">Evento solidario</span>
+              <h3>Jornada del Jamón</h3>
+              <p>Acciones benéficas impulsadas por asociaciones y vecinos de la zona.</p>
+              <time datetime="2018">2018</time>
+            </div>
+          </article>
+          <article class="news-card">
+            <img src="./assets/afabeco-cheque-plaza-toros-2021.jpg" alt="Entrega de donación a AFABECO en 2021" loading="lazy" decoding="async" />
             <div class="news-body">
               <span class="tag">Apoyo local</span>
-              <h3>Comunidad bejarana</h3>
-              <p>Entidades y asociaciones locales han colaborado con la labor de AFABECO.</p>
+              <h3>Tejido social</h3>
+              <p>Colaboraciones que refuerzan la atención a personas y familias.</p>
               <time datetime="2021">2021</time>
             </div>
           </article>
@@ -2002,173 +1993,178 @@
       </div>
     </section>
 
-    <section id="faq" class="faq" aria-labelledby="titulo-faq">
+    <section id="familias" class="care reveal" aria-labelledby="familias-title">
+      <div class="container">
+        <div class="care-layout">
+          <figure class="care-image">
+            <img src="./assets/afabeco-centro-exterior.jpg" alt="Personas del equipo de AFABECO en la entrada del centro" loading="lazy" decoding="async" />
+          </figure>
+          <div>
+            <div class="section-head">
+              <p class="section-kicker">Familias cuidadoras</p>
+              <h2 id="familias-title" class="section-title">Cuidar también requiere apoyo</h2>
+              <p class="section-intro">
+                El Alzheimer no afecta solo a la persona diagnosticada. Cambia la organización familiar, las rutinas y la carga emocional de quienes cuidan cada día.
+              </p>
+            </div>
+            <div class="care-list">
+              <article class="care-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z" />
+                </svg>
+                <div>
+                  <h3>Cuando aparecen señales de desorientación</h3>
+                  <p>Olvidos frecuentes, cambios de conducta o dificultades para comunicarse pueden ser motivo suficiente para pedir orientación.</p>
+                </div>
+              </article>
+              <article class="care-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M8 19a4 4 0 0 1 8 0M12 3v10M7 8h10" />
+                </svg>
+                <div>
+                  <h3>Cuando no se sabe por dónde empezar</h3>
+                  <p>AFABECO puede ayudar a ordenar información, recursos, decisiones y pasos útiles para la familia.</p>
+                </div>
+              </article>
+              <article class="care-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8Z" />
+                </svg>
+                <div>
+                  <h3>Cuando la persona cuidadora se siente desbordada</h3>
+                  <p>El apoyo familiar y el respiro ayudan a cuidar mejor sin que todo el peso recaiga en una sola persona.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq reveal" aria-labelledby="faq-title">
       <div class="container">
         <div class="section-head">
-          <p class="section-label">Preguntas frecuentes</p>
-          <h2 id="titulo-faq">Dudas habituales antes de llamar</h2>
-          <p class="intro">
-            Estas respuestas ayudan a orientar el primer contacto. Para cualquier situación concreta, lo mejor es llamar o escribir directamente a AFABECO.
-          </p>
+          <p class="section-kicker">Preguntas frecuentes</p>
+          <h2 id="faq-title" class="section-title">Dudas habituales antes de llamar</h2>
+          <p class="section-intro">Para una situación concreta, lo más útil es contactar directamente con AFABECO y confirmar disponibilidad.</p>
         </div>
-
         <div class="faq-grid">
-          <article class="card faq-item">
-            <h3>¿Tengo que tener diagnóstico para contactar?</h3>
+          <details>
+            <summary>¿Tengo que tener diagnóstico para contactar?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" /></svg></summary>
             <p>No necesariamente. Si hay dudas, sospechas o preocupación familiar, puedes contactar para recibir orientación inicial.</p>
-          </article>
-
-          <article class="card faq-item">
-            <h3>¿Atendéis solo Alzheimer?</h3>
-            <p>AFABECO orienta a personas afectadas por Alzheimer, deterioro cognitivo u otras demencias, así como a sus familias.</p>
-          </article>
-
-          <article class="card faq-item">
-            <h3>¿Puedo llamar si soy cuidador/a?</h3>
-            <p>Sí. El apoyo a la familia cuidadora forma parte esencial de la labor de la asociación.</p>
-          </article>
-
-          <article class="card faq-item">
-            <h3>¿Dónde está el centro?</h3>
+          </details>
+          <details>
+            <summary>¿Atendéis solo Alzheimer?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" /></svg></summary>
+            <p>La asociación orienta a personas con Alzheimer, deterioro cognitivo u otras demencias, así como a sus familias.</p>
+          </details>
+          <details>
+            <summary>¿Puedo llamar si soy cuidador o cuidadora?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" /></svg></summary>
+            <p>Sí. El apoyo a la familia cuidadora forma parte esencial de la labor de AFABECO.</p>
+          </details>
+          <details>
+            <summary>¿Dónde está el centro?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" /></svg></summary>
             <p>En C/ Los Magnolios 11, El Castañar, 37700 Béjar, Salamanca.</p>
-          </article>
-
-          <article class="card faq-item">
-            <h3>¿Cuál es el horario?</h3>
+          </details>
+          <details>
+            <summary>¿Cuál es el horario?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" /></svg></summary>
             <p>Antes de acudir, llama al 923 608 004 para confirmar horario de atención y disponibilidad.</p>
-          </article>
-
-          <article class="card faq-item">
-            <h3>¿Cómo puedo colaborar?</h3>
+          </details>
+          <details>
+            <summary>¿Cómo puedo colaborar?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" /></svg></summary>
             <p>Puedes preguntar por asociación, voluntariado, donaciones o colaboración de empresas y entidades locales.</p>
-          </article>
+          </details>
         </div>
       </div>
     </section>
 
-    <section class="cta-band" aria-labelledby="titulo-cta">
-      <div class="container">
-        <h2 id="titulo-cta">¿Necesitas orientación para tu familia?</h2>
-        <p>Cuéntanos tu situación. Te atenderán con calma, respeto y cercanía.</p>
-        <div class="cta-actions">
-          <a href="#contacto" class="btn btn-primary">Contactar con AFABECO</a>
-          <a href="tel:923608004" class="btn btn-secondary">Llamar: 923 608 004</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="contacto" class="contact" aria-labelledby="titulo-contacto">
+    <section id="contacto" class="contact reveal" aria-labelledby="contacto-title">
       <div class="container">
         <div class="section-head">
-          <p class="section-label">Contacto</p>
-          <h2 id="titulo-contacto">Contacta con AFABECO Béjar</h2>
-          <p class="intro">Puedes llamar, escribir o acudir al centro. Se recomienda confirmar horario antes de desplazarse.</p>
+          <p class="section-kicker">Contacto</p>
+          <h2 id="contacto-title" class="section-title">Contacta con AFABECO Béjar</h2>
+          <p class="section-intro">Puedes llamar, escribir o solicitar orientación por formulario. Se recomienda confirmar horario antes de desplazarse.</p>
         </div>
 
-        <div class="contact-grid">
-          <aside class="card contact-panel" aria-label="Datos de contacto">
-            <h3>Cómo encontrarnos</h3>
-            <p>Datos oficiales publicados por AFACAYLE y por la Junta de Castilla y León.</p>
-
-            <div class="contact-list">
-              <div class="contact-item">
-                <div class="contact-icon" aria-hidden="true">
-                  <svg class="icon" viewBox="0 0 24 24">
-                    <path d="M12 21s7-7.1 7-12A7 7 0 0 0 5 9c0 4.9 7 12 7 12Z" />
-                    <circle cx="12" cy="9" r="2.5" />
-                  </svg>
-                </div>
-                <div>
-                  <strong>Dirección</strong>
-                  <p>C/ Los Magnolios 11, El Castañar<br />37700 Béjar, Salamanca</p>
-                </div>
-              </div>
-
-              <div class="contact-item">
-                <div class="contact-icon" aria-hidden="true">
-                  <svg class="icon" viewBox="0 0 24 24">
-                    <path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 11.2 19 19.5 19.5 0 0 1 5 12.8 19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2.1Z" />
-                  </svg>
-                </div>
-                <div>
-                  <strong>Teléfono</strong>
-                  <p><a href="tel:923608004">923 608 004</a></p>
-                </div>
-              </div>
-
-              <div class="contact-item">
-                <div class="contact-icon" aria-hidden="true">
-                  <svg class="icon" viewBox="0 0 24 24">
-                    <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" />
-                    <path d="m22 6-10 7L2 6" />
-                  </svg>
-                </div>
-                <div>
-                  <strong>Email</strong>
-                  <p><a href="mailto:afabeco@yahoo.es">afabeco@yahoo.es</a></p>
-                </div>
-              </div>
-
-              <div class="contact-item">
-                <div class="contact-icon" aria-hidden="true">
-                  <svg class="icon" viewBox="0 0 24 24">
-                    <rect x="2" y="2" width="20" height="20" rx="5" />
-                    <circle cx="12" cy="12" r="4" />
-                    <path d="M17.5 6.5h.01" />
-                  </svg>
-                </div>
-                <div>
-                  <strong>Instagram</strong>
-                  <p><a href="https://www.instagram.com/afabecobejar/" target="_blank" rel="noopener noreferrer">@afabecobejar</a></p>
-                </div>
+        <div class="contact-layout">
+          <aside class="contact-panel" aria-label="Datos de contacto">
+            <div class="contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 21s7-7.1 7-12A7 7 0 0 0 5 9c0 4.9 7 12 7 12Z" />
+                <circle cx="12" cy="9" r="2.5" />
+              </svg>
+              <div>
+                <strong>Dirección</strong>
+                <span>C/ Los Magnolios 11, El Castañar, 37700 Béjar</span>
               </div>
             </div>
-
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=C%2F%20Los%20Magnolios%2011%2C%20El%20Casta%C3%B1ar%2C%20B%C3%A9jar%2C%20Salamanca" target="_blank" rel="noopener noreferrer">
-              Abrir ubicación en Google Maps
+            <div class="contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 11.2 19 19.5 19.5 0 0 1 5 12.8 19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2.1Z" />
+              </svg>
+              <div>
+                <strong>Teléfono</strong>
+                <a href="tel:923608004">923 608 004</a>
+              </div>
+            </div>
+            <div class="contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" />
+                <path d="m22 6-10 7L2 6" />
+              </svg>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:afabeco@yahoo.es">afabeco@yahoo.es</a>
+              </div>
+            </div>
+            <div class="contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <path d="M17.5 6.5h.01" />
+              </svg>
+              <div>
+                <strong>Instagram</strong>
+                <a href="https://www.instagram.com/afabecobejar/" target="_blank" rel="noopener noreferrer">@afabecobejar</a>
+              </div>
+            </div>
+            <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=C%2F%20Los%20Magnolios%2011%2C%20El%20Casta%C3%B1ar%2C%20B%C3%A9jar%2C%20Salamanca" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18l6-6-6-6" /></svg>
+              Abrir ubicación
             </a>
           </aside>
 
-          <div class="card form-panel" aria-labelledby="titulo-formulario">
-            <h3 id="titulo-formulario">Escríbenos</h3>
-            <p>Este formulario envía el mensaje al correo oficial de AFABECO.</p>
-
+          <div class="form-panel">
             <form action="https://formsubmit.co/afabeco@yahoo.es" method="POST">
               <input type="hidden" name="_subject" value="Nueva consulta desde la web de AFABECO" />
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_template" value="table" />
-              <input type="hidden" name="_next" value="https://gm-neila.github.io/familiares-alzheimer/?enviado=1#contacto" />
               <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
 
               <div class="form-grid">
                 <div class="field">
                   <label for="nombre">Nombre y apellidos *</label>
-                  <input type="text" id="nombre" name="nombre" autocomplete="name" required placeholder="Tu nombre completo" />
+                  <input id="nombre" name="nombre" type="text" autocomplete="name" required placeholder="Tu nombre" />
                 </div>
-
                 <div class="field">
                   <label for="telefono">Teléfono</label>
-                  <input type="tel" id="telefono" name="telefono" autocomplete="tel" placeholder="Tu teléfono" />
+                  <input id="telefono" name="telefono" type="tel" autocomplete="tel" placeholder="Tu teléfono" />
                 </div>
-
                 <div class="field">
                   <label for="email">Correo electrónico *</label>
-                  <input type="email" id="email" name="email" autocomplete="email" required placeholder="tu@email.com" />
+                  <input id="email" name="email" type="email" autocomplete="email" required placeholder="tu@email.com" />
                 </div>
-
                 <div class="field">
                   <label for="motivo">Motivo</label>
                   <select id="motivo" name="motivo">
                     <option value="">Selecciona una opción</option>
-                    <option value="Información sobre servicios">Información sobre servicios</option>
-                    <option value="Tengo un familiar con Alzheimer o demencia">Tengo un familiar con Alzheimer o demencia</option>
-                    <option value="Apoyo familiar o respiro">Apoyo familiar o respiro</option>
-                    <option value="Colaboración">Colaboración</option>
-                    <option value="Voluntariado">Voluntariado</option>
-                    <option value="Otro">Otro</option>
+                    <option>Información sobre servicios</option>
+                    <option>Tengo un familiar con Alzheimer o demencia</option>
+                    <option>Apoyo familiar o respiro</option>
+                    <option>Colaboración</option>
+                    <option>Voluntariado</option>
+                    <option>Otro</option>
                   </select>
                 </div>
-
                 <div class="field full">
                   <label for="mensaje">Mensaje *</label>
                   <textarea id="mensaje" name="mensaje" required placeholder="Cuéntanos en qué podemos ayudarte"></textarea>
@@ -2176,14 +2172,11 @@
               </div>
 
               <div class="privacy">
-                <input type="checkbox" id="privacidad" name="privacidad" required />
-                <label for="privacidad">
-                  Acepto que mis datos se utilicen únicamente para responder a esta consulta. Evita incluir información médica sensible en este formulario; para situaciones personales, es preferible contactar por teléfono.
-                </label>
+                <input id="privacidad" name="privacidad" type="checkbox" required />
+                <label for="privacidad">Acepto que mis datos se utilicen únicamente para responder a esta consulta. Evita incluir información médica sensible en el formulario.</label>
               </div>
 
               <button class="submit-btn" type="submit">Enviar mensaje</button>
-              <p class="form-note">La primera vez que se use FormSubmit, el correo de destino puede recibir un email de confirmación para activar el servicio.</p>
             </form>
           </div>
         </div>
@@ -2191,152 +2184,482 @@
     </section>
   </main>
 
-  <footer class="site-footer" role="contentinfo">
+  <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div>
-          <a href="#inicio" class="brand" aria-label="AFABECO Béjar - Inicio">
+          <a class="brand" href="#inicio" aria-label="AFABECO Béjar y Comarca">
             <span class="brand-mark" aria-hidden="true">
-              <svg viewBox="0 0 24 24">
-                <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8Z" />
+              <svg viewBox="0 0 32 32" fill="none">
+                <path d="M16 4v24M4 16h24M8 8c5 4 8 9 16 16M24 8c-5 4-8 9-16 16" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+                <circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2.2" />
               </svg>
             </span>
-            <span class="brand-text">
+            <span class="brand-name">
               <strong>AFABECO</strong>
-              <span>AFA Béjar y Comarca</span>
+              <span>Béjar y Comarca</span>
             </span>
           </a>
-
-          <p style="margin-top:16px;">Asociación de Familiares de Enfermos de Alzheimer de Béjar.</p>
-          <p>C/ Los Magnolios 11, El Castañar, 37700 Béjar, Salamanca.</p>
+          <p>Asociación de Familiares de Enfermos de Alzheimer de Béjar.</p>
           <p>Registro de Asociaciones de Castilla y León nº 37/1/0003090.</p>
         </div>
-
         <nav aria-label="Enlaces de asociación">
-          <h4>Asociación</h4>
+          <h2>Asociación</h2>
           <ul>
             <li><a href="#datos">Datos oficiales</a></li>
-            <li><a href="#quienes">Quiénes somos</a></li>
             <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#instalaciones">Centro</a></li>
+            <li><a href="#centro">Centro</a></li>
           </ul>
         </nav>
-
-        <nav aria-label="Enlaces de información">
-          <h4>Información</h4>
+        <nav aria-label="Enlaces de ayuda">
+          <h2>Ayuda</h2>
           <ul>
+            <li><a href="#recorrido">Primer contacto</a></li>
             <li><a href="#familias">Familias cuidadoras</a></li>
             <li><a href="#faq">Preguntas frecuentes</a></li>
-            <li><a href="https://www.afacayle.es/afa-bejar/" target="_blank" rel="noopener noreferrer">Ficha en AFACAYLE</a></li>
-            <li><a href="https://crealzheimer.imserso.es" target="_blank" rel="noopener noreferrer">CRE Alzheimer</a></li>
           </ul>
         </nav>
-
         <nav aria-label="Enlaces de contacto">
-          <h4>Contacto</h4>
+          <h2>Contacto</h2>
           <ul>
             <li><a href="tel:923608004">923 608 004</a></li>
             <li><a href="mailto:afabeco@yahoo.es">afabeco@yahoo.es</a></li>
             <li><a href="https://www.instagram.com/afabecobejar/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            <li><a href="#contacto">Formulario</a></li>
           </ul>
         </nav>
       </div>
-
       <div class="footer-bottom">
         <span>© 2026 AFABECO Béjar. Todos los derechos reservados.</span>
-        <div class="legal-links">
-          <button type="button" data-modal="legal-modal">Aviso legal y privacidad</button>
-          <button type="button" data-modal="cookies-modal">Cookies</button>
-        </div>
+        <span>C/ Los Magnolios 11, El Castañar, 37700 Béjar.</span>
       </div>
     </div>
   </footer>
 
-  <dialog id="legal-modal">
-    <div class="modal-content">
-      <h2>Aviso legal y privacidad</h2>
-      <p>Esta web muestra información pública de AFABECO, AFA Béjar y Comarca, con finalidad informativa y de contacto.</p>
-      <p>El formulario recoge nombre, email, teléfono opcional, motivo y mensaje para responder a la consulta enviada. No incluyas información médica sensible en el formulario.</p>
-      <p>Para ejercer cualquier derecho o solicitar información sobre el tratamiento de datos, contacta con AFABECO en <a href="mailto:afabeco@yahoo.es">afabeco@yahoo.es</a>.</p>
-      <button class="btn btn-primary modal-close" type="button">Cerrar</button>
-    </div>
-  </dialog>
-
-  <dialog id="cookies-modal">
-    <div class="modal-content">
-      <h2>Cookies</h2>
-      <p>Esta página no instala cookies propias de seguimiento. Puede realizar conexiones externas para cargar tipografías de Google Fonts y para enviar el formulario mediante FormSubmit.</p>
-      <button class="btn btn-primary modal-close" type="button">Cerrar</button>
-    </div>
-  </dialog>
-
   <script>
-    const navButton = document.querySelector(".nav-button");
+    const menuButton = document.querySelector(".menu-toggle");
     const nav = document.querySelector(".main-nav");
+    const progress = document.querySelector(".page-progress");
 
-    function closeMenu() {
-      nav.classList.remove("is-open");
-      navButton.setAttribute("aria-expanded", "false");
+    function setMenu(open) {
+      nav.classList.toggle("is-open", open);
+      document.body.classList.toggle("no-scroll", open);
+      menuButton.setAttribute("aria-expanded", String(open));
+      menuButton.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
     }
 
-    function openMenu() {
-      nav.classList.add("is-open");
-      navButton.setAttribute("aria-expanded", "true");
-    }
-
-    navButton.addEventListener("click", () => {
-      const isOpen = nav.classList.contains("is-open");
-      isOpen ? closeMenu() : openMenu();
-    });
-
-    nav.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", closeMenu);
-    });
-
-    document.addEventListener("click", (event) => {
-      const clickedInside = nav.contains(event.target) || navButton.contains(event.target);
-      if (!clickedInside) closeMenu();
-    });
-
+    menuButton.addEventListener("click", () => setMenu(!nav.classList.contains("is-open")));
+    nav.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => setMenu(false)));
     document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape") {
-        closeMenu();
-        document.querySelectorAll("dialog[open]").forEach((dialog) => dialog.close());
-      }
+      if (event.key === "Escape") setMenu(false);
     });
 
-    document.querySelectorAll("img[data-fallback]").forEach((img) => {
-      img.addEventListener("error", () => {
-        const fallback = img.getAttribute("data-fallback");
-        if (fallback && img.src !== fallback) {
-          img.src = fallback;
-          img.removeAttribute("data-fallback");
+    function updateProgress() {
+      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      const amount = scrollable > 0 ? window.scrollY / scrollable : 0;
+      progress.style.transform = `scaleX(${Math.max(0, Math.min(1, amount))})`;
+    }
+
+    updateProgress();
+    window.addEventListener("scroll", updateProgress, { passive: true });
+    window.addEventListener("resize", updateProgress);
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          revealObserver.unobserve(entry.target);
         }
       });
-    });
+    }, { threshold: 0.18 });
 
-    document.querySelectorAll("[data-modal]").forEach((button) => {
-      button.addEventListener("click", () => {
-        const modal = document.getElementById(button.dataset.modal);
-        if (modal) modal.showModal();
+    document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
+
+    const sectionLinks = [...document.querySelectorAll(".main-nav a[href^='#']")];
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        sectionLinks.forEach((link) => {
+          link.classList.toggle("is-active", link.getAttribute("href") === `#${entry.target.id}`);
+        });
+      });
+    }, { rootMargin: "-38% 0px -54% 0px" });
+
+    sectionLinks
+      .map((link) => document.querySelector(link.getAttribute("href")))
+      .filter(Boolean)
+      .forEach((section) => sectionObserver.observe(section));
+
+    const tabs = [...document.querySelectorAll(".service-tab")];
+    const panels = [...document.querySelectorAll(".service-panel")];
+
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        tabs.forEach((item) => item.setAttribute("aria-selected", String(item === tab)));
+        panels.forEach((panel) => {
+          panel.classList.toggle("is-active", panel.id === tab.getAttribute("aria-controls"));
+        });
       });
     });
 
-    document.querySelectorAll(".modal-close").forEach((button) => {
-      button.addEventListener("click", () => {
-        button.closest("dialog").close();
-      });
+    const gallery = document.querySelector("[data-gallery]");
+    const cards = [...gallery.querySelectorAll(".gallery-card")];
+    const count = document.querySelector("[data-gallery-count]");
+    const thumbs = document.querySelector("[data-gallery-thumbs]");
+    let activeIndex = 0;
+
+    cards.forEach((card, index) => {
+      const thumbButton = document.createElement("button");
+      thumbButton.type = "button";
+      thumbButton.setAttribute("aria-label", `Mostrar imagen ${index + 1}`);
+      const thumbImage = card.querySelector("img").cloneNode();
+      thumbImage.alt = "";
+      thumbButton.append(thumbImage);
+      thumbButton.addEventListener("click", () => showSlide(index));
+      thumbs.append(thumbButton);
     });
 
-    const params = new URLSearchParams(window.location.search);
-    if (params.get("enviado") === "1") {
-      const contact = document.getElementById("contacto");
-      const success = document.createElement("div");
-      success.className = "notice";
-      success.style.marginBottom = "24px";
-      success.innerHTML = "<p><strong>Mensaje enviado.</strong> Gracias por contactar con AFABECO. Te responderán lo antes posible.</p>";
-      contact.querySelector(".container").prepend(success);
+    function showSlide(index) {
+      activeIndex = (index + cards.length) % cards.length;
+      const prevIndex = (activeIndex - 1 + cards.length) % cards.length;
+      const nextIndex = (activeIndex + 1) % cards.length;
+
+      cards.forEach((card, cardIndex) => {
+        card.classList.toggle("is-active", cardIndex === activeIndex);
+        card.classList.toggle("is-prev", cardIndex === prevIndex);
+        card.classList.toggle("is-next", cardIndex === nextIndex);
+      });
+
+      [...thumbs.children].forEach((button, buttonIndex) => {
+        button.classList.toggle("is-active", buttonIndex === activeIndex);
+      });
+
+      count.textContent = `${activeIndex + 1} / ${cards.length}`;
+    }
+
+    document.querySelector("[data-gallery-prev]").addEventListener("click", () => showSlide(activeIndex - 1));
+    document.querySelector("[data-gallery-next]").addEventListener("click", () => showSlide(activeIndex + 1));
+    showSlide(0);
+  </script>
+
+  <script type="module">
+    const canvas = document.getElementById("memory-scene");
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    try {
+      const THREE = await import("./assets/three.module.js");
+      initThreeScene(THREE);
+    } catch (error) {
+      initCanvasFallback();
+    }
+
+    function initThreeScene(THREE) {
+      const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: "high-performance", preserveDrawingBuffer: true });
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(48, 1, 0.1, 100);
+      camera.position.set(0, 0, 6.4);
+
+      const brain = new THREE.Group();
+      brain.position.set(1.82, 0.02, 0);
+      scene.add(brain);
+
+      const brainTexture = new THREE.TextureLoader().load("./assets/digital-brain.webp");
+      brainTexture.colorSpace = THREE.SRGBColorSpace;
+      const brainImageMaterial = new THREE.MeshBasicMaterial({
+        map: brainTexture,
+        transparent: true,
+        opacity: 0.94,
+        blending: THREE.AdditiveBlending,
+        side: THREE.DoubleSide,
+        depthWrite: false
+      });
+      const brainGlowMaterial = new THREE.MeshBasicMaterial({
+        map: brainTexture,
+        transparent: true,
+        opacity: 0.26,
+        blending: THREE.AdditiveBlending,
+        side: THREE.DoubleSide,
+        depthWrite: false
+      });
+      const brainImage = new THREE.Mesh(new THREE.PlaneGeometry(3.12, 1.9), brainImageMaterial);
+      brainImage.position.set(0.02, -0.04, 0.2);
+      brainImage.rotation.z = -0.035;
+      const brainGlow = new THREE.Mesh(new THREE.PlaneGeometry(3.34, 2.04), brainGlowMaterial);
+      brainGlow.position.set(0.02, -0.04, 0.08);
+      brainGlow.rotation.z = -0.035;
+      brain.add(brainGlow);
+      brain.add(brainImage);
+
+      const surfaceMaterial = new THREE.MeshBasicMaterial({
+        color: "#77c9b2",
+        transparent: true,
+        opacity: 0.04,
+        blending: THREE.AdditiveBlending,
+        depthWrite: false
+      });
+      [-1, 1].forEach((side) => {
+        const lobe = new THREE.Mesh(new THREE.SphereGeometry(1, 52, 28), surfaceMaterial);
+        lobe.scale.set(0.78, 0.94, 0.68);
+        lobe.position.x = side * 0.36;
+        lobe.rotation.z = side * -0.08;
+        brain.add(lobe);
+      });
+
+      const pointCount = 980;
+      const base = new Float32Array(pointCount * 3);
+      const positions = new Float32Array(pointCount * 3);
+      const colors = new Float32Array(pointCount * 3);
+      const colorA = new THREE.Color("#77c9b2");
+      const colorB = new THREE.Color("#f2b84b");
+      const colorC = new THREE.Color("#5eb5d6");
+
+      for (let i = 0; i < pointCount; i += 1) {
+        const side = Math.random() > 0.5 ? 1 : -1;
+        const theta = Math.random() * Math.PI * 2;
+        const vertical = Math.random() * 2 - 1;
+        const radial = Math.sqrt(Math.max(0, 1 - vertical * vertical));
+        const fold = 1 + Math.sin(theta * 6 + vertical * 4) * 0.075 + Math.cos(theta * 11 - vertical * 5) * 0.045;
+        const shell = 0.82 + Math.random() * 0.23;
+        let x = side * (0.35 + Math.abs(radial * Math.cos(theta)) * 0.68 * fold * shell);
+        let y = vertical * 0.92 * fold * shell + Math.sin(theta * 2) * 0.08 * (1 - Math.abs(vertical));
+        let z = radial * Math.sin(theta) * 0.68 * fold * shell;
+
+        if (y < -0.72) y = -0.72 + (y + 0.72) * 0.38;
+        if (Math.abs(x) < 0.32) x += side * 0.12;
+
+        const index = i * 3;
+        base[index] = x;
+        base[index + 1] = y;
+        base[index + 2] = z;
+        positions[index] = x;
+        positions[index + 1] = y;
+        positions[index + 2] = z;
+
+        const mixed = colorA.clone().lerp(i % 4 === 0 ? colorB : colorC, Math.random() * 0.72);
+        colors[index] = mixed.r;
+        colors[index + 1] = mixed.g;
+        colors[index + 2] = mixed.b;
+      }
+
+      const pointsGeometry = new THREE.BufferGeometry();
+      pointsGeometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
+      pointsGeometry.setAttribute("color", new THREE.BufferAttribute(colors, 3));
+
+      const points = new THREE.Points(pointsGeometry, new THREE.PointsMaterial({
+        size: 0.028,
+        vertexColors: true,
+        transparent: true,
+        opacity: 0.58,
+        blending: THREE.AdditiveBlending,
+        depthWrite: false
+      }));
+      brain.add(points);
+
+      const linePositions = [];
+      for (let i = 0; i < pointCount; i += 8) {
+        const j = (i + Math.floor(6 + Math.random() * 42)) % pointCount;
+        linePositions.push(base[i * 3], base[i * 3 + 1], base[i * 3 + 2]);
+        linePositions.push(base[j * 3], base[j * 3 + 1], base[j * 3 + 2]);
+      }
+
+      const lineGeometry = new THREE.BufferGeometry();
+      lineGeometry.setAttribute("position", new THREE.Float32BufferAttribute(linePositions, 3));
+      const lines = new THREE.LineSegments(lineGeometry, new THREE.LineBasicMaterial({
+        color: "#dff6ef",
+        transparent: true,
+        opacity: 0.1,
+        depthWrite: false
+      }));
+      brain.add(lines);
+
+      const foldMaterial = new THREE.LineBasicMaterial({
+        color: "#f2b84b",
+        transparent: true,
+        opacity: 0.38,
+        depthWrite: false
+      });
+      const fissureMaterial = new THREE.LineBasicMaterial({
+        color: "#dff6ef",
+        transparent: true,
+        opacity: 0.44,
+        depthWrite: false
+      });
+      const folds = new THREE.Group();
+
+      function addFold(points, material = foldMaterial) {
+        const geometry = new THREE.BufferGeometry().setFromPoints(points);
+        folds.add(new THREE.Line(geometry, material));
+      }
+
+      [-1, 1].forEach((side) => {
+        [-0.55, -0.28, -0.02, 0.24, 0.5].forEach((band, bandIndex) => {
+          const pts = [];
+          for (let k = 0; k < 82; k += 1) {
+            const t = (k / 81) * Math.PI * 2;
+            const wave = Math.sin(t * 5 + bandIndex) * 0.045;
+            pts.push(new THREE.Vector3(
+              side * (0.42 + Math.cos(t) * 0.28 + wave),
+              band + Math.sin(t * 2.2 + bandIndex) * 0.055,
+              Math.sin(t) * (0.42 + Math.cos(bandIndex) * 0.045)
+            ));
+          }
+          addFold(pts);
+        });
+
+        [-0.42, -0.12, 0.18, 0.45].forEach((offset, offsetIndex) => {
+          const pts = [];
+          for (let k = 0; k < 72; k += 1) {
+            const s = k / 71;
+            const y = -0.72 + s * 1.42;
+            pts.push(new THREE.Vector3(
+              side * (0.5 + Math.sin(s * Math.PI * 3 + offsetIndex) * 0.18),
+              y,
+              offset + Math.sin(s * Math.PI * 4 + offsetIndex) * 0.08
+            ));
+          }
+          addFold(pts);
+        });
+      });
+
+      const fissurePoints = [];
+      for (let k = 0; k < 96; k += 1) {
+        const s = k / 95;
+        fissurePoints.push(new THREE.Vector3(
+          Math.sin(s * Math.PI * 4) * 0.045,
+          -0.76 + s * 1.5,
+          Math.sin(s * Math.PI * 2) * 0.14
+        ));
+      }
+      addFold(fissurePoints, fissureMaterial);
+      brain.add(folds);
+
+      let pointerX = 0;
+      let pointerY = 0;
+      window.addEventListener("pointermove", (event) => {
+        pointerX = (event.clientX / window.innerWidth - 0.5) * 0.35;
+        pointerY = (event.clientY / window.innerHeight - 0.5) * 0.22;
+      }, { passive: true });
+
+      function resize() {
+        const { clientWidth, clientHeight } = canvas;
+        renderer.setSize(clientWidth, clientHeight, false);
+        camera.aspect = clientWidth / Math.max(clientHeight, 1);
+        camera.updateProjectionMatrix();
+        brain.position.x = clientWidth < 760 ? 0.42 : 1.82;
+        brain.position.y = clientWidth < 760 ? -0.02 : 0.02;
+        brain.scale.setScalar(clientWidth < 760 ? 0.92 : 1.18);
+      }
+
+      function updatePixelProbe() {
+        const gl = renderer.getContext();
+        const sample = new Uint8Array(4);
+        const coords = [[0.5, 0.5], [0.62, 0.42], [0.72, 0.5], [0.58, 0.62], [0.8, 0.35], [0.68, 0.72]];
+        let nonBlank = 0;
+        let colorTotal = 0;
+        coords.forEach(([x, y]) => {
+          gl.readPixels(Math.floor(canvas.width * x), Math.floor(canvas.height * y), 1, 1, gl.RGBA, gl.UNSIGNED_BYTE, sample);
+          const color = sample[0] + sample[1] + sample[2] + sample[3];
+          colorTotal += color;
+          if (color > 20) nonBlank += 1;
+        });
+        canvas.dataset.pixelProbe = `${nonBlank}/${coords.length}:${colorTotal}`;
+      }
+
+      function animate(time = 0) {
+        const t = time * 0.001;
+        for (let i = 0; i < pointCount; i += 1) {
+          const index = i * 3;
+          positions[index] = base[index] + Math.sin(t * 0.95 + base[index + 1] * 2.7) * 0.014;
+          positions[index + 1] = base[index + 1] + Math.sin(t * 1.18 + base[index] * 2.1 + base[index + 2]) * 0.023;
+          positions[index + 2] = base[index + 2] + Math.cos(t + base[index + 1] * 2.4) * 0.018;
+        }
+        pointsGeometry.attributes.position.needsUpdate = true;
+
+        if (!prefersReducedMotion) {
+          brain.rotation.y += ((0.24 + pointerX + Math.sin(t * 0.28) * 0.06) - brain.rotation.y) * 0.018;
+          brain.rotation.x += ((-0.08 + pointerY + Math.cos(t * 0.32) * 0.025) - brain.rotation.x) * 0.018;
+          brainImage.rotation.z = -0.035 + Math.sin(t * 0.55) * 0.012;
+          brainGlow.rotation.z = brainImage.rotation.z;
+          brainImageMaterial.opacity = 0.86 + Math.sin(t * 1.25) * 0.08;
+          brainGlowMaterial.opacity = 0.2 + Math.sin(t * 1.05) * 0.06;
+          folds.rotation.z = Math.sin(t * 0.42) * 0.025;
+        }
+
+        renderer.render(scene, camera);
+        canvas.dataset.rendered = "three";
+        updatePixelProbe();
+        requestAnimationFrame(animate);
+      }
+
+      resize();
+      window.addEventListener("resize", resize);
+      animate();
+    }
+
+    function initCanvasFallback() {
+      const context = canvas.getContext("2d");
+      const nodes = Array.from({ length: 80 }, () => ({
+        x: Math.random(),
+        y: Math.random(),
+        r: 1 + Math.random() * 2,
+        vx: -0.0004 + Math.random() * 0.0008,
+        vy: -0.0003 + Math.random() * 0.0006
+      }));
+
+      function resize() {
+        const scale = Math.min(window.devicePixelRatio || 1, 2);
+        canvas.width = Math.floor(canvas.clientWidth * scale);
+        canvas.height = Math.floor(canvas.clientHeight * scale);
+        context.setTransform(scale, 0, 0, scale, 0, 0);
+      }
+
+      function draw() {
+        const w = canvas.clientWidth;
+        const h = canvas.clientHeight;
+        context.clearRect(0, 0, w, h);
+        context.globalCompositeOperation = "lighter";
+
+        nodes.forEach((node) => {
+          if (!prefersReducedMotion) {
+            node.x = (node.x + node.vx + 1) % 1;
+            node.y = (node.y + node.vy + 1) % 1;
+          }
+        });
+
+        for (let i = 0; i < nodes.length; i += 1) {
+          const a = nodes[i];
+          for (let j = i + 1; j < nodes.length; j += 1) {
+            const b = nodes[j];
+            const dx = (a.x - b.x) * w;
+            const dy = (a.y - b.y) * h;
+            const distance = Math.hypot(dx, dy);
+            if (distance < 130) {
+              context.strokeStyle = `rgba(223, 246, 239, ${0.16 * (1 - distance / 130)})`;
+              context.lineWidth = 1;
+              context.beginPath();
+              context.moveTo(a.x * w, a.y * h);
+              context.lineTo(b.x * w, b.y * h);
+              context.stroke();
+            }
+          }
+        }
+
+        nodes.forEach((node, index) => {
+          context.fillStyle = index % 4 === 0 ? "rgba(242,184,75,0.78)" : "rgba(119,201,178,0.82)";
+          context.beginPath();
+          context.arc(node.x * w, node.y * h, node.r, 0, Math.PI * 2);
+          context.fill();
+        });
+
+        canvas.dataset.rendered = "fallback";
+        canvas.dataset.pixelProbe = `${nodes.length}/${nodes.length}:fallback`;
+        requestAnimationFrame(draw);
+      }
+
+      resize();
+      window.addEventListener("resize", resize);
+      draw();
     }
   </script>
 </body>

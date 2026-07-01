@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="420" viewBox="0 0 420 420">
+  <defs>
+    <pattern id="micro" width="84" height="84" patternUnits="userSpaceOnUse">
+      <path d="M0 42H84M42 0V84" stroke="#123f47" stroke-opacity=".055" stroke-width="1"/>
+      <path d="M0 0L84 84M84 0L0 84" stroke="#1f6670" stroke-opacity=".032" stroke-width="1"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="420" height="420" fill="url(#micro)"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M26 72C72 32 111 44 147 84S222 145 268 110 348 75 394 119" stroke="#77c9b2" stroke-opacity=".30" stroke-width="1.4"/>
+    <path d="M14 246C58 210 94 211 137 239S221 300 271 259 356 200 405 241" stroke="#d56c46" stroke-opacity=".18" stroke-width="1.2"/>
+    <path d="M42 358C92 319 141 328 181 351S264 396 316 351 374 302 412 324" stroke="#f2b84b" stroke-opacity=".20" stroke-width="1.2"/>
+    <path d="M56 172H110L142 139H198L232 173H293L338 128H392" stroke="#123f47" stroke-opacity=".16" stroke-width="1.1"/>
+    <path d="M28 296H86L118 326H178L205 299H252L287 333H376" stroke="#1f6670" stroke-opacity=".18" stroke-width="1.1"/>
+    <path d="M84 41V89L122 126M240 35V82L275 116M342 226V275L376 309M190 202V250L155 284" stroke="#5eb5d6" stroke-opacity=".18" stroke-width="1.1"/>
+  </g>
+  <g filter="url(#glow)">
+    <circle cx="26" cy="72" r="2.8" fill="#77c9b2" fill-opacity=".65"/>
+    <circle cx="147" cy="84" r="2.6" fill="#5eb5d6" fill-opacity=".58"/>
+    <circle cx="268" cy="110" r="3" fill="#77c9b2" fill-opacity=".62"/>
+    <circle cx="394" cy="119" r="2.5" fill="#f2b84b" fill-opacity=".48"/>
+    <circle cx="56" cy="172" r="2.4" fill="#123f47" fill-opacity=".45"/>
+    <circle cx="142" cy="139" r="2.9" fill="#d56c46" fill-opacity=".42"/>
+    <circle cx="232" cy="173" r="2.6" fill="#77c9b2" fill-opacity=".54"/>
+    <circle cx="338" cy="128" r="2.8" fill="#5eb5d6" fill-opacity=".50"/>
+    <circle cx="14" cy="246" r="2.5" fill="#d56c46" fill-opacity=".44"/>
+    <circle cx="137" cy="239" r="2.8" fill="#f2b84b" fill-opacity=".46"/>
+    <circle cx="271" cy="259" r="2.7" fill="#77c9b2" fill-opacity=".56"/>
+    <circle cx="405" cy="241" r="2.3" fill="#123f47" fill-opacity=".44"/>
+    <circle cx="28" cy="296" r="2.4" fill="#5eb5d6" fill-opacity=".50"/>
+    <circle cx="118" cy="326" r="2.6" fill="#77c9b2" fill-opacity=".50"/>
+    <circle cx="205" cy="299" r="2.5" fill="#d56c46" fill-opacity=".42"/>
+    <circle cx="287" cy="333" r="2.8" fill="#f2b84b" fill-opacity=".48"/>
+    <circle cx="42" cy="358" r="2.6" fill="#77c9b2" fill-opacity=".52"/>
+    <circle cx="181" cy="351" r="2.8" fill="#123f47" fill-opacity=".42"/>
+    <circle cx="316" cy="351" r="2.6" fill="#5eb5d6" fill-opacity=".52"/>
+  </g>
+</svg>
